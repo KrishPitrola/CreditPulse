@@ -1,0 +1,3001 @@
+loan_id,customer_id,loan_amount,term_months,interest_rate,purpose,loan_status,disbursed_date
+1,504,78780,36,17.06,Vehicle,Paid Off,2025-03-29
+2,1380,83935,60,12.46,Medical,Current,2024-10-24
+3,893,33682,36,21.08,Medical,Default,2025-03-26
+4,1041,16279,6,21.73,Vehicle,Default,2025-03-09
+5,26,29375,60,14.11,Vehicle,Current,2025-04-03
+6,271,31978,60,10.5,Wedding,Default,2026-02-04
+7,521,39135,48,21.79,Debt Consolidation,Current,2026-03-18
+8,1045,25543,24,15.31,Business Expansion,Current,2022-06-10
+9,409,25540,48,10.61,Wedding,Default,2024-08-25
+10,1781,24611,60,17.8,Home Renovation,Paid Off,2025-10-01
+11,41,55957,60,17.42,Medical,Current,2025-04-02
+12,1089,18864,48,10.16,Business Expansion,Current,2023-12-05
+13,143,28193,6,15.36,Vehicle,Paid Off,2024-11-15
+14,553,128191,48,18.67,Medical,Current,2024-05-12
+15,656,29952,24,13.12,Wedding,Default,2022-03-14
+16,286,47679,48,18.87,Debt Consolidation,Current,2026-01-28
+17,49,46450,48,12.76,Vehicle,Paid Off,2025-07-12
+18,1568,18985,48,11.61,Wedding,Paid Off,2022-04-16
+19,310,77280,24,19.61,Home Renovation,Default,2025-07-02
+20,1814,57140,24,15.56,Business Expansion,Default,2022-09-17
+21,1213,41289,6,20.14,Medical,Default,2023-07-24
+22,718,25791,12,17.2,Debt Consolidation,Default,2023-07-18
+23,1423,53923,24,9.68,Business Expansion,Paid Off,2022-08-17
+24,1571,93963,12,20.88,Education,Current,2026-02-22
+25,927,28748,60,15.08,Medical,Current,2022-12-26
+26,763,31671,60,12.45,Debt Consolidation,Default,2023-01-06
+27,1802,59589,48,20.28,Home Renovation,Paid Off,2023-12-04
+28,1858,32856,12,16.94,Debt Consolidation,Default,2022-11-12
+29,1440,15169,36,18.91,Debt Consolidation,Default,2024-04-25
+30,1520,51434,36,12.47,Wedding,Paid Off,2024-06-20
+31,1119,26813,60,11.59,Wedding,Current,2025-03-29
+32,1169,38425,24,10.18,Debt Consolidation,Paid Off,2023-06-26
+33,1431,36658,6,10.16,Vehicle,Current,2024-08-08
+34,16,40499,36,13.27,Debt Consolidation,Paid Off,2026-03-09
+35,1951,39566,48,12.42,Wedding,Default,2025-10-31
+36,1841,12167,36,15.43,Business Expansion,Paid Off,2022-10-25
+37,194,247289,36,9.65,Vehicle,Current,2024-07-08
+38,800,241576,60,13.45,Wedding,Current,2024-12-21
+39,1612,29628,6,10.72,Wedding,Current,2024-12-24
+40,1195,46386,24,21.45,Business Expansion,Current,2024-06-03
+41,1970,38596,60,20.23,Medical,Default,2023-11-18
+42,1603,24917,24,19.53,Wedding,Current,2023-06-07
+43,1694,10016,48,14.39,Wedding,Current,2026-05-03
+44,1614,179962,60,12.52,Business Expansion,Default,2025-10-08
+45,1487,45141,12,16.0,Wedding,Default,2025-10-19
+46,1127,20698,12,13.42,Wedding,Paid Off,2022-01-22
+47,633,14212,6,19.9,Vehicle,Default,2022-01-25
+48,1889,33545,6,16.07,Vehicle,Current,2025-11-04
+49,1708,46983,24,12.24,Medical,Current,2023-08-04
+50,866,22412,12,9.93,Home Renovation,Current,2025-06-22
+51,1503,45189,6,21.23,Debt Consolidation,Default,2025-09-06
+52,1414,24174,12,21.38,Home Renovation,Current,2025-07-30
+53,551,10633,60,21.47,Debt Consolidation,Default,2022-06-26
+54,1295,10000,48,11.12,Debt Consolidation,Default,2025-09-06
+55,162,59997,60,16.58,Home Renovation,Paid Off,2023-01-14
+56,1261,40652,60,11.8,Vehicle,Default,2023-08-27
+57,334,91936,60,21.2,Vehicle,Current,2025-08-01
+58,1942,47110,24,19.12,Wedding,Current,2025-11-18
+59,1255,24503,24,12.72,Home Renovation,Current,2026-05-18
+60,562,17904,24,19.21,Vehicle,Paid Off,2024-02-23
+61,517,32038,24,21.95,Debt Consolidation,Default,2023-06-13
+62,929,22719,24,11.72,Vehicle,Current,2022-05-23
+63,1064,28172,12,17.13,Wedding,Current,2023-01-01
+64,1556,42679,36,10.86,Debt Consolidation,Default,2025-01-12
+65,1203,66321,36,12.23,Home Renovation,Current,2025-08-10
+66,224,107553,36,18.44,Home Renovation,Paid Off,2022-07-31
+67,441,27936,6,10.38,Medical,Current,2026-01-30
+68,432,16724,36,9.73,Education,Paid Off,2024-10-16
+69,958,25988,60,17.5,Wedding,Paid Off,2022-03-19
+70,1080,17107,36,12.83,Medical,Paid Off,2025-12-04
+71,1752,54981,36,16.68,Wedding,Current,2024-11-21
+72,1707,41006,36,15.48,Debt Consolidation,Current,2024-04-07
+73,532,30371,60,19.26,Home Renovation,Current,2026-05-28
+74,1372,37722,48,12.32,Wedding,Default,2024-02-27
+75,1581,21052,36,11.02,Medical,Paid Off,2025-01-01
+76,489,29376,24,18.02,Home Renovation,Paid Off,2024-03-31
+77,1694,45904,60,21.96,Home Renovation,Paid Off,2025-08-18
+78,1267,37720,24,16.18,Home Renovation,Current,2023-11-28
+79,1171,33247,36,19.01,Wedding,Default,2023-08-17
+80,823,50015,12,11.71,Vehicle,Current,2022-03-22
+81,755,61581,60,11.89,Vehicle,Default,2025-11-26
+82,610,36287,6,17.38,Vehicle,Paid Off,2024-01-06
+83,204,27448,6,20.57,Wedding,Default,2024-06-15
+84,521,19137,12,11.25,Home Renovation,Paid Off,2023-01-31
+85,1421,42917,60,21.95,Vehicle,Default,2023-05-04
+86,1073,37114,36,10.29,Wedding,Default,2025-01-12
+87,1272,16915,24,15.75,Home Renovation,Paid Off,2024-07-09
+88,1101,89262,6,13.74,Debt Consolidation,Current,2023-11-23
+89,1222,71141,60,10.04,Education,Default,2022-08-31
+90,1954,20530,60,17.84,Wedding,Paid Off,2024-07-27
+91,1060,122183,48,11.36,Education,Default,2025-04-01
+92,221,56471,6,9.96,Vehicle,Paid Off,2022-10-17
+93,854,13981,60,9.74,Home Renovation,Paid Off,2025-06-20
+94,1506,41969,12,18.27,Home Renovation,Default,2022-09-25
+95,576,20779,12,17.41,Debt Consolidation,Current,2023-09-22
+96,315,25599,6,15.2,Debt Consolidation,Default,2022-12-16
+97,220,45715,48,10.3,Home Renovation,Default,2022-08-06
+98,1414,80119,36,16.94,Education,Default,2025-06-14
+99,1510,78262,6,19.56,Medical,Current,2024-05-22
+100,1234,14384,60,17.98,Home Renovation,Default,2023-10-27
+101,1630,39565,60,16.7,Medical,Current,2022-10-09
+102,1697,17458,12,19.05,Education,Paid Off,2025-04-29
+103,854,16794,24,10.29,Education,Current,2023-07-15
+104,1764,31374,36,11.6,Business Expansion,Current,2024-01-28
+105,1849,55302,12,14.98,Home Renovation,Default,2025-04-06
+106,892,32424,12,10.75,Business Expansion,Current,2025-07-18
+107,1620,38457,36,19.22,Vehicle,Current,2022-02-02
+108,417,39948,6,9.58,Home Renovation,Paid Off,2023-01-03
+109,1684,92653,60,17.65,Vehicle,Paid Off,2023-08-05
+110,1384,38861,60,19.59,Vehicle,Current,2026-05-02
+111,966,24383,60,11.09,Wedding,Default,2022-10-21
+112,1654,35992,24,16.04,Education,Paid Off,2024-04-23
+113,566,48696,12,17.13,Business Expansion,Paid Off,2022-03-19
+114,1989,33634,12,18.46,Home Renovation,Paid Off,2025-06-07
+115,1971,10272,60,19.83,Medical,Paid Off,2023-09-09
+116,401,35336,36,9.56,Education,Current,2023-04-28
+117,510,31063,6,21.83,Business Expansion,Current,2022-07-15
+118,653,64799,24,20.28,Business Expansion,Paid Off,2025-01-10
+119,277,25126,12,15.3,Wedding,Current,2025-07-06
+120,1299,41098,12,12.96,Home Renovation,Current,2023-02-01
+121,649,58509,12,18.07,Vehicle,Paid Off,2024-08-29
+122,951,18483,12,11.5,Home Renovation,Current,2022-03-30
+123,298,35134,60,14.05,Vehicle,Current,2023-03-06
+124,1295,31948,24,13.68,Vehicle,Paid Off,2026-04-03
+125,578,20676,6,10.81,Business Expansion,Current,2022-04-18
+126,1839,65192,12,11.48,Vehicle,Paid Off,2022-03-01
+127,216,61042,48,10.95,Wedding,Current,2023-04-27
+128,1824,68447,36,16.91,Vehicle,Paid Off,2023-10-30
+129,684,38156,12,18.84,Education,Paid Off,2023-10-30
+130,379,20303,6,13.58,Education,Paid Off,2022-07-20
+131,1676,58400,60,14.66,Vehicle,Current,2023-02-14
+132,1566,26961,12,10.42,Vehicle,Paid Off,2025-04-13
+133,718,32129,6,20.63,Education,Paid Off,2022-10-24
+134,1343,32816,48,15.19,Medical,Current,2024-03-04
+135,1042,39048,12,15.22,Wedding,Paid Off,2023-02-02
+136,119,10847,24,21.69,Medical,Current,2023-02-19
+137,1478,42105,12,9.9,Home Renovation,Current,2025-03-10
+138,243,79862,24,11.21,Vehicle,Current,2024-08-11
+139,1077,26942,36,11.64,Education,Default,2023-12-05
+140,185,27668,24,17.05,Business Expansion,Current,2025-07-30
+141,1180,48154,12,16.73,Debt Consolidation,Current,2025-02-06
+142,664,15399,12,10.58,Vehicle,Paid Off,2024-12-04
+143,1083,12907,12,16.89,Medical,Default,2024-08-05
+144,1224,31069,6,18.63,Debt Consolidation,Current,2026-02-16
+145,210,36990,12,12.6,Business Expansion,Default,2024-06-08
+146,649,14358,12,20.65,Education,Default,2025-04-26
+147,1558,76737,48,20.73,Home Renovation,Current,2024-05-05
+148,92,55261,6,21.89,Debt Consolidation,Current,2026-02-11
+149,1478,23570,48,9.92,Vehicle,Current,2024-12-23
+150,1068,14709,36,19.62,Debt Consolidation,Paid Off,2025-11-27
+151,1396,18075,6,15.16,Home Renovation,Default,2023-05-08
+152,1377,36219,48,18.91,Wedding,Default,2025-11-20
+153,929,59631,36,21.37,Medical,Current,2022-09-29
+154,811,15626,24,12.49,Home Renovation,Default,2022-07-05
+155,1233,99836,36,17.86,Wedding,Paid Off,2022-11-28
+156,290,159259,36,20.22,Business Expansion,Current,2026-03-11
+157,1559,27528,6,21.71,Debt Consolidation,Current,2024-08-07
+158,1297,22447,12,20.43,Education,Default,2024-04-10
+159,438,46351,24,17.34,Wedding,Current,2025-12-12
+160,1675,51678,6,20.25,Vehicle,Paid Off,2022-05-25
+161,698,19753,60,13.66,Medical,Default,2022-03-08
+162,1352,45254,36,18.91,Business Expansion,Current,2025-11-30
+163,1567,56338,48,16.69,Debt Consolidation,Current,2023-03-01
+164,544,98052,60,10.51,Wedding,Default,2023-11-19
+165,1903,34849,6,15.93,Medical,Current,2025-10-13
+166,1127,43987,6,10.89,Vehicle,Default,2024-01-19
+167,92,202121,48,10.01,Education,Paid Off,2024-01-21
+168,524,57190,60,16.48,Business Expansion,Current,2022-05-18
+169,846,13869,60,19.17,Medical,Paid Off,2022-10-11
+170,1389,19250,12,16.25,Vehicle,Paid Off,2025-08-22
+171,1529,24924,60,21.24,Debt Consolidation,Paid Off,2025-04-03
+172,412,24992,60,12.12,Debt Consolidation,Current,2026-03-06
+173,1610,25505,12,13.51,Business Expansion,Paid Off,2023-07-02
+174,604,23370,60,14.79,Home Renovation,Paid Off,2022-04-22
+175,739,39329,24,13.82,Business Expansion,Paid Off,2024-09-22
+176,1900,86104,48,19.87,Wedding,Default,2024-08-20
+177,669,42120,48,17.98,Medical,Current,2024-12-27
+178,1060,49466,36,17.26,Wedding,Default,2025-10-10
+179,87,116585,6,11.85,Home Renovation,Paid Off,2024-07-26
+180,333,10410,6,14.38,Medical,Current,2023-01-02
+181,1650,43838,6,10.87,Home Renovation,Current,2023-07-20
+182,1549,57249,60,11.35,Debt Consolidation,Paid Off,2022-11-05
+183,1179,23211,12,16.01,Home Renovation,Current,2025-07-08
+184,667,27758,24,14.71,Business Expansion,Default,2025-10-29
+185,1340,55650,12,15.42,Vehicle,Paid Off,2024-05-10
+186,42,36276,60,17.56,Education,Current,2023-08-21
+187,1893,39711,6,9.78,Debt Consolidation,Default,2023-04-21
+188,1409,32702,48,17.56,Business Expansion,Default,2024-04-23
+189,176,33743,24,17.7,Medical,Current,2026-05-31
+190,1292,43213,36,16.92,Business Expansion,Current,2025-11-28
+191,1180,54840,48,15.07,Business Expansion,Current,2023-09-15
+192,571,65826,12,20.73,Education,Current,2023-09-20
+193,1523,94032,24,12.33,Medical,Current,2024-02-01
+194,1503,28754,6,11.35,Vehicle,Current,2023-08-06
+195,1971,44813,12,17.23,Wedding,Default,2022-11-26
+196,560,25272,48,13.07,Debt Consolidation,Default,2022-12-26
+197,1566,21682,60,18.16,Debt Consolidation,Default,2025-09-26
+198,1568,18807,12,11.52,Home Renovation,Current,2022-08-28
+199,14,15784,24,16.68,Medical,Default,2024-06-21
+200,1069,45982,24,11.81,Wedding,Current,2025-02-25
+201,259,67603,6,17.82,Education,Paid Off,2023-12-06
+202,1547,35157,24,15.11,Business Expansion,Current,2022-11-29
+203,966,75191,24,11.02,Vehicle,Current,2022-02-21
+204,215,15428,36,19.11,Medical,Current,2024-07-27
+205,652,44653,12,9.55,Business Expansion,Current,2026-02-21
+206,1918,29979,48,13.64,Medical,Default,2025-12-15
+207,1271,68728,36,20.7,Business Expansion,Current,2026-03-25
+208,261,34521,60,11.34,Wedding,Current,2025-03-03
+209,113,89635,36,13.73,Wedding,Current,2022-08-19
+210,1674,35281,36,20.75,Wedding,Default,2022-10-13
+211,169,34243,48,10.96,Vehicle,Current,2022-02-20
+212,712,75413,48,20.01,Medical,Current,2024-07-02
+213,263,24288,6,13.58,Wedding,Current,2025-05-30
+214,125,22693,12,16.79,Debt Consolidation,Paid Off,2023-03-31
+215,1190,27066,24,11.95,Business Expansion,Current,2022-06-21
+216,1863,26145,36,17.96,Business Expansion,Paid Off,2022-06-28
+217,1969,50858,36,11.93,Business Expansion,Default,2023-10-13
+218,1296,122665,48,15.89,Wedding,Current,2022-04-25
+219,101,58114,24,14.47,Debt Consolidation,Default,2026-01-06
+220,1993,56761,36,14.12,Home Renovation,Paid Off,2024-02-03
+221,1263,49799,24,13.81,Vehicle,Current,2023-09-23
+222,487,37374,48,10.59,Vehicle,Default,2026-01-30
+223,1394,39546,60,21.91,Medical,Default,2024-06-25
+224,1421,34673,12,19.57,Wedding,Current,2024-05-18
+225,873,37402,36,11.24,Business Expansion,Current,2025-04-17
+226,169,35974,6,11.3,Vehicle,Current,2023-09-14
+227,1685,16791,48,21.83,Business Expansion,Default,2022-05-16
+228,1314,35957,36,10.61,Wedding,Default,2024-04-18
+229,865,47095,24,14.68,Vehicle,Paid Off,2025-02-12
+230,462,42537,60,16.6,Education,Default,2022-10-08
+231,44,31803,12,19.9,Business Expansion,Current,2023-08-16
+232,1311,145325,36,10.03,Debt Consolidation,Default,2023-09-11
+233,1840,10000,48,13.3,Wedding,Current,2025-02-19
+234,1273,31763,36,12.31,Education,Default,2022-01-06
+235,1529,11176,24,13.25,Debt Consolidation,Current,2025-08-04
+236,281,65773,60,15.41,Wedding,Current,2025-09-01
+237,1120,30195,24,14.71,Wedding,Current,2024-10-04
+238,609,26196,60,12.56,Debt Consolidation,Current,2022-09-02
+239,1468,249314,24,15.66,Business Expansion,Paid Off,2022-05-17
+240,1879,29259,60,14.02,Business Expansion,Paid Off,2024-09-11
+241,5,22534,36,20.35,Wedding,Paid Off,2025-07-10
+242,330,30268,36,21.68,Medical,Current,2022-09-02
+243,321,73057,48,18.66,Debt Consolidation,Current,2022-02-05
+244,381,41810,24,11.54,Education,Current,2022-04-30
+245,532,101388,24,15.26,Education,Current,2025-11-20
+246,1705,10000,24,11.54,Medical,Paid Off,2023-07-13
+247,1388,19701,36,17.45,Home Renovation,Paid Off,2023-12-31
+248,338,23887,24,13.15,Home Renovation,Default,2025-08-01
+249,1883,37136,48,11.92,Education,Default,2025-07-10
+250,456,105213,6,16.98,Business Expansion,Current,2022-12-09
+251,1197,40739,24,20.41,Debt Consolidation,Default,2025-11-03
+252,1141,13158,24,12.89,Wedding,Paid Off,2025-11-30
+253,1303,107333,24,10.7,Medical,Current,2025-04-02
+254,1614,19708,12,9.66,Medical,Current,2024-11-27
+255,991,61251,24,19.24,Medical,Paid Off,2024-04-23
+256,673,30078,12,10.78,Business Expansion,Paid Off,2022-11-13
+257,58,36460,12,19.89,Business Expansion,Current,2025-02-18
+258,1360,48349,60,19.89,Debt Consolidation,Current,2024-12-12
+259,1570,52753,48,18.41,Debt Consolidation,Default,2025-12-09
+260,55,95619,6,14.72,Home Renovation,Paid Off,2022-06-06
+261,990,87534,12,21.04,Medical,Paid Off,2024-09-09
+262,1763,18548,24,18.14,Debt Consolidation,Default,2022-10-12
+263,831,20426,36,20.62,Business Expansion,Default,2025-05-08
+264,27,14020,24,11.65,Home Renovation,Default,2023-09-16
+265,1081,47009,60,19.68,Education,Current,2023-04-01
+266,1924,76651,60,11.28,Medical,Default,2023-04-10
+267,687,212622,12,12.12,Vehicle,Paid Off,2022-06-10
+268,574,14726,60,19.04,Home Renovation,Default,2022-08-17
+269,400,30851,6,19.18,Vehicle,Current,2026-04-01
+270,1845,46622,6,11.95,Debt Consolidation,Current,2022-03-09
+271,1056,18914,60,15.92,Vehicle,Current,2022-05-02
+272,1478,47395,6,20.86,Home Renovation,Paid Off,2022-03-30
+273,256,52925,24,17.84,Home Renovation,Current,2026-03-26
+274,1026,12463,6,21.0,Business Expansion,Current,2023-02-25
+275,1728,18911,12,11.81,Home Renovation,Current,2023-12-21
+276,1920,24986,6,11.32,Medical,Current,2026-03-09
+277,1381,16178,48,13.85,Debt Consolidation,Current,2022-11-25
+278,1356,11739,48,19.26,Education,Current,2025-06-09
+279,1782,30757,48,16.63,Debt Consolidation,Current,2022-07-22
+280,1918,26331,48,19.04,Education,Paid Off,2024-12-19
+281,1869,18829,60,11.89,Education,Current,2023-08-01
+282,718,81159,48,9.55,Home Renovation,Default,2026-01-25
+283,127,21099,12,21.01,Vehicle,Default,2025-12-20
+284,1985,33909,24,18.23,Vehicle,Paid Off,2023-01-15
+285,1335,31254,60,21.47,Debt Consolidation,Current,2023-01-06
+286,566,37025,24,21.77,Education,Paid Off,2024-05-18
+287,1328,36912,48,12.34,Debt Consolidation,Default,2022-08-20
+288,1955,27001,24,11.05,Business Expansion,Current,2022-08-14
+289,628,48733,12,15.7,Wedding,Current,2024-01-10
+290,474,63529,24,16.46,Home Renovation,Current,2022-03-25
+291,317,64032,24,15.67,Medical,Default,2024-02-28
+292,1995,58353,36,17.0,Wedding,Current,2023-10-01
+293,1723,59320,36,12.32,Medical,Default,2024-04-14
+294,399,23629,36,11.86,Debt Consolidation,Current,2022-05-23
+295,837,40918,36,21.24,Education,Current,2024-01-23
+296,1913,31994,6,21.98,Wedding,Default,2024-10-03
+297,1771,91667,6,14.45,Wedding,Current,2024-12-06
+298,1209,11710,60,10.56,Vehicle,Current,2022-10-21
+299,149,29665,36,18.19,Wedding,Current,2022-07-28
+300,574,10000,12,10.31,Medical,Default,2023-02-12
+301,1595,29211,12,16.94,Home Renovation,Paid Off,2024-04-07
+302,895,15716,12,19.98,Vehicle,Current,2026-01-25
+303,378,42910,24,19.06,Business Expansion,Current,2026-04-18
+304,1610,41865,48,12.91,Vehicle,Current,2025-08-11
+305,203,40960,24,15.45,Vehicle,Current,2025-05-20
+306,439,30612,36,15.89,Debt Consolidation,Paid Off,2022-10-29
+307,1056,37551,36,10.85,Vehicle,Paid Off,2023-05-29
+308,1226,28460,36,12.39,Home Renovation,Current,2022-10-03
+309,681,69376,6,18.72,Vehicle,Default,2022-05-20
+310,1629,30867,60,9.83,Vehicle,Default,2023-01-02
+311,381,13578,48,17.99,Medical,Current,2022-11-09
+312,257,73190,48,17.29,Home Renovation,Default,2026-04-06
+313,1063,32618,60,18.9,Vehicle,Default,2026-04-21
+314,924,16868,36,12.02,Vehicle,Current,2025-09-17
+315,770,26779,36,15.81,Medical,Current,2025-01-15
+316,717,54918,48,16.33,Home Renovation,Paid Off,2026-04-14
+317,571,34365,36,20.5,Vehicle,Current,2022-09-01
+318,1831,35367,36,13.43,Vehicle,Current,2024-02-10
+319,1558,33121,36,9.95,Business Expansion,Current,2022-12-29
+320,624,44741,60,20.25,Wedding,Current,2023-09-13
+321,469,10000,12,15.64,Medical,Paid Off,2022-10-03
+322,202,16702,60,14.36,Home Renovation,Paid Off,2026-04-14
+323,617,21081,48,17.94,Business Expansion,Paid Off,2025-09-13
+324,659,42590,60,16.24,Vehicle,Current,2024-08-20
+325,609,55847,48,20.18,Home Renovation,Current,2024-11-03
+326,616,69148,36,12.79,Vehicle,Default,2025-04-25
+327,105,34622,48,17.96,Medical,Paid Off,2026-04-19
+328,1912,17775,24,10.27,Home Renovation,Current,2025-04-24
+329,810,19457,12,19.96,Debt Consolidation,Current,2023-12-16
+330,387,73563,60,16.8,Wedding,Paid Off,2026-04-17
+331,26,39068,24,14.26,Medical,Current,2024-05-26
+332,1556,38199,24,14.65,Wedding,Current,2022-04-26
+333,1146,15640,12,12.6,Medical,Current,2025-08-20
+334,1232,17207,48,10.56,Home Renovation,Default,2025-11-10
+335,1799,43592,24,10.93,Home Renovation,Default,2022-12-14
+336,700,59094,48,13.58,Wedding,Default,2024-08-01
+337,365,69976,36,16.6,Medical,Default,2024-05-12
+338,1651,39117,6,18.2,Home Renovation,Current,2025-04-19
+339,1567,81274,24,14.22,Medical,Current,2024-03-10
+340,1192,52267,48,10.72,Home Renovation,Current,2024-09-27
+341,593,70478,60,17.94,Vehicle,Default,2023-11-20
+342,188,15116,48,19.64,Medical,Default,2025-09-28
+343,573,34589,12,17.19,Vehicle,Current,2024-01-15
+344,1058,26561,12,15.71,Home Renovation,Paid Off,2026-06-01
+345,101,54318,48,12.18,Home Renovation,Current,2023-06-28
+346,1847,16299,24,21.95,Debt Consolidation,Paid Off,2024-04-03
+347,1017,51220,12,17.31,Wedding,Paid Off,2022-07-08
+348,968,33840,48,10.68,Medical,Paid Off,2023-11-21
+349,660,56311,6,16.58,Vehicle,Paid Off,2024-12-23
+350,1348,11607,36,12.12,Wedding,Current,2022-06-07
+351,1503,35137,24,15.81,Vehicle,Default,2023-09-07
+352,1459,47467,60,16.25,Vehicle,Current,2023-02-14
+353,1083,37324,36,12.64,Vehicle,Current,2024-11-21
+354,184,50143,60,19.04,Home Renovation,Current,2023-01-05
+355,1007,26336,60,18.29,Business Expansion,Default,2023-01-18
+356,1207,26634,36,12.16,Vehicle,Paid Off,2026-03-01
+357,1383,25205,24,21.21,Debt Consolidation,Default,2024-12-27
+358,1606,95063,48,20.16,Business Expansion,Default,2024-06-07
+359,699,21782,60,17.33,Education,Default,2024-12-05
+360,1940,106933,24,15.28,Education,Paid Off,2023-05-08
+361,1584,52431,60,18.07,Debt Consolidation,Current,2023-09-07
+362,552,33644,36,14.63,Wedding,Default,2022-05-12
+363,463,52305,12,20.07,Debt Consolidation,Current,2023-07-01
+364,898,45170,24,17.58,Wedding,Paid Off,2023-06-10
+365,739,16737,48,12.45,Home Renovation,Current,2023-05-04
+366,1890,64642,12,11.9,Debt Consolidation,Current,2023-05-18
+367,1382,17017,24,15.3,Vehicle,Current,2025-02-20
+368,1185,38345,36,17.59,Education,Current,2022-03-17
+369,1048,46613,12,12.91,Medical,Paid Off,2022-03-01
+370,837,25977,24,17.73,Wedding,Default,2022-12-27
+371,752,25614,6,21.55,Debt Consolidation,Default,2024-09-22
+372,1941,28008,6,10.19,Medical,Paid Off,2022-06-21
+373,1524,20623,48,13.22,Vehicle,Default,2022-05-11
+374,1728,41709,24,17.9,Vehicle,Default,2022-07-04
+375,529,30067,60,20.03,Home Renovation,Default,2023-04-29
+376,1865,28070,48,18.68,Business Expansion,Current,2022-09-05
+377,363,131987,60,19.86,Business Expansion,Default,2026-05-07
+378,942,70042,24,15.71,Education,Default,2022-07-04
+379,803,24218,48,11.03,Medical,Default,2023-10-04
+380,537,13336,48,18.72,Wedding,Default,2026-03-13
+381,1191,29565,12,21.19,Education,Default,2023-03-23
+382,282,91557,6,11.69,Vehicle,Paid Off,2023-07-17
+383,1392,23257,36,12.68,Home Renovation,Current,2025-04-22
+384,1937,187450,36,16.17,Home Renovation,Current,2025-12-03
+385,1381,45888,24,16.32,Wedding,Current,2024-08-30
+386,1627,65452,12,21.54,Education,Current,2026-05-26
+387,114,36331,24,15.44,Debt Consolidation,Current,2024-01-24
+388,483,35000,24,9.76,Home Renovation,Default,2025-05-25
+389,1544,22493,60,17.78,Wedding,Default,2022-04-22
+390,941,260300,60,12.5,Vehicle,Current,2025-02-05
+391,592,18483,24,17.49,Medical,Paid Off,2025-12-05
+392,15,11983,60,11.03,Debt Consolidation,Current,2023-04-30
+393,1118,56216,36,14.36,Medical,Current,2024-03-15
+394,28,28610,24,10.63,Education,Default,2026-03-30
+395,76,31629,24,12.13,Vehicle,Default,2022-11-25
+396,199,34448,60,13.46,Wedding,Default,2026-04-20
+397,1707,21736,36,19.37,Debt Consolidation,Default,2023-07-16
+398,56,20376,6,19.79,Vehicle,Current,2024-10-03
+399,1721,41782,60,14.66,Wedding,Current,2023-11-13
+400,766,19230,36,20.46,Debt Consolidation,Default,2022-07-25
+401,35,46959,12,18.23,Home Renovation,Paid Off,2024-11-02
+402,689,26586,24,14.76,Debt Consolidation,Default,2026-02-02
+403,347,74551,48,18.72,Wedding,Paid Off,2024-07-17
+404,466,60160,6,19.02,Wedding,Current,2025-08-06
+405,1965,27585,12,17.38,Education,Current,2025-08-05
+406,476,33329,6,14.51,Medical,Paid Off,2025-07-10
+407,253,12658,24,16.7,Education,Default,2022-08-15
+408,657,88324,12,15.95,Debt Consolidation,Default,2026-04-22
+409,1726,44527,60,19.04,Wedding,Paid Off,2025-05-01
+410,1443,39713,36,19.41,Vehicle,Paid Off,2023-10-17
+411,1627,95952,36,20.42,Medical,Current,2022-10-01
+412,760,54219,12,18.09,Debt Consolidation,Current,2023-11-02
+413,806,90159,24,11.98,Medical,Paid Off,2024-04-28
+414,1174,13407,12,14.42,Debt Consolidation,Paid Off,2024-02-12
+415,248,32707,48,12.31,Business Expansion,Current,2022-02-17
+416,399,20458,60,17.15,Home Renovation,Default,2023-04-14
+417,325,47300,36,11.98,Debt Consolidation,Current,2025-12-07
+418,806,50223,12,10.12,Vehicle,Default,2025-06-19
+419,1311,18354,48,12.75,Medical,Paid Off,2022-07-02
+420,413,88949,12,21.34,Home Renovation,Paid Off,2022-08-29
+421,532,38945,60,16.07,Vehicle,Default,2026-05-03
+422,999,67609,60,15.68,Wedding,Paid Off,2023-04-05
+423,316,41290,12,11.88,Medical,Default,2026-05-21
+424,1430,31507,24,18.83,Education,Default,2024-02-22
+425,597,19172,36,20.2,Education,Current,2025-05-13
+426,1022,37946,24,18.58,Vehicle,Current,2023-01-23
+427,1537,10526,12,14.61,Home Renovation,Default,2022-10-26
+428,1912,29543,24,21.7,Business Expansion,Paid Off,2023-04-28
+429,1469,37731,36,20.84,Business Expansion,Current,2024-01-28
+430,1651,25106,60,17.59,Home Renovation,Current,2022-06-25
+431,75,54839,36,11.17,Wedding,Default,2023-10-25
+432,311,65877,36,18.09,Vehicle,Current,2025-12-31
+433,991,52888,60,14.79,Medical,Paid Off,2025-05-08
+434,242,34968,6,10.69,Home Renovation,Paid Off,2022-05-01
+435,745,89825,24,21.14,Medical,Paid Off,2024-08-22
+436,613,35219,48,21.24,Wedding,Paid Off,2025-05-10
+437,618,38264,60,19.62,Medical,Current,2022-01-11
+438,1401,34864,48,17.25,Vehicle,Current,2023-09-12
+439,347,61404,60,14.14,Home Renovation,Current,2025-02-19
+440,1842,34197,48,11.74,Business Expansion,Current,2022-12-14
+441,1986,17990,36,21.13,Education,Current,2024-08-16
+442,209,22945,6,13.47,Vehicle,Paid Off,2024-12-22
+443,1750,18246,12,12.76,Home Renovation,Current,2023-10-04
+444,498,21098,12,15.74,Wedding,Current,2023-07-30
+445,473,51576,24,21.08,Medical,Paid Off,2023-08-03
+446,1079,37857,48,19.87,Business Expansion,Current,2023-06-25
+447,1465,68831,24,14.95,Medical,Current,2022-12-04
+448,621,22080,60,21.93,Education,Current,2026-04-14
+449,32,17622,48,20.16,Wedding,Current,2025-09-08
+450,1651,40586,36,10.17,Home Renovation,Current,2022-11-01
+451,307,25937,12,11.79,Medical,Paid Off,2024-08-21
+452,1332,31676,12,18.32,Home Renovation,Paid Off,2024-06-12
+453,803,31187,36,10.01,Wedding,Current,2024-01-01
+454,966,41881,48,15.56,Home Renovation,Current,2024-10-06
+455,618,67728,60,20.34,Medical,Default,2022-09-11
+456,1212,47011,6,12.05,Education,Current,2023-08-05
+457,1891,11044,12,18.87,Business Expansion,Default,2023-07-13
+458,1262,28018,60,16.82,Home Renovation,Current,2025-04-10
+459,1013,33908,48,19.09,Vehicle,Default,2023-01-05
+460,780,34736,6,12.58,Wedding,Paid Off,2024-10-17
+461,1947,15172,6,20.59,Medical,Current,2022-02-23
+462,300,37676,60,21.77,Vehicle,Current,2022-09-07
+463,1139,38911,24,16.88,Debt Consolidation,Default,2022-08-06
+464,395,19372,24,11.42,Vehicle,Current,2022-06-16
+465,588,62243,60,17.74,Wedding,Default,2024-07-18
+466,968,30100,24,16.93,Medical,Paid Off,2022-01-12
+467,1824,28849,6,17.7,Medical,Default,2024-07-16
+468,1693,28743,60,22.0,Education,Paid Off,2025-03-11
+469,1779,12798,12,20.29,Medical,Paid Off,2025-08-11
+470,123,39438,24,19.48,Home Renovation,Default,2026-03-04
+471,783,117885,48,21.4,Home Renovation,Current,2024-02-21
+472,1966,46891,36,12.69,Debt Consolidation,Current,2023-05-07
+473,1993,21178,36,10.61,Education,Current,2023-03-03
+474,1256,57953,36,19.24,Wedding,Current,2023-08-07
+475,1419,25729,60,11.43,Vehicle,Default,2023-09-04
+476,23,13404,36,18.7,Wedding,Current,2023-09-28
+477,1101,37679,48,11.14,Home Renovation,Current,2025-09-24
+478,532,28567,24,15.91,Vehicle,Current,2024-09-29
+479,837,22864,36,15.46,Business Expansion,Default,2025-02-27
+480,760,38524,36,10.63,Debt Consolidation,Current,2024-05-15
+481,35,84111,24,17.17,Wedding,Current,2024-06-08
+482,394,33347,36,10.66,Medical,Current,2024-11-17
+483,35,10000,36,17.96,Wedding,Current,2025-08-19
+484,682,45929,60,11.44,Business Expansion,Current,2024-10-11
+485,685,41468,60,17.59,Medical,Paid Off,2022-06-21
+486,1992,30303,36,14.97,Medical,Current,2024-09-05
+487,1202,35872,12,21.8,Medical,Paid Off,2025-11-02
+488,497,85790,12,16.04,Business Expansion,Current,2023-08-29
+489,1624,20669,6,16.39,Business Expansion,Paid Off,2022-04-03
+490,853,38779,6,15.88,Home Renovation,Current,2024-04-25
+491,1879,67558,36,17.76,Debt Consolidation,Current,2025-03-10
+492,9,10795,24,13.94,Home Renovation,Default,2025-04-14
+493,767,41447,48,9.7,Wedding,Default,2026-02-25
+494,1789,32717,36,11.74,Debt Consolidation,Default,2023-01-09
+495,1297,21078,36,10.07,Wedding,Current,2024-05-02
+496,965,14717,24,13.42,Vehicle,Paid Off,2026-01-22
+497,1057,144900,60,15.12,Medical,Paid Off,2023-06-27
+498,1854,43778,12,12.14,Wedding,Paid Off,2022-06-10
+499,1754,32380,48,12.74,Home Renovation,Current,2025-10-11
+500,1563,40321,36,16.18,Vehicle,Paid Off,2022-01-12
+501,183,46009,6,9.67,Vehicle,Current,2025-09-05
+502,516,18734,36,18.15,Wedding,Default,2025-09-09
+503,242,36327,48,18.57,Business Expansion,Current,2023-09-13
+504,1313,54674,48,14.01,Wedding,Default,2025-10-11
+505,590,37348,60,14.44,Home Renovation,Paid Off,2023-09-12
+506,1957,74583,12,11.19,Home Renovation,Default,2023-01-26
+507,1309,33993,6,18.2,Debt Consolidation,Current,2023-01-21
+508,1037,32775,6,12.12,Education,Paid Off,2025-08-21
+509,1840,91808,60,12.52,Debt Consolidation,Default,2025-07-06
+510,1323,20679,48,11.89,Debt Consolidation,Default,2023-09-09
+511,131,34992,36,11.35,Home Renovation,Paid Off,2024-05-14
+512,174,31560,6,11.58,Wedding,Paid Off,2022-11-09
+513,892,30771,60,15.07,Vehicle,Default,2024-09-20
+514,795,37615,6,20.25,Education,Default,2025-04-13
+515,94,42357,12,13.19,Home Renovation,Current,2024-03-13
+516,636,22380,24,9.6,Debt Consolidation,Default,2025-07-15
+517,45,54804,60,14.9,Debt Consolidation,Current,2024-05-01
+518,930,26457,36,18.71,Wedding,Current,2025-05-05
+519,832,29354,48,21.99,Vehicle,Paid Off,2022-03-17
+520,1835,143988,36,15.58,Wedding,Paid Off,2025-04-25
+521,1206,27432,48,21.19,Education,Current,2024-09-26
+522,1648,113686,60,10.26,Vehicle,Default,2022-02-08
+523,1236,87740,48,13.45,Medical,Default,2022-05-11
+524,732,38936,60,14.71,Home Renovation,Current,2024-08-27
+525,1433,53118,36,17.28,Medical,Default,2025-08-16
+526,1322,76764,36,18.22,Education,Current,2022-02-12
+527,1820,26898,24,18.58,Medical,Default,2024-08-19
+528,1375,14239,36,12.4,Business Expansion,Paid Off,2023-03-26
+529,683,54063,60,13.74,Debt Consolidation,Default,2025-05-18
+530,1734,10000,60,17.71,Medical,Current,2022-09-26
+531,194,33181,60,18.39,Debt Consolidation,Current,2024-05-03
+532,494,32500,60,17.66,Debt Consolidation,Current,2024-01-08
+533,1846,13136,36,19.5,Business Expansion,Current,2022-11-28
+534,1174,29401,12,13.03,Home Renovation,Current,2026-03-15
+535,895,48246,60,15.54,Education,Current,2022-12-21
+536,234,35574,12,17.07,Debt Consolidation,Default,2022-07-26
+537,592,60337,36,21.29,Medical,Current,2024-10-08
+538,848,49720,12,12.12,Home Renovation,Current,2022-04-07
+539,1744,21207,24,20.51,Wedding,Default,2024-01-02
+540,537,122280,12,11.68,Home Renovation,Paid Off,2024-10-28
+541,1991,24078,6,13.72,Business Expansion,Paid Off,2022-08-22
+542,1251,86769,12,11.01,Vehicle,Current,2023-04-04
+543,906,49294,24,21.92,Medical,Paid Off,2026-05-27
+544,1297,28238,6,19.13,Medical,Current,2025-02-14
+545,650,16384,12,20.17,Business Expansion,Current,2024-11-21
+546,1333,14958,60,10.8,Vehicle,Default,2022-04-14
+547,1508,73855,36,21.53,Home Renovation,Current,2026-03-28
+548,1279,106330,6,19.27,Debt Consolidation,Paid Off,2025-06-02
+549,1334,17840,6,19.8,Business Expansion,Current,2022-03-27
+550,842,82304,6,11.59,Debt Consolidation,Current,2022-08-30
+551,1413,27214,12,20.89,Wedding,Default,2022-11-18
+552,1129,24725,24,18.35,Business Expansion,Default,2026-04-10
+553,1605,30010,36,18.66,Education,Current,2022-07-23
+554,128,64654,60,14.05,Home Renovation,Paid Off,2022-10-10
+555,728,44854,12,14.99,Debt Consolidation,Default,2024-05-01
+556,183,19033,6,12.57,Medical,Current,2024-08-28
+557,1439,67831,24,15.81,Medical,Current,2022-06-24
+558,1339,35567,24,18.44,Medical,Current,2024-04-29
+559,790,10000,60,17.81,Debt Consolidation,Paid Off,2022-11-07
+560,612,22105,48,14.77,Education,Current,2023-04-13
+561,453,42870,36,14.67,Vehicle,Current,2024-04-18
+562,211,10812,48,19.43,Home Renovation,Default,2024-01-11
+563,1500,42857,36,11.32,Wedding,Default,2022-01-21
+564,668,54834,48,21.3,Medical,Default,2022-06-23
+565,1414,48398,24,14.52,Education,Current,2026-05-01
+566,689,33029,36,10.27,Home Renovation,Paid Off,2026-04-04
+567,1411,38875,60,21.03,Business Expansion,Default,2022-11-06
+568,1493,35632,6,21.72,Debt Consolidation,Current,2025-12-31
+569,1755,32085,60,20.45,Vehicle,Paid Off,2023-08-29
+570,1737,66416,36,20.57,Business Expansion,Current,2025-12-06
+571,820,32059,24,18.52,Medical,Default,2023-10-05
+572,1215,29159,6,19.84,Business Expansion,Paid Off,2024-12-16
+573,297,45270,12,18.25,Wedding,Current,2024-07-02
+574,1067,11175,12,20.59,Debt Consolidation,Default,2025-07-02
+575,967,19609,48,17.65,Medical,Default,2025-11-29
+576,17,30200,60,14.56,Medical,Paid Off,2023-02-09
+577,322,26258,6,9.96,Vehicle,Paid Off,2023-11-17
+578,1940,36034,60,18.49,Business Expansion,Default,2022-09-16
+579,1836,41521,48,13.05,Business Expansion,Current,2022-07-10
+580,898,27988,48,13.4,Debt Consolidation,Default,2023-11-29
+581,1289,76032,60,11.5,Debt Consolidation,Current,2022-02-27
+582,1700,65714,48,16.91,Debt Consolidation,Default,2023-05-10
+583,1203,94588,24,18.58,Home Renovation,Current,2024-10-31
+584,1381,28338,60,10.25,Medical,Default,2024-02-03
+585,1746,34082,60,15.84,Home Renovation,Default,2022-09-11
+586,1281,23191,60,21.27,Medical,Default,2024-07-08
+587,1834,20909,48,18.71,Medical,Current,2024-07-17
+588,318,81017,12,19.57,Business Expansion,Current,2025-04-06
+589,782,43649,60,20.68,Wedding,Paid Off,2025-07-09
+590,1633,40909,48,20.06,Medical,Default,2023-04-24
+591,1628,21850,24,13.06,Debt Consolidation,Default,2026-05-27
+592,1961,71879,60,16.66,Wedding,Paid Off,2022-10-14
+593,1291,117663,36,16.0,Home Renovation,Current,2023-05-23
+594,1376,36239,24,15.96,Debt Consolidation,Current,2023-01-30
+595,1357,47451,24,15.18,Wedding,Default,2022-10-28
+596,1786,85373,36,19.86,Home Renovation,Current,2022-06-17
+597,763,22161,6,14.81,Vehicle,Current,2022-09-24
+598,295,15126,12,15.08,Wedding,Current,2024-01-27
+599,1411,46495,48,14.53,Business Expansion,Default,2025-02-18
+600,1359,23785,36,20.4,Vehicle,Paid Off,2025-04-11
+601,884,47647,60,14.79,Wedding,Paid Off,2024-06-20
+602,1470,13848,36,18.65,Debt Consolidation,Paid Off,2024-05-03
+603,1527,58332,12,11.3,Vehicle,Current,2022-09-18
+604,1899,59170,60,15.22,Business Expansion,Current,2025-12-13
+605,647,67025,48,10.98,Vehicle,Default,2023-03-12
+606,790,108315,36,9.91,Business Expansion,Current,2022-11-18
+607,1788,19300,24,21.02,Business Expansion,Default,2022-09-01
+608,535,112591,36,10.88,Business Expansion,Paid Off,2024-01-27
+609,1281,37905,24,10.0,Home Renovation,Current,2022-11-10
+610,466,70201,24,13.31,Medical,Current,2024-02-06
+611,373,28406,24,15.57,Education,Current,2022-10-20
+612,1944,31905,48,14.77,Medical,Paid Off,2023-09-17
+613,981,34472,12,11.79,Vehicle,Default,2026-02-23
+614,1261,25873,6,11.03,Home Renovation,Paid Off,2023-12-16
+615,307,66071,6,14.72,Medical,Paid Off,2025-03-19
+616,1288,27203,48,15.15,Debt Consolidation,Default,2023-11-23
+617,984,42910,36,15.44,Debt Consolidation,Current,2026-01-14
+618,1934,35268,48,11.16,Business Expansion,Default,2022-10-11
+619,1087,43612,60,15.26,Wedding,Current,2024-07-10
+620,1414,36245,36,11.36,Medical,Current,2026-01-30
+621,226,28267,6,19.5,Business Expansion,Paid Off,2025-09-22
+622,1559,49260,36,14.34,Medical,Paid Off,2024-03-20
+623,149,49829,48,10.07,Vehicle,Default,2025-10-05
+624,481,63408,60,12.97,Debt Consolidation,Current,2022-07-01
+625,1707,64299,12,18.34,Wedding,Default,2025-03-17
+626,606,33971,60,13.36,Home Renovation,Default,2025-08-14
+627,793,39102,60,16.49,Business Expansion,Default,2023-01-30
+628,1378,52558,48,16.71,Business Expansion,Current,2022-04-19
+629,1537,29102,48,11.87,Business Expansion,Current,2024-09-01
+630,1380,43724,6,11.0,Education,Current,2024-12-25
+631,1808,81043,6,12.94,Education,Paid Off,2023-02-26
+632,814,23347,60,19.99,Vehicle,Current,2025-04-01
+633,598,41327,6,19.59,Medical,Paid Off,2025-05-27
+634,1202,32103,36,16.86,Debt Consolidation,Default,2024-10-03
+635,580,40841,6,13.75,Vehicle,Current,2023-01-05
+636,641,12806,6,20.25,Vehicle,Current,2023-10-12
+637,868,32862,24,10.64,Business Expansion,Default,2022-07-23
+638,559,51103,12,13.07,Medical,Current,2023-01-10
+639,684,53809,6,11.43,Wedding,Default,2024-04-14
+640,847,24283,12,10.24,Education,Default,2023-10-29
+641,1763,53294,6,18.42,Vehicle,Current,2023-09-03
+642,827,26889,6,13.5,Medical,Current,2024-04-25
+643,1893,99823,24,14.19,Home Renovation,Default,2022-09-05
+644,69,53367,12,12.5,Business Expansion,Current,2025-05-07
+645,401,19063,12,15.66,Business Expansion,Current,2026-03-21
+646,1042,24887,36,21.37,Home Renovation,Current,2023-07-06
+647,1920,24890,24,15.31,Home Renovation,Default,2024-04-13
+648,1847,18803,36,9.86,Education,Paid Off,2025-07-21
+649,930,86893,6,12.86,Wedding,Current,2025-04-15
+650,1021,63950,6,12.58,Wedding,Current,2025-02-10
+651,192,27756,12,13.31,Vehicle,Current,2024-04-13
+652,892,46170,6,20.08,Education,Current,2024-10-21
+653,1728,41401,12,14.17,Debt Consolidation,Paid Off,2022-12-11
+654,1848,30656,12,16.22,Business Expansion,Current,2024-05-17
+655,1457,39483,36,10.02,Debt Consolidation,Current,2024-08-09
+656,978,64677,48,13.12,Home Renovation,Paid Off,2022-12-09
+657,285,19105,6,21.17,Medical,Current,2024-09-14
+658,21,43012,48,12.64,Vehicle,Current,2025-10-24
+659,1140,40314,24,20.03,Business Expansion,Default,2023-03-12
+660,1482,26078,48,13.02,Wedding,Default,2022-11-27
+661,1109,34231,48,16.54,Home Renovation,Paid Off,2023-09-08
+662,1115,180140,36,18.23,Wedding,Current,2022-10-14
+663,1551,15954,48,21.99,Education,Current,2024-06-03
+664,83,18434,48,15.81,Wedding,Paid Off,2023-10-14
+665,1915,17338,24,17.44,Wedding,Current,2026-03-22
+666,281,23331,36,12.91,Medical,Default,2025-09-18
+667,388,18256,24,12.13,Medical,Current,2025-05-12
+668,1300,26136,6,20.93,Wedding,Default,2022-10-01
+669,894,87473,6,17.11,Home Renovation,Current,2022-01-09
+670,1702,61342,60,11.67,Wedding,Default,2025-02-12
+671,1992,61853,60,15.61,Business Expansion,Default,2024-03-15
+672,1506,11339,6,19.34,Wedding,Default,2025-08-22
+673,221,55803,6,16.23,Vehicle,Paid Off,2025-10-07
+674,481,13224,60,11.04,Debt Consolidation,Current,2024-02-10
+675,817,42722,48,13.97,Debt Consolidation,Current,2022-12-29
+676,1357,26511,60,21.8,Vehicle,Current,2022-09-13
+677,345,39624,24,21.2,Home Renovation,Default,2024-06-29
+678,159,41517,12,18.79,Medical,Default,2026-04-03
+679,1798,31895,60,21.02,Education,Default,2024-01-03
+680,1734,18538,6,19.7,Medical,Paid Off,2025-07-04
+681,1708,60606,60,12.26,Medical,Current,2024-10-08
+682,1704,26288,6,13.01,Wedding,Default,2025-12-12
+683,997,23904,48,12.11,Debt Consolidation,Paid Off,2023-02-06
+684,1230,66184,60,14.45,Business Expansion,Paid Off,2023-07-23
+685,712,99990,48,15.68,Education,Default,2025-02-04
+686,729,15526,60,18.74,Wedding,Current,2025-10-08
+687,972,73380,48,16.56,Business Expansion,Current,2022-05-14
+688,1087,34352,12,18.82,Medical,Default,2022-09-18
+689,341,32565,48,20.19,Wedding,Default,2024-12-07
+690,106,64050,24,11.9,Home Renovation,Current,2025-10-20
+691,904,23356,60,17.97,Medical,Current,2025-06-12
+692,382,31740,60,16.5,Home Renovation,Current,2024-07-18
+693,407,61733,36,17.51,Home Renovation,Default,2025-08-24
+694,167,38468,24,14.91,Medical,Paid Off,2024-04-13
+695,1559,124414,6,18.0,Vehicle,Current,2024-08-13
+696,1209,29683,24,15.97,Wedding,Paid Off,2022-03-31
+697,1976,31799,12,10.09,Business Expansion,Default,2024-05-10
+698,385,28011,36,13.45,Education,Paid Off,2024-03-13
+699,1077,41310,24,10.52,Debt Consolidation,Default,2025-03-17
+700,793,62753,6,21.88,Wedding,Current,2023-04-08
+701,1565,57830,36,21.47,Education,Default,2023-05-27
+702,1083,43777,12,13.62,Wedding,Current,2022-05-09
+703,658,70238,60,10.71,Vehicle,Current,2024-09-09
+704,405,24454,6,16.91,Medical,Default,2025-07-06
+705,224,32529,24,12.59,Education,Current,2024-08-27
+706,650,15094,24,19.91,Business Expansion,Current,2023-11-15
+707,1012,23968,12,21.29,Business Expansion,Current,2026-05-08
+708,320,59579,48,14.98,Wedding,Current,2022-07-15
+709,1186,85040,36,16.74,Home Renovation,Paid Off,2022-06-25
+710,35,21595,6,14.22,Home Renovation,Paid Off,2025-11-21
+711,478,67859,12,10.28,Home Renovation,Current,2024-06-24
+712,1856,25620,24,17.13,Home Renovation,Current,2024-06-03
+713,474,26094,6,17.97,Home Renovation,Default,2025-02-19
+714,1273,23503,24,20.12,Home Renovation,Paid Off,2024-04-02
+715,1356,49029,48,18.9,Debt Consolidation,Current,2023-04-23
+716,1075,20496,48,19.34,Home Renovation,Current,2025-07-01
+717,197,23186,36,14.3,Business Expansion,Default,2024-05-26
+718,1455,30138,48,10.77,Wedding,Current,2025-08-26
+719,421,10630,6,15.18,Business Expansion,Current,2023-11-04
+720,1179,60100,12,10.85,Business Expansion,Default,2022-01-26
+721,1271,40799,60,10.34,Business Expansion,Default,2023-02-01
+722,1349,46167,12,17.47,Medical,Current,2023-06-09
+723,666,10697,36,15.52,Vehicle,Default,2025-06-25
+724,798,36955,12,12.54,Home Renovation,Current,2022-04-01
+725,1612,34953,12,13.4,Business Expansion,Default,2024-06-11
+726,1093,110436,60,18.93,Business Expansion,Default,2023-09-30
+727,396,117918,48,19.19,Vehicle,Current,2022-10-29
+728,61,19412,24,17.04,Medical,Current,2023-08-20
+729,653,90630,6,15.97,Wedding,Current,2025-09-08
+730,118,34508,12,10.22,Debt Consolidation,Default,2024-11-04
+731,1171,54520,48,20.23,Medical,Current,2024-05-14
+732,641,107257,12,21.71,Education,Default,2025-08-04
+733,526,22891,6,13.77,Vehicle,Current,2025-09-29
+734,503,81696,60,18.15,Business Expansion,Default,2024-08-15
+735,1806,28765,60,13.64,Business Expansion,Paid Off,2025-03-30
+736,1668,48189,24,17.2,Medical,Paid Off,2024-05-07
+737,349,46497,12,10.81,Vehicle,Paid Off,2022-03-28
+738,1269,20326,12,21.0,Education,Current,2025-08-01
+739,1715,11715,60,12.38,Education,Current,2025-07-01
+740,1146,44093,12,15.51,Debt Consolidation,Paid Off,2026-04-23
+741,1793,64401,24,19.59,Education,Current,2024-02-09
+742,1073,20605,36,11.8,Medical,Paid Off,2022-01-14
+743,1013,31708,6,10.42,Business Expansion,Default,2022-03-03
+744,878,29799,6,11.28,Education,Default,2024-06-20
+745,919,48967,60,16.82,Medical,Current,2026-04-17
+746,853,28502,6,21.69,Education,Default,2023-02-12
+747,1001,72120,24,11.68,Wedding,Paid Off,2023-06-21
+748,1874,31172,12,13.75,Education,Current,2025-02-09
+749,1615,69668,12,11.95,Debt Consolidation,Current,2022-12-27
+750,1385,44850,24,20.88,Debt Consolidation,Current,2022-02-12
+751,1086,33695,60,11.22,Debt Consolidation,Default,2025-09-03
+752,229,18979,6,13.73,Medical,Default,2023-03-07
+753,326,19684,36,12.5,Wedding,Current,2024-02-02
+754,1573,51289,12,21.26,Vehicle,Default,2025-06-30
+755,644,13627,60,10.32,Education,Current,2022-10-23
+756,662,129127,12,11.9,Wedding,Default,2024-02-14
+757,125,83837,24,13.47,Wedding,Current,2024-05-29
+758,1343,29120,12,21.01,Business Expansion,Current,2026-04-12
+759,370,60383,48,11.86,Medical,Current,2025-01-01
+760,770,35664,12,13.6,Wedding,Default,2022-04-20
+761,1259,17014,24,20.41,Business Expansion,Current,2024-11-06
+762,961,13662,36,12.12,Debt Consolidation,Default,2022-06-16
+763,933,36794,36,19.39,Home Renovation,Default,2025-06-13
+764,1377,15269,12,15.86,Wedding,Current,2026-03-19
+765,1447,75865,48,14.18,Vehicle,Default,2024-11-28
+766,884,16602,12,13.52,Business Expansion,Paid Off,2024-02-05
+767,1036,34546,60,15.54,Vehicle,Paid Off,2024-10-10
+768,382,60495,24,16.76,Debt Consolidation,Default,2025-07-30
+769,1152,51366,48,17.62,Education,Paid Off,2023-03-01
+770,1566,38724,12,15.15,Vehicle,Current,2023-04-26
+771,1737,32908,12,13.32,Business Expansion,Current,2024-02-12
+772,194,82104,12,21.19,Medical,Paid Off,2024-02-06
+773,774,44763,48,10.56,Home Renovation,Paid Off,2026-03-20
+774,952,48359,24,15.06,Education,Current,2023-12-22
+775,1355,12381,48,10.01,Business Expansion,Current,2024-11-15
+776,985,115409,24,14.83,Vehicle,Current,2024-08-15
+777,1305,19135,36,14.09,Medical,Current,2024-10-15
+778,935,57509,24,14.28,Vehicle,Current,2023-01-03
+779,1230,42983,12,12.82,Medical,Default,2022-06-05
+780,1356,19269,6,13.18,Business Expansion,Default,2024-10-24
+781,776,30246,48,17.55,Medical,Current,2026-05-29
+782,1969,35347,12,10.73,Medical,Default,2022-05-27
+783,1188,60053,6,16.33,Education,Current,2023-11-15
+784,1029,30424,60,13.62,Wedding,Current,2023-09-12
+785,1667,159374,60,20.07,Wedding,Paid Off,2023-01-26
+786,1556,63885,48,21.97,Wedding,Default,2026-03-21
+787,164,58669,60,16.29,Home Renovation,Default,2023-06-19
+788,90,33195,24,13.02,Debt Consolidation,Default,2023-12-11
+789,783,37461,36,21.32,Debt Consolidation,Paid Off,2025-04-02
+790,57,28497,60,9.65,Business Expansion,Current,2025-09-01
+791,253,41099,12,20.32,Education,Paid Off,2023-04-12
+792,1009,59046,60,18.86,Education,Current,2024-08-29
+793,236,23356,48,16.84,Debt Consolidation,Paid Off,2025-02-05
+794,42,27110,36,18.53,Medical,Current,2024-08-02
+795,1343,33384,6,13.41,Vehicle,Current,2023-01-20
+796,352,18600,60,14.72,Vehicle,Default,2024-06-17
+797,1002,37810,48,9.88,Business Expansion,Current,2022-10-12
+798,1148,55520,12,13.32,Home Renovation,Default,2026-02-20
+799,1086,27779,36,19.63,Medical,Current,2023-12-28
+800,955,20112,12,14.74,Debt Consolidation,Paid Off,2025-11-05
+801,1614,56397,36,19.04,Business Expansion,Default,2025-11-15
+802,1984,17809,24,13.58,Business Expansion,Current,2022-02-17
+803,938,83519,6,21.03,Medical,Paid Off,2022-11-11
+804,922,66923,48,17.37,Business Expansion,Current,2025-05-19
+805,505,42444,48,20.34,Education,Current,2024-02-20
+806,603,94331,36,10.3,Education,Current,2024-03-02
+807,825,87325,36,10.86,Vehicle,Default,2025-03-12
+808,620,12967,60,20.68,Education,Current,2022-07-10
+809,457,33511,6,17.94,Home Renovation,Current,2022-12-30
+810,1692,50291,60,17.04,Education,Default,2022-02-24
+811,725,36968,12,10.37,Medical,Paid Off,2024-03-01
+812,804,106144,12,12.41,Business Expansion,Current,2025-09-12
+813,37,30548,6,15.18,Business Expansion,Current,2024-01-25
+814,1524,82350,6,11.65,Vehicle,Current,2024-04-21
+815,1951,10000,12,21.87,Business Expansion,Current,2022-09-22
+816,414,11578,36,15.48,Vehicle,Current,2022-05-21
+817,717,22810,12,11.12,Medical,Default,2023-02-26
+818,959,70435,36,19.72,Vehicle,Current,2025-09-23
+819,1736,37241,12,17.05,Business Expansion,Current,2023-09-28
+820,1623,43986,12,15.78,Vehicle,Default,2025-11-03
+821,454,16980,24,12.02,Vehicle,Current,2022-10-20
+822,77,25760,6,19.81,Debt Consolidation,Paid Off,2025-05-23
+823,1811,25165,12,16.07,Vehicle,Current,2025-03-11
+824,341,38179,36,15.28,Wedding,Default,2022-03-22
+825,269,24507,6,13.1,Medical,Default,2024-07-23
+826,707,44214,60,20.03,Vehicle,Paid Off,2023-09-02
+827,596,33454,48,19.79,Vehicle,Current,2022-12-25
+828,1239,31234,12,11.74,Wedding,Paid Off,2025-06-19
+829,342,86063,36,15.22,Education,Paid Off,2025-09-11
+830,576,39719,60,16.61,Wedding,Current,2024-03-16
+831,1005,39940,6,12.5,Medical,Current,2022-11-20
+832,1938,54565,60,16.22,Home Renovation,Default,2025-09-27
+833,1766,29243,60,18.58,Vehicle,Current,2023-03-21
+834,272,67921,36,21.9,Home Renovation,Paid Off,2025-02-06
+835,1179,18942,24,10.46,Business Expansion,Default,2022-08-04
+836,1015,23145,24,14.63,Medical,Current,2022-12-04
+837,1171,26841,12,15.83,Home Renovation,Current,2024-08-04
+838,1360,56450,6,17.49,Wedding,Paid Off,2025-10-15
+839,816,83927,36,14.26,Vehicle,Current,2026-03-08
+840,1898,28388,12,14.46,Medical,Default,2022-01-22
+841,1805,20549,6,18.36,Medical,Paid Off,2022-10-07
+842,635,31412,60,18.86,Vehicle,Current,2024-09-19
+843,2000,35659,6,10.53,Education,Paid Off,2025-09-07
+844,246,38290,60,21.38,Vehicle,Current,2022-10-15
+845,1273,71390,24,20.02,Debt Consolidation,Default,2022-12-16
+846,207,12589,6,17.09,Medical,Current,2022-12-29
+847,832,96579,6,16.18,Education,Current,2024-03-11
+848,443,40806,6,17.89,Wedding,Current,2022-01-23
+849,801,20339,24,11.42,Education,Paid Off,2024-01-04
+850,1414,65110,12,18.43,Business Expansion,Current,2025-10-14
+851,511,22752,12,15.03,Debt Consolidation,Current,2022-04-08
+852,68,85736,60,19.64,Wedding,Current,2025-08-05
+853,1618,23127,60,17.75,Vehicle,Current,2022-07-30
+854,832,22843,60,13.35,Business Expansion,Current,2022-04-18
+855,1929,53177,6,10.11,Debt Consolidation,Current,2024-02-12
+856,1883,111819,12,21.11,Education,Current,2024-02-07
+857,1845,39860,12,10.64,Home Renovation,Default,2024-05-13
+858,1672,19418,6,13.71,Wedding,Paid Off,2023-01-29
+859,1121,54073,60,10.29,Debt Consolidation,Current,2022-07-17
+860,60,34648,60,11.6,Home Renovation,Paid Off,2022-12-09
+861,28,75549,36,15.91,Medical,Current,2023-11-01
+862,153,30303,48,17.33,Education,Default,2025-07-03
+863,573,16875,48,14.44,Home Renovation,Paid Off,2024-05-26
+864,1622,41126,12,12.17,Medical,Default,2024-01-01
+865,1707,111855,12,9.69,Medical,Current,2025-09-01
+866,295,13475,6,14.36,Education,Paid Off,2024-07-28
+867,899,32897,6,17.72,Wedding,Current,2023-07-25
+868,1547,28171,48,14.11,Education,Default,2022-05-18
+869,1452,22841,36,13.27,Vehicle,Paid Off,2025-05-11
+870,1029,19299,6,18.41,Education,Current,2025-03-11
+871,1093,140587,24,21.49,Medical,Current,2025-05-13
+872,1756,26184,60,18.2,Debt Consolidation,Current,2025-10-20
+873,1020,28955,60,11.16,Wedding,Default,2022-12-26
+874,1299,36568,60,13.47,Vehicle,Current,2025-09-26
+875,907,37211,6,13.69,Business Expansion,Current,2025-05-31
+876,137,25618,36,14.28,Wedding,Paid Off,2025-08-04
+877,857,24274,12,15.79,Home Renovation,Default,2025-12-14
+878,787,67715,12,9.77,Home Renovation,Paid Off,2026-04-04
+879,1228,33544,24,12.45,Debt Consolidation,Current,2024-05-27
+880,418,21857,12,17.25,Education,Current,2022-05-03
+881,1872,45201,24,15.73,Education,Default,2023-02-18
+882,3,107806,36,12.05,Education,Current,2022-03-19
+883,1269,78774,60,16.98,Wedding,Default,2024-06-27
+884,731,44416,24,11.18,Wedding,Paid Off,2023-10-13
+885,1685,28209,6,16.01,Wedding,Paid Off,2024-04-29
+886,696,58945,24,18.88,Debt Consolidation,Default,2023-04-15
+887,1040,40936,60,13.64,Education,Current,2023-05-12
+888,1513,45996,48,10.18,Education,Current,2025-09-23
+889,59,38842,60,18.2,Business Expansion,Current,2023-04-01
+890,438,77265,36,16.02,Vehicle,Current,2023-01-11
+891,812,26862,60,9.58,Home Renovation,Current,2024-10-03
+892,455,63477,12,10.15,Education,Current,2022-10-17
+893,569,48100,12,10.65,Business Expansion,Current,2025-04-28
+894,1577,49783,12,12.45,Vehicle,Current,2022-06-10
+895,816,148459,60,15.34,Wedding,Current,2022-12-03
+896,75,26507,12,12.56,Business Expansion,Paid Off,2022-12-28
+897,1974,37182,12,13.29,Vehicle,Current,2025-03-26
+898,893,60882,60,12.02,Vehicle,Default,2026-05-20
+899,1085,16029,6,21.39,Vehicle,Default,2024-01-07
+900,1213,45937,36,11.6,Vehicle,Current,2024-06-22
+901,598,27159,48,17.12,Debt Consolidation,Current,2024-06-06
+902,1669,52656,12,19.75,Home Renovation,Default,2024-09-14
+903,592,42437,36,14.84,Debt Consolidation,Current,2022-06-20
+904,1493,20637,24,16.94,Business Expansion,Paid Off,2022-11-09
+905,940,31306,60,11.7,Vehicle,Paid Off,2024-02-19
+906,1226,79966,24,15.17,Business Expansion,Current,2024-02-08
+907,1281,31812,48,15.51,Education,Default,2023-11-14
+908,463,29781,60,15.37,Education,Default,2022-11-13
+909,487,81542,6,9.66,Wedding,Paid Off,2024-10-22
+910,1743,88337,60,14.18,Vehicle,Paid Off,2024-04-08
+911,496,70267,36,21.63,Vehicle,Current,2024-02-04
+912,1580,23330,36,13.35,Home Renovation,Default,2025-04-19
+913,266,55630,36,20.56,Vehicle,Default,2022-09-12
+914,48,27859,48,11.53,Vehicle,Paid Off,2026-04-12
+915,1307,41573,24,19.14,Wedding,Current,2026-03-20
+916,185,70090,24,15.87,Wedding,Default,2024-09-27
+917,1025,40102,60,14.1,Wedding,Current,2022-04-29
+918,140,41377,36,21.08,Education,Default,2026-02-15
+919,383,46321,12,15.47,Wedding,Default,2024-01-11
+920,1099,17336,60,17.96,Wedding,Current,2025-11-29
+921,1537,20999,60,11.35,Vehicle,Default,2025-05-24
+922,1145,27083,60,11.34,Business Expansion,Paid Off,2023-05-22
+923,1827,57390,48,21.4,Home Renovation,Current,2022-11-27
+924,1525,12606,6,19.14,Wedding,Current,2025-08-12
+925,1786,35667,36,14.47,Home Renovation,Current,2025-04-15
+926,86,26181,48,20.87,Education,Current,2024-05-16
+927,1861,21364,36,12.66,Business Expansion,Current,2023-09-11
+928,768,19544,48,17.73,Business Expansion,Default,2024-02-23
+929,1218,73898,24,18.67,Wedding,Current,2026-03-22
+930,499,10000,6,10.87,Debt Consolidation,Default,2025-03-18
+931,211,79158,24,19.68,Wedding,Default,2023-07-05
+932,6,22177,12,21.13,Wedding,Current,2024-03-26
+933,434,32926,24,9.58,Debt Consolidation,Current,2022-12-11
+934,1955,42612,36,9.52,Debt Consolidation,Current,2022-05-24
+935,592,31885,60,14.72,Wedding,Paid Off,2024-05-03
+936,1588,21013,24,18.66,Education,Default,2022-12-16
+937,1523,25694,24,11.83,Education,Current,2022-10-03
+938,1538,18494,36,11.77,Vehicle,Current,2022-08-14
+939,1920,79248,48,19.68,Education,Default,2023-01-16
+940,605,21046,6,18.87,Education,Current,2026-04-04
+941,1810,59561,24,21.79,Vehicle,Current,2024-04-17
+942,1352,13995,60,20.91,Debt Consolidation,Current,2022-08-12
+943,42,126245,60,11.58,Home Renovation,Paid Off,2023-08-24
+944,852,43318,36,11.06,Medical,Default,2022-05-12
+945,1220,42673,6,16.82,Vehicle,Default,2024-09-05
+946,1432,50199,60,19.01,Home Renovation,Current,2022-01-20
+947,1369,31733,24,18.9,Wedding,Paid Off,2022-01-15
+948,1304,57537,48,19.37,Home Renovation,Default,2022-03-27
+949,778,137188,12,16.03,Vehicle,Current,2022-01-15
+950,990,65329,48,16.0,Medical,Default,2026-04-09
+951,781,38494,36,15.42,Business Expansion,Current,2023-11-22
+952,1660,19235,36,13.71,Medical,Current,2025-10-28
+953,200,13494,24,19.71,Wedding,Current,2024-01-10
+954,194,28833,36,14.23,Medical,Current,2022-04-28
+955,1533,29038,24,19.58,Vehicle,Default,2022-01-07
+956,1358,19618,60,14.52,Home Renovation,Default,2022-10-12
+957,1815,90144,48,11.04,Medical,Current,2024-12-22
+958,421,32544,60,18.89,Medical,Default,2023-05-25
+959,468,27018,36,17.23,Debt Consolidation,Default,2025-09-11
+960,673,22097,36,15.94,Education,Default,2025-09-14
+961,104,21443,6,21.83,Home Renovation,Default,2023-10-22
+962,1910,41390,60,14.0,Debt Consolidation,Current,2022-04-04
+963,408,76924,60,13.57,Education,Default,2024-06-28
+964,698,23119,48,15.56,Business Expansion,Default,2026-02-22
+965,704,47835,6,13.85,Wedding,Paid Off,2024-09-02
+966,431,12815,60,20.82,Vehicle,Current,2026-02-12
+967,1178,30115,24,17.09,Education,Default,2025-12-29
+968,1670,28203,48,20.45,Debt Consolidation,Default,2026-05-27
+969,1162,64684,60,15.81,Vehicle,Paid Off,2022-09-19
+970,205,28808,6,13.27,Business Expansion,Current,2025-10-10
+971,953,81960,36,11.6,Home Renovation,Default,2024-07-02
+972,1239,18012,36,17.78,Education,Paid Off,2023-05-09
+973,573,35579,12,11.63,Wedding,Default,2025-09-13
+974,88,41486,6,10.82,Home Renovation,Current,2026-01-05
+975,1988,43102,12,21.11,Vehicle,Paid Off,2023-10-31
+976,577,35790,24,12.25,Wedding,Default,2023-06-12
+977,612,16374,36,21.39,Home Renovation,Paid Off,2025-10-05
+978,344,30722,60,11.2,Wedding,Current,2024-12-30
+979,1474,23788,60,15.65,Medical,Current,2025-11-17
+980,241,57864,12,21.15,Business Expansion,Paid Off,2026-04-19
+981,311,49710,6,17.55,Wedding,Paid Off,2024-02-12
+982,1381,29602,60,18.7,Wedding,Current,2024-02-21
+983,513,31090,60,19.31,Debt Consolidation,Current,2024-06-13
+984,141,22594,12,12.29,Medical,Default,2022-08-25
+985,1513,56401,6,10.89,Wedding,Paid Off,2023-11-28
+986,1414,18856,48,21.22,Home Renovation,Paid Off,2026-03-05
+987,631,23483,48,14.1,Vehicle,Default,2023-10-04
+988,1703,44495,48,18.71,Home Renovation,Current,2023-09-29
+989,1073,20412,48,16.2,Vehicle,Current,2024-03-05
+990,960,56210,24,19.14,Debt Consolidation,Default,2025-10-23
+991,1895,19314,12,16.0,Business Expansion,Current,2025-05-17
+992,42,60984,12,10.83,Business Expansion,Default,2022-01-19
+993,1325,22623,36,13.45,Debt Consolidation,Default,2023-08-31
+994,866,20172,12,15.75,Education,Current,2024-07-22
+995,1455,21329,48,13.04,Wedding,Paid Off,2026-03-10
+996,1572,21508,60,9.93,Medical,Current,2023-10-18
+997,517,21995,48,21.88,Medical,Default,2022-09-10
+998,327,37949,60,16.67,Debt Consolidation,Paid Off,2025-07-16
+999,463,37465,12,15.69,Vehicle,Default,2025-12-13
+1000,1747,36734,6,21.76,Education,Default,2023-11-14
+1001,1719,31674,60,12.13,Debt Consolidation,Paid Off,2026-02-09
+1002,615,55580,12,18.26,Debt Consolidation,Default,2022-04-18
+1003,309,36204,12,20.21,Vehicle,Paid Off,2026-01-29
+1004,1663,120229,24,21.8,Debt Consolidation,Default,2025-09-12
+1005,211,78161,12,21.89,Vehicle,Current,2025-01-27
+1006,688,77319,24,14.78,Medical,Current,2024-08-27
+1007,350,21325,36,14.39,Wedding,Default,2024-12-17
+1008,1218,68150,24,13.03,Wedding,Current,2023-02-04
+1009,1742,74524,48,14.42,Medical,Default,2022-09-26
+1010,1448,41387,48,20.32,Debt Consolidation,Default,2022-04-21
+1011,360,54893,60,13.3,Education,Paid Off,2025-09-02
+1012,1753,84575,48,11.22,Vehicle,Paid Off,2025-11-26
+1013,1731,26045,24,20.72,Education,Default,2023-03-06
+1014,1331,46558,60,11.95,Home Renovation,Current,2025-08-26
+1015,1160,34021,24,18.57,Home Renovation,Paid Off,2025-03-24
+1016,1824,66562,60,19.32,Vehicle,Current,2022-10-30
+1017,381,14828,36,17.99,Home Renovation,Default,2022-12-11
+1018,1222,58915,6,13.94,Education,Current,2024-08-28
+1019,1118,10000,6,10.97,Wedding,Current,2024-11-21
+1020,1442,82425,24,16.92,Wedding,Current,2022-11-01
+1021,457,20095,60,14.55,Home Renovation,Current,2022-03-11
+1022,1232,25441,12,14.46,Wedding,Current,2023-09-12
+1023,1449,39372,48,21.43,Wedding,Current,2025-08-29
+1024,354,86442,36,19.2,Wedding,Paid Off,2025-10-05
+1025,1725,62021,6,19.22,Vehicle,Paid Off,2025-08-24
+1026,397,43121,24,17.4,Medical,Current,2024-06-30
+1027,1000,133332,6,11.0,Home Renovation,Default,2022-06-19
+1028,1168,89189,36,17.52,Education,Default,2024-11-09
+1029,1665,52475,6,16.84,Vehicle,Default,2025-03-18
+1030,337,26424,24,18.17,Debt Consolidation,Paid Off,2022-07-13
+1031,667,62262,48,11.76,Wedding,Default,2024-09-18
+1032,1240,34081,60,14.92,Education,Current,2025-03-16
+1033,85,21348,6,13.57,Debt Consolidation,Paid Off,2026-01-01
+1034,826,43255,48,11.81,Home Renovation,Default,2025-12-06
+1035,1712,68011,36,16.45,Debt Consolidation,Current,2025-01-03
+1036,1201,45490,48,15.61,Debt Consolidation,Paid Off,2024-11-28
+1037,699,103582,48,16.24,Home Renovation,Current,2025-08-27
+1038,1885,34135,12,21.57,Education,Current,2022-08-29
+1039,130,40022,48,18.19,Business Expansion,Default,2022-01-11
+1040,157,17310,36,19.51,Home Renovation,Current,2022-09-09
+1041,1127,57190,12,16.69,Education,Default,2025-08-29
+1042,57,57440,6,16.53,Home Renovation,Paid Off,2026-03-23
+1043,924,10398,6,21.75,Medical,Default,2024-11-02
+1044,462,68278,24,21.58,Vehicle,Current,2022-12-18
+1045,1765,49063,60,9.5,Home Renovation,Current,2023-09-08
+1046,930,24518,48,20.81,Wedding,Default,2023-08-24
+1047,746,24361,48,15.06,Vehicle,Default,2025-03-27
+1048,310,41645,60,13.41,Business Expansion,Paid Off,2023-12-23
+1049,861,17845,48,15.88,Home Renovation,Current,2025-11-09
+1050,1790,58640,60,19.75,Home Renovation,Current,2023-05-01
+1051,1746,22284,12,11.27,Education,Current,2023-03-17
+1052,210,27374,48,16.4,Medical,Current,2025-04-26
+1053,752,29192,24,11.11,Vehicle,Current,2025-06-28
+1054,1292,56338,6,16.37,Vehicle,Current,2023-06-18
+1055,762,16620,60,20.8,Vehicle,Paid Off,2024-03-30
+1056,152,71072,6,21.31,Vehicle,Default,2025-10-17
+1057,1369,26822,60,11.29,Home Renovation,Current,2023-02-22
+1058,1823,23814,60,18.66,Wedding,Current,2025-07-20
+1059,1028,86464,60,11.91,Business Expansion,Current,2024-02-02
+1060,1038,14788,60,17.6,Business Expansion,Default,2024-11-13
+1061,1601,90976,12,14.75,Medical,Current,2022-11-11
+1062,550,10972,36,14.24,Education,Current,2025-05-21
+1063,1143,33073,6,12.88,Home Renovation,Default,2024-12-24
+1064,1880,33839,60,16.35,Medical,Default,2022-05-16
+1065,1604,141755,60,10.61,Debt Consolidation,Current,2023-11-15
+1066,1779,35153,24,11.33,Medical,Current,2023-04-08
+1067,1421,42660,6,10.72,Vehicle,Current,2023-04-01
+1068,738,73551,6,19.28,Education,Paid Off,2022-09-10
+1069,1149,64187,48,18.6,Business Expansion,Current,2023-09-20
+1070,533,25707,36,10.69,Wedding,Current,2023-12-16
+1071,1965,43861,48,20.32,Medical,Paid Off,2025-02-03
+1072,1268,18650,48,10.74,Education,Current,2022-04-09
+1073,701,54065,24,21.33,Education,Current,2024-03-08
+1074,1764,10000,24,19.58,Debt Consolidation,Current,2025-10-20
+1075,1819,34053,48,16.4,Vehicle,Current,2024-04-04
+1076,1112,18019,48,11.09,Wedding,Current,2022-01-20
+1077,1856,23197,48,18.42,Education,Default,2025-09-08
+1078,1222,41891,12,14.24,Medical,Paid Off,2026-02-15
+1079,1578,106641,6,20.98,Medical,Current,2025-08-02
+1080,361,23869,60,19.22,Business Expansion,Current,2025-10-20
+1081,172,48168,36,18.33,Vehicle,Paid Off,2023-01-10
+1082,1880,84478,24,19.48,Medical,Default,2024-10-25
+1083,162,19964,24,21.41,Wedding,Default,2024-12-02
+1084,260,44829,12,13.31,Medical,Current,2022-06-28
+1085,1936,24102,36,19.13,Wedding,Default,2022-07-04
+1086,298,89777,6,10.46,Home Renovation,Current,2023-05-07
+1087,1597,56160,12,16.69,Wedding,Default,2022-06-23
+1088,699,80453,24,16.43,Debt Consolidation,Default,2024-10-06
+1089,1767,10000,6,21.53,Wedding,Default,2024-05-18
+1090,1679,141136,48,21.16,Vehicle,Current,2022-10-07
+1091,1873,39064,36,15.94,Business Expansion,Current,2025-10-18
+1092,1394,107534,60,11.06,Business Expansion,Default,2022-01-29
+1093,1700,107511,12,20.89,Home Renovation,Current,2026-03-08
+1094,953,46537,60,14.81,Wedding,Paid Off,2024-12-30
+1095,22,94253,24,12.55,Wedding,Paid Off,2026-02-22
+1096,492,42878,48,18.05,Business Expansion,Current,2022-03-28
+1097,1757,51285,36,21.56,Debt Consolidation,Current,2025-10-13
+1098,569,37361,48,20.8,Home Renovation,Default,2022-12-25
+1099,1360,18790,24,19.99,Medical,Current,2024-11-18
+1100,189,15327,6,14.78,Education,Default,2024-02-16
+1101,1791,25264,24,21.62,Wedding,Default,2023-11-24
+1102,891,38814,12,19.9,Debt Consolidation,Current,2026-04-19
+1103,1596,32720,6,13.13,Medical,Current,2024-09-16
+1104,633,32495,24,12.16,Wedding,Paid Off,2026-02-20
+1105,1585,18059,48,14.42,Wedding,Default,2023-09-17
+1106,1462,44299,48,19.82,Vehicle,Current,2022-03-14
+1107,1386,34829,48,20.1,Medical,Current,2022-04-28
+1108,531,49671,6,17.19,Medical,Paid Off,2023-11-04
+1109,139,17214,24,10.84,Wedding,Current,2023-12-18
+1110,780,33686,12,14.53,Home Renovation,Current,2022-01-19
+1111,1461,39042,36,15.65,Business Expansion,Current,2022-06-23
+1112,587,50319,48,20.73,Home Renovation,Current,2024-04-21
+1113,171,41757,36,9.59,Wedding,Paid Off,2026-04-25
+1114,428,54079,24,12.33,Medical,Default,2024-03-20
+1115,1359,80991,24,14.06,Business Expansion,Default,2023-01-09
+1116,801,58692,24,10.86,Wedding,Current,2024-06-17
+1117,1342,60283,36,11.52,Wedding,Default,2023-12-26
+1118,1816,28555,36,9.57,Education,Current,2025-12-23
+1119,805,96621,6,11.87,Education,Paid Off,2022-03-24
+1120,810,92254,36,14.76,Home Renovation,Paid Off,2023-11-10
+1121,1734,43504,12,17.83,Wedding,Paid Off,2024-09-08
+1122,1721,29947,24,10.98,Business Expansion,Default,2024-09-28
+1123,1386,52695,36,19.5,Education,Default,2026-01-02
+1124,424,57845,24,18.89,Vehicle,Default,2026-05-18
+1125,1725,62944,48,18.57,Debt Consolidation,Paid Off,2026-02-28
+1126,1576,60712,36,11.14,Debt Consolidation,Default,2022-08-09
+1127,129,70193,6,11.08,Business Expansion,Current,2023-12-06
+1128,1440,24079,6,19.09,Home Renovation,Current,2023-04-30
+1129,300,116014,60,19.87,Business Expansion,Default,2024-05-29
+1130,760,43030,60,9.6,Medical,Current,2024-09-10
+1131,1940,134810,24,15.57,Vehicle,Paid Off,2026-04-08
+1132,1675,25482,12,17.22,Business Expansion,Current,2026-02-02
+1133,609,45718,12,12.62,Home Renovation,Paid Off,2026-04-20
+1134,618,23390,24,21.93,Wedding,Default,2023-05-22
+1135,760,39476,36,11.98,Debt Consolidation,Current,2025-12-17
+1136,759,36960,6,18.26,Business Expansion,Paid Off,2024-10-25
+1137,205,53567,12,11.86,Wedding,Paid Off,2025-04-25
+1138,1993,29719,60,11.36,Education,Current,2022-09-04
+1139,1506,42818,36,9.98,Education,Current,2023-01-29
+1140,548,33532,36,9.72,Home Renovation,Current,2023-02-13
+1141,597,22122,6,14.25,Medical,Paid Off,2024-12-11
+1142,1556,30100,60,17.42,Education,Paid Off,2023-04-19
+1143,107,13058,24,14.83,Business Expansion,Default,2022-05-06
+1144,996,43785,36,17.55,Home Renovation,Current,2023-09-16
+1145,1,33329,24,14.04,Wedding,Current,2023-12-20
+1146,1725,48494,36,12.59,Education,Default,2022-04-08
+1147,528,72127,6,9.51,Wedding,Current,2025-09-14
+1148,1136,42233,24,12.15,Medical,Paid Off,2024-08-24
+1149,1224,29738,48,10.76,Medical,Current,2023-01-14
+1150,1895,161070,36,14.04,Home Renovation,Current,2023-09-16
+1151,1300,22829,6,17.86,Business Expansion,Current,2025-10-30
+1152,18,36864,12,13.64,Debt Consolidation,Paid Off,2026-02-27
+1153,1926,27793,24,18.79,Business Expansion,Default,2025-04-21
+1154,1237,17913,48,14.14,Medical,Current,2025-08-24
+1155,732,32236,12,16.8,Home Renovation,Paid Off,2022-06-28
+1156,1955,88853,12,17.37,Home Renovation,Current,2025-05-17
+1157,448,28866,6,16.83,Debt Consolidation,Default,2025-09-02
+1158,993,84032,12,11.91,Home Renovation,Paid Off,2024-07-01
+1159,1778,15503,6,21.27,Medical,Paid Off,2025-06-21
+1160,320,35090,24,18.57,Education,Paid Off,2026-04-08
+1161,1254,26764,48,18.51,Education,Default,2022-03-31
+1162,463,41499,12,14.73,Medical,Default,2025-12-28
+1163,495,42716,48,21.69,Vehicle,Current,2024-01-20
+1164,105,13506,60,18.47,Home Renovation,Default,2024-06-12
+1165,734,62304,36,14.74,Debt Consolidation,Default,2024-10-28
+1166,687,29703,6,11.59,Wedding,Default,2023-07-16
+1167,1474,19495,12,13.12,Home Renovation,Default,2025-03-05
+1168,70,42552,60,11.88,Vehicle,Current,2024-03-25
+1169,679,49019,60,16.16,Home Renovation,Paid Off,2024-11-17
+1170,1237,37306,12,14.97,Vehicle,Current,2024-11-09
+1171,1156,26723,48,19.24,Business Expansion,Default,2024-03-31
+1172,312,53608,24,12.09,Education,Current,2022-01-08
+1173,1194,38721,48,12.22,Home Renovation,Paid Off,2025-11-27
+1174,1479,108721,48,15.19,Wedding,Current,2025-12-20
+1175,329,16966,48,12.74,Medical,Default,2023-03-28
+1176,1911,22593,60,12.86,Education,Current,2022-09-01
+1177,1068,21444,12,10.07,Medical,Current,2023-05-03
+1178,131,17435,6,17.5,Education,Paid Off,2023-07-23
+1179,1380,49874,24,20.42,Wedding,Default,2022-04-16
+1180,947,19424,12,21.87,Business Expansion,Current,2023-03-07
+1181,455,19891,6,9.52,Wedding,Current,2023-12-13
+1182,40,115832,48,21.65,Home Renovation,Paid Off,2023-10-27
+1183,623,49444,60,20.55,Wedding,Default,2023-06-25
+1184,699,74127,12,14.6,Medical,Current,2025-06-06
+1185,1,10716,24,21.82,Debt Consolidation,Current,2025-07-05
+1186,637,36740,6,19.8,Wedding,Current,2023-03-26
+1187,1221,28733,24,11.71,Business Expansion,Current,2022-02-02
+1188,60,46918,60,21.73,Debt Consolidation,Current,2026-05-13
+1189,239,54485,48,10.83,Wedding,Current,2026-03-08
+1190,940,35360,36,21.32,Debt Consolidation,Current,2023-06-12
+1191,153,37314,60,17.43,Education,Default,2025-02-02
+1192,1189,81111,36,12.26,Education,Current,2023-07-05
+1193,1449,31954,48,17.37,Vehicle,Default,2026-03-22
+1194,78,45047,12,15.08,Wedding,Paid Off,2026-02-03
+1195,1635,59440,36,14.11,Home Renovation,Current,2024-09-08
+1196,1866,57198,36,11.77,Debt Consolidation,Current,2023-01-14
+1197,1993,31424,12,11.86,Wedding,Paid Off,2024-10-01
+1198,1996,63791,12,17.59,Medical,Current,2022-02-13
+1199,1760,63254,12,20.57,Wedding,Current,2024-03-18
+1200,28,39832,48,11.85,Home Renovation,Default,2022-10-21
+1201,178,99377,36,12.57,Vehicle,Current,2025-08-14
+1202,574,64513,6,18.55,Wedding,Current,2022-10-09
+1203,687,47233,6,17.04,Vehicle,Default,2024-02-13
+1204,90,12584,6,10.88,Debt Consolidation,Current,2022-01-28
+1205,860,65526,60,21.18,Education,Current,2022-09-28
+1206,235,14831,6,12.85,Business Expansion,Current,2025-07-08
+1207,790,21647,6,19.41,Debt Consolidation,Current,2022-01-20
+1208,641,37433,6,16.28,Debt Consolidation,Current,2023-11-25
+1209,839,20890,60,10.56,Vehicle,Current,2022-10-13
+1210,520,37530,48,20.65,Medical,Default,2022-12-01
+1211,1925,30740,24,15.49,Home Renovation,Current,2023-05-15
+1212,766,15187,48,18.15,Business Expansion,Default,2025-07-09
+1213,1967,42301,6,9.77,Home Renovation,Default,2022-04-02
+1214,1004,46117,48,13.21,Debt Consolidation,Current,2024-11-13
+1215,509,22343,36,11.27,Home Renovation,Current,2023-04-05
+1216,116,41396,12,14.84,Medical,Paid Off,2022-10-29
+1217,190,14196,60,13.09,Vehicle,Current,2025-11-02
+1218,1923,13420,60,20.55,Vehicle,Current,2022-08-19
+1219,1879,62730,12,21.88,Home Renovation,Current,2023-04-05
+1220,1652,45899,24,13.97,Medical,Paid Off,2025-06-14
+1221,1474,99792,6,14.01,Home Renovation,Default,2022-06-23
+1222,1192,16842,48,11.39,Business Expansion,Default,2024-05-27
+1223,108,28152,24,17.0,Vehicle,Current,2025-10-23
+1224,1497,28582,12,20.66,Medical,Current,2025-11-08
+1225,425,66847,48,19.72,Home Renovation,Current,2023-12-15
+1226,1622,27399,24,20.95,Medical,Current,2025-09-17
+1227,748,71437,24,19.63,Debt Consolidation,Current,2025-12-27
+1228,1277,39580,6,19.36,Debt Consolidation,Paid Off,2022-11-01
+1229,1314,24218,60,11.33,Vehicle,Paid Off,2022-10-30
+1230,111,37344,36,18.52,Vehicle,Current,2026-05-28
+1231,565,81048,6,10.91,Wedding,Current,2024-05-25
+1232,1064,27811,24,11.31,Education,Current,2023-10-24
+1233,376,60715,12,19.09,Medical,Paid Off,2023-12-24
+1234,998,36627,36,14.8,Vehicle,Current,2025-11-21
+1235,1987,62983,48,19.42,Education,Default,2023-11-14
+1236,898,45866,60,21.02,Vehicle,Current,2024-02-24
+1237,1215,19905,48,15.71,Vehicle,Default,2024-12-29
+1238,42,83084,48,16.2,Vehicle,Current,2023-04-17
+1239,523,33175,6,16.76,Business Expansion,Current,2024-05-13
+1240,1848,45966,48,19.21,Education,Default,2026-03-13
+1241,766,25902,60,10.59,Home Renovation,Paid Off,2024-01-11
+1242,888,48159,12,21.92,Medical,Paid Off,2022-02-05
+1243,1693,93674,48,15.42,Home Renovation,Default,2022-10-01
+1244,423,113779,6,20.89,Debt Consolidation,Default,2024-01-10
+1245,258,48199,12,13.18,Debt Consolidation,Current,2022-10-23
+1246,835,21732,48,21.65,Education,Default,2024-05-12
+1247,122,24661,12,19.85,Wedding,Current,2022-04-25
+1248,445,50695,12,10.97,Wedding,Current,2025-11-25
+1249,1400,41516,12,14.22,Wedding,Paid Off,2022-02-23
+1250,1843,14194,36,14.15,Home Renovation,Paid Off,2025-12-07
+1251,1732,55754,60,16.77,Debt Consolidation,Default,2024-09-03
+1252,850,28607,48,20.38,Education,Paid Off,2022-03-03
+1253,1948,43747,24,11.27,Home Renovation,Current,2023-05-17
+1254,54,22695,6,16.61,Education,Default,2024-05-02
+1255,1485,38023,12,15.37,Wedding,Current,2022-10-14
+1256,130,41656,48,18.23,Vehicle,Paid Off,2023-09-06
+1257,661,45579,36,18.53,Debt Consolidation,Default,2024-06-28
+1258,1094,47514,60,18.19,Home Renovation,Paid Off,2023-08-11
+1259,1259,53713,12,10.25,Home Renovation,Current,2025-08-08
+1260,156,47215,48,18.89,Education,Default,2024-10-27
+1261,251,28483,6,14.45,Wedding,Current,2024-05-17
+1262,1612,28589,36,16.43,Business Expansion,Current,2023-06-13
+1263,181,39876,48,13.33,Vehicle,Current,2023-04-11
+1264,742,44243,12,12.9,Business Expansion,Current,2022-07-08
+1265,1605,11300,36,21.72,Wedding,Current,2022-09-14
+1266,878,15493,12,14.51,Education,Current,2022-04-25
+1267,503,15119,36,11.8,Business Expansion,Paid Off,2026-03-08
+1268,107,114201,48,20.02,Vehicle,Default,2025-11-19
+1269,1794,48186,36,13.41,Vehicle,Current,2025-08-07
+1270,682,29737,36,11.56,Wedding,Current,2024-01-31
+1271,1752,14201,36,11.93,Home Renovation,Default,2022-08-11
+1272,389,21741,6,14.03,Debt Consolidation,Paid Off,2026-05-14
+1273,103,29567,24,9.85,Education,Current,2023-08-01
+1274,1941,55404,48,10.83,Business Expansion,Current,2023-03-10
+1275,1521,19508,6,18.96,Education,Default,2023-09-26
+1276,139,13771,48,12.02,Education,Current,2022-03-08
+1277,589,59886,24,10.56,Business Expansion,Current,2025-03-13
+1278,1513,49706,6,16.55,Home Renovation,Current,2024-09-17
+1279,1347,19647,6,13.43,Home Renovation,Default,2023-09-25
+1280,660,21035,24,18.9,Business Expansion,Current,2024-03-26
+1281,213,80843,12,13.43,Wedding,Current,2024-03-11
+1282,333,29982,24,21.67,Wedding,Current,2025-12-10
+1283,1192,27493,6,13.64,Business Expansion,Current,2026-02-27
+1284,1879,33541,6,15.78,Education,Default,2026-05-07
+1285,1487,43399,6,16.84,Vehicle,Current,2024-02-22
+1286,1532,62315,48,20.36,Medical,Current,2022-03-18
+1287,806,48604,12,11.39,Home Renovation,Current,2024-08-06
+1288,1328,33192,60,10.67,Education,Current,2026-01-11
+1289,896,25428,12,19.59,Education,Paid Off,2025-09-01
+1290,650,29219,60,11.51,Business Expansion,Current,2024-10-24
+1291,1112,39713,60,17.11,Debt Consolidation,Current,2024-12-07
+1292,1957,37842,24,15.09,Medical,Default,2022-09-26
+1293,1724,17439,24,14.0,Home Renovation,Paid Off,2024-06-01
+1294,1647,35649,60,19.18,Education,Default,2024-03-04
+1295,1924,37191,12,21.96,Home Renovation,Current,2025-05-27
+1296,1948,30531,12,16.59,Home Renovation,Current,2024-10-15
+1297,619,79018,6,11.28,Business Expansion,Paid Off,2023-09-26
+1298,13,38192,6,15.74,Medical,Current,2024-07-20
+1299,1491,17861,12,21.18,Home Renovation,Current,2022-11-27
+1300,150,61483,24,16.71,Home Renovation,Current,2023-12-25
+1301,1065,41511,6,11.74,Vehicle,Default,2026-04-30
+1302,1514,91333,24,21.83,Debt Consolidation,Current,2023-06-09
+1303,468,33522,36,17.63,Home Renovation,Paid Off,2022-10-15
+1304,30,32991,48,15.6,Debt Consolidation,Paid Off,2024-01-15
+1305,768,57364,24,14.51,Wedding,Default,2025-06-23
+1306,1872,43901,12,15.01,Debt Consolidation,Current,2024-11-15
+1307,28,32095,48,21.4,Home Renovation,Current,2024-02-05
+1308,942,31466,60,14.66,Medical,Paid Off,2024-07-10
+1309,1233,76657,60,10.03,Home Renovation,Default,2025-08-11
+1310,1267,19643,60,19.38,Debt Consolidation,Current,2025-12-04
+1311,884,30849,48,9.6,Medical,Paid Off,2022-08-04
+1312,736,34942,36,11.48,Debt Consolidation,Current,2024-03-28
+1313,1152,59092,6,12.29,Wedding,Paid Off,2024-08-04
+1314,524,28468,6,13.86,Wedding,Current,2024-08-17
+1315,778,19089,48,20.75,Home Renovation,Default,2024-08-10
+1316,1933,22563,6,11.75,Vehicle,Default,2022-08-10
+1317,1750,28911,36,11.99,Home Renovation,Current,2023-11-05
+1318,906,34757,24,13.78,Vehicle,Default,2025-05-22
+1319,72,51550,12,18.28,Home Renovation,Current,2024-09-02
+1320,806,37872,24,15.18,Education,Default,2025-01-21
+1321,1214,23512,36,11.32,Medical,Default,2023-03-14
+1322,1133,20728,48,9.89,Debt Consolidation,Current,2025-05-16
+1323,1167,24056,36,10.28,Debt Consolidation,Current,2024-01-11
+1324,588,59733,36,21.73,Home Renovation,Current,2023-03-14
+1325,1702,26525,12,20.35,Wedding,Current,2026-04-03
+1326,588,49886,36,12.87,Education,Current,2025-07-25
+1327,1770,11855,6,11.27,Vehicle,Paid Off,2023-07-15
+1328,1892,51655,6,13.23,Vehicle,Paid Off,2025-12-29
+1329,269,30122,36,16.06,Medical,Current,2025-10-03
+1330,591,17658,12,19.88,Vehicle,Paid Off,2022-07-09
+1331,421,19957,24,21.54,Education,Paid Off,2023-09-01
+1332,1599,186095,12,13.87,Vehicle,Current,2024-05-08
+1333,114,61976,36,16.19,Education,Current,2026-05-25
+1334,320,23017,60,14.96,Business Expansion,Default,2025-11-20
+1335,487,24101,36,19.79,Debt Consolidation,Current,2025-02-22
+1336,740,14953,48,11.98,Wedding,Current,2026-01-20
+1337,567,10000,48,17.21,Wedding,Paid Off,2023-10-26
+1338,170,29497,60,18.79,Wedding,Current,2026-02-17
+1339,635,42749,24,9.68,Education,Current,2024-07-28
+1340,1803,32107,36,20.3,Debt Consolidation,Default,2022-08-21
+1341,284,24699,60,14.58,Wedding,Default,2024-12-02
+1342,402,70259,6,21.85,Wedding,Default,2022-09-15
+1343,1988,12854,36,17.49,Home Renovation,Current,2025-03-30
+1344,1691,28671,6,12.23,Vehicle,Current,2023-01-20
+1345,160,31609,60,16.33,Business Expansion,Current,2022-12-07
+1346,825,26372,36,12.2,Education,Current,2023-03-06
+1347,1763,23529,60,16.71,Medical,Current,2022-01-30
+1348,1739,29724,24,9.7,Business Expansion,Default,2023-09-21
+1349,1210,26660,6,18.24,Vehicle,Current,2025-08-21
+1350,1823,17285,36,14.63,Debt Consolidation,Current,2023-12-23
+1351,954,23012,48,14.82,Medical,Current,2026-04-16
+1352,546,43771,6,21.08,Vehicle,Paid Off,2024-07-28
+1353,1733,31231,24,11.71,Education,Current,2025-05-03
+1354,773,36035,48,14.95,Debt Consolidation,Current,2023-08-07
+1355,439,140853,60,18.11,Wedding,Paid Off,2024-06-14
+1356,1398,56709,24,18.28,Home Renovation,Current,2022-07-23
+1357,400,47188,6,10.62,Business Expansion,Default,2022-02-03
+1358,103,127204,36,10.8,Debt Consolidation,Default,2026-03-16
+1359,1601,69218,48,21.09,Wedding,Current,2022-07-24
+1360,992,68200,36,15.79,Wedding,Current,2022-03-08
+1361,520,45521,24,20.15,Education,Default,2023-03-10
+1362,1929,28586,36,16.39,Education,Default,2022-08-23
+1363,63,41999,36,21.38,Debt Consolidation,Default,2023-12-20
+1364,349,35201,36,14.66,Wedding,Paid Off,2025-08-13
+1365,1208,27551,60,14.45,Debt Consolidation,Default,2024-02-07
+1366,327,273519,12,15.84,Wedding,Current,2023-07-03
+1367,414,19321,24,13.34,Wedding,Current,2024-04-29
+1368,1589,14491,12,9.55,Home Renovation,Paid Off,2024-04-29
+1369,1140,39616,6,9.83,Debt Consolidation,Paid Off,2024-02-06
+1370,278,23280,48,19.75,Medical,Default,2025-05-13
+1371,1692,24714,24,11.63,Vehicle,Current,2025-03-17
+1372,1014,30188,12,16.45,Education,Default,2024-03-12
+1373,1237,43786,48,17.56,Debt Consolidation,Paid Off,2022-04-16
+1374,1129,50503,48,14.86,Vehicle,Default,2025-07-27
+1375,1974,24903,60,11.67,Business Expansion,Current,2023-10-14
+1376,720,164655,12,14.97,Wedding,Default,2022-07-23
+1377,207,85603,12,15.8,Business Expansion,Current,2025-07-17
+1378,164,21986,36,20.04,Medical,Current,2025-07-08
+1379,426,14903,48,11.49,Education,Default,2023-10-23
+1380,889,32928,6,10.67,Home Renovation,Paid Off,2024-06-14
+1381,1427,36094,60,19.13,Home Renovation,Default,2022-11-10
+1382,1058,53743,48,18.34,Business Expansion,Default,2022-06-11
+1383,1306,10000,36,9.82,Education,Paid Off,2026-02-12
+1384,1188,53562,36,17.43,Medical,Paid Off,2026-05-12
+1385,697,33223,12,12.5,Medical,Default,2023-03-31
+1386,1367,10455,12,16.19,Wedding,Current,2023-05-18
+1387,1185,74426,36,19.13,Home Renovation,Paid Off,2025-09-12
+1388,1542,43669,24,10.54,Wedding,Current,2022-10-22
+1389,1108,43440,6,17.48,Debt Consolidation,Current,2025-04-01
+1390,620,26228,6,10.89,Home Renovation,Default,2025-05-05
+1391,1040,25231,6,11.27,Education,Current,2023-06-21
+1392,1994,45663,6,10.47,Debt Consolidation,Paid Off,2024-01-11
+1393,857,21932,12,14.39,Debt Consolidation,Default,2024-10-02
+1394,634,22021,6,14.67,Wedding,Default,2024-09-23
+1395,215,37852,6,12.13,Vehicle,Default,2024-05-09
+1396,1584,19193,24,17.42,Debt Consolidation,Current,2024-07-12
+1397,1028,60952,12,11.75,Education,Default,2022-01-21
+1398,115,18926,60,16.59,Debt Consolidation,Paid Off,2025-05-27
+1399,1322,40292,6,10.97,Medical,Current,2023-12-04
+1400,199,80851,36,21.94,Business Expansion,Current,2025-05-13
+1401,1573,17751,6,11.48,Medical,Default,2026-02-27
+1402,901,48339,6,11.91,Business Expansion,Paid Off,2022-03-02
+1403,1279,22242,6,15.97,Education,Default,2026-04-08
+1404,1303,52602,12,20.34,Education,Current,2022-08-24
+1405,427,34927,6,13.59,Home Renovation,Current,2023-03-27
+1406,1684,120578,60,18.15,Medical,Current,2022-09-17
+1407,1698,60608,24,15.52,Medical,Default,2022-07-08
+1408,1553,26488,60,16.39,Vehicle,Paid Off,2023-08-26
+1409,1031,15623,60,19.61,Business Expansion,Current,2024-06-12
+1410,1405,51113,36,21.03,Education,Current,2023-05-28
+1411,1642,44770,12,18.09,Medical,Current,2026-01-09
+1412,1558,36291,36,10.79,Business Expansion,Default,2026-04-19
+1413,674,40317,24,11.57,Wedding,Current,2023-02-26
+1414,128,31779,36,14.92,Vehicle,Default,2024-07-02
+1415,1826,39095,48,18.84,Business Expansion,Current,2023-10-15
+1416,1255,15966,6,17.09,Education,Default,2024-05-29
+1417,1493,21294,48,13.91,Debt Consolidation,Default,2025-07-19
+1418,238,18095,6,15.12,Business Expansion,Current,2022-03-11
+1419,1971,55735,24,16.84,Business Expansion,Current,2023-08-25
+1420,1846,10873,60,21.38,Medical,Current,2024-12-22
+1421,467,31096,36,9.87,Debt Consolidation,Current,2023-01-04
+1422,1440,32359,24,14.87,Medical,Current,2023-01-16
+1423,1614,10000,12,10.41,Medical,Default,2025-09-07
+1424,117,23566,24,11.31,Home Renovation,Default,2023-10-06
+1425,860,46107,6,13.48,Wedding,Current,2022-01-23
+1426,809,92886,24,12.17,Debt Consolidation,Default,2025-03-08
+1427,457,28121,24,20.73,Home Renovation,Current,2025-02-24
+1428,1194,32846,36,13.05,Business Expansion,Current,2023-03-11
+1429,1980,40682,12,10.79,Wedding,Current,2023-07-24
+1430,1776,57126,48,21.33,Home Renovation,Paid Off,2025-10-06
+1431,1073,71404,48,20.66,Wedding,Default,2024-05-13
+1432,408,36780,36,13.47,Education,Default,2023-10-18
+1433,778,53005,12,10.12,Vehicle,Current,2024-10-08
+1434,1394,25906,6,21.88,Home Renovation,Default,2024-05-12
+1435,1743,62288,6,15.16,Medical,Current,2025-05-16
+1436,7,18176,48,14.29,Home Renovation,Current,2025-03-26
+1437,638,48866,24,9.72,Debt Consolidation,Paid Off,2026-05-24
+1438,1396,49659,48,21.85,Medical,Default,2024-08-03
+1439,1585,17008,12,20.02,Home Renovation,Default,2024-04-04
+1440,1875,21702,48,20.98,Medical,Current,2022-03-22
+1441,1288,16713,60,9.7,Home Renovation,Default,2024-08-20
+1442,336,27560,36,18.54,Medical,Current,2023-07-17
+1443,1024,68562,24,14.5,Debt Consolidation,Current,2025-02-13
+1444,1464,20844,24,15.67,Vehicle,Paid Off,2022-04-07
+1445,675,30860,24,18.21,Vehicle,Current,2024-07-19
+1446,507,27518,60,21.59,Debt Consolidation,Paid Off,2022-09-06
+1447,206,76784,24,21.22,Home Renovation,Default,2022-07-30
+1448,1076,22218,12,10.1,Education,Paid Off,2022-01-22
+1449,609,78273,6,21.92,Wedding,Current,2025-11-09
+1450,703,50727,36,12.33,Education,Default,2022-06-30
+1451,600,61523,60,20.78,Debt Consolidation,Current,2024-01-26
+1452,1224,73541,48,21.87,Debt Consolidation,Paid Off,2025-11-10
+1453,227,79911,6,12.75,Home Renovation,Current,2026-05-27
+1454,1514,16557,6,10.1,Home Renovation,Default,2023-09-16
+1455,1009,69007,24,13.62,Debt Consolidation,Current,2025-06-08
+1456,1313,55955,36,12.87,Education,Current,2022-12-15
+1457,336,69269,48,15.26,Medical,Current,2022-09-16
+1458,183,168688,12,18.91,Wedding,Paid Off,2024-04-26
+1459,640,31601,36,17.85,Business Expansion,Current,2024-12-04
+1460,177,51335,12,16.72,Vehicle,Paid Off,2025-09-16
+1461,1084,42254,24,13.52,Vehicle,Default,2026-02-05
+1462,1260,36163,12,10.65,Medical,Current,2026-04-19
+1463,296,42341,60,10.53,Debt Consolidation,Default,2025-02-17
+1464,1892,23953,12,17.74,Debt Consolidation,Default,2026-02-14
+1465,1982,22544,12,18.19,Vehicle,Current,2022-06-03
+1466,341,16286,6,12.16,Education,Current,2025-10-05
+1467,1506,39203,36,19.73,Vehicle,Current,2023-01-20
+1468,827,48836,6,13.76,Debt Consolidation,Default,2025-04-24
+1469,1656,45006,48,15.92,Debt Consolidation,Default,2023-10-04
+1470,1828,32470,24,18.36,Education,Default,2025-09-04
+1471,1652,30691,48,10.82,Education,Current,2022-09-24
+1472,1512,71857,24,14.32,Debt Consolidation,Default,2024-07-15
+1473,675,102651,48,15.92,Vehicle,Paid Off,2026-05-17
+1474,533,21321,12,10.36,Education,Paid Off,2024-05-16
+1475,1642,14424,60,13.34,Wedding,Default,2025-03-28
+1476,102,47894,6,11.34,Wedding,Current,2022-08-08
+1477,1956,39925,6,12.51,Education,Current,2024-08-01
+1478,961,34969,24,9.86,Business Expansion,Current,2025-09-17
+1479,566,35421,36,13.9,Business Expansion,Default,2022-08-31
+1480,1152,17928,6,13.93,Education,Default,2023-03-11
+1481,202,54702,36,15.78,Medical,Paid Off,2024-11-06
+1482,1128,49030,6,15.02,Home Renovation,Default,2024-01-28
+1483,815,55682,6,17.61,Vehicle,Paid Off,2026-02-08
+1484,332,46578,12,13.18,Education,Paid Off,2024-04-04
+1485,1037,28699,48,12.95,Vehicle,Paid Off,2025-05-29
+1486,1982,109107,48,14.92,Home Renovation,Default,2025-10-27
+1487,152,47190,60,12.61,Education,Default,2022-08-16
+1488,1400,64754,6,10.16,Business Expansion,Paid Off,2022-03-15
+1489,508,18332,24,12.48,Home Renovation,Current,2024-12-25
+1490,1938,28229,24,12.33,Wedding,Default,2025-06-24
+1491,1822,51201,60,14.56,Home Renovation,Default,2024-03-15
+1492,586,23922,12,18.67,Medical,Paid Off,2025-11-17
+1493,599,61127,36,12.07,Education,Current,2026-05-29
+1494,422,36587,24,17.46,Business Expansion,Current,2025-12-16
+1495,1326,105650,24,18.67,Education,Current,2022-07-13
+1496,1067,64305,48,20.85,Vehicle,Default,2025-06-28
+1497,1574,26783,60,13.32,Education,Paid Off,2025-11-09
+1498,657,24524,12,13.44,Education,Current,2022-05-23
+1499,483,97245,12,13.65,Education,Default,2024-07-21
+1500,590,28558,6,17.83,Medical,Default,2024-05-26
+1501,1706,10454,6,11.72,Home Renovation,Default,2023-06-25
+1502,1175,38730,12,17.99,Business Expansion,Current,2022-01-20
+1503,1437,34683,24,21.62,Home Renovation,Default,2025-04-09
+1504,819,22031,36,20.42,Home Renovation,Default,2024-08-25
+1505,189,41641,6,19.74,Wedding,Current,2025-03-07
+1506,126,55285,24,19.94,Business Expansion,Default,2024-12-11
+1507,1525,59228,12,18.94,Home Renovation,Paid Off,2026-05-07
+1508,828,45298,6,13.31,Medical,Current,2026-02-16
+1509,1311,26858,36,15.63,Business Expansion,Current,2023-12-20
+1510,1469,36187,24,17.79,Medical,Default,2023-06-04
+1511,1503,28040,36,9.67,Medical,Paid Off,2023-12-24
+1512,352,40457,60,13.67,Debt Consolidation,Default,2024-11-26
+1513,1675,29868,60,20.21,Vehicle,Paid Off,2025-05-05
+1514,535,22718,6,12.87,Wedding,Current,2024-11-29
+1515,926,43762,60,9.76,Debt Consolidation,Current,2024-04-20
+1516,1088,33673,12,17.74,Medical,Default,2022-10-18
+1517,349,23731,36,9.89,Wedding,Default,2025-03-28
+1518,1446,35023,60,21.67,Education,Default,2024-01-07
+1519,330,55717,60,10.62,Wedding,Default,2024-02-13
+1520,1519,45602,6,21.57,Wedding,Paid Off,2025-07-07
+1521,379,25668,48,20.74,Business Expansion,Current,2024-07-09
+1522,1,116024,12,12.82,Medical,Current,2025-10-22
+1523,477,10000,24,14.39,Medical,Default,2024-05-04
+1524,823,15042,24,11.88,Business Expansion,Default,2025-04-01
+1525,352,14148,60,13.79,Home Renovation,Current,2025-06-08
+1526,412,36839,36,19.44,Debt Consolidation,Paid Off,2025-03-06
+1527,959,12206,24,13.11,Vehicle,Default,2022-01-18
+1528,1201,40602,60,11.34,Education,Current,2025-10-26
+1529,444,56677,48,21.58,Business Expansion,Current,2025-07-01
+1530,88,34547,60,11.53,Medical,Current,2024-09-24
+1531,1854,22253,6,19.5,Vehicle,Current,2022-02-01
+1532,84,52678,6,12.22,Home Renovation,Current,2025-04-29
+1533,1585,33589,6,15.6,Vehicle,Paid Off,2022-01-11
+1534,337,25498,24,17.75,Home Renovation,Paid Off,2022-01-02
+1535,262,32831,24,11.22,Debt Consolidation,Paid Off,2023-08-04
+1536,1172,21214,48,17.82,Business Expansion,Current,2026-04-24
+1537,1362,31865,12,21.42,Medical,Current,2025-12-31
+1538,823,28466,12,21.95,Vehicle,Default,2023-02-07
+1539,1786,35392,48,20.98,Education,Current,2023-08-19
+1540,319,19141,6,15.41,Education,Default,2023-12-28
+1541,1087,50795,60,17.46,Vehicle,Current,2024-05-15
+1542,1526,58919,6,20.66,Business Expansion,Current,2023-09-11
+1543,47,39225,24,11.67,Wedding,Default,2024-06-11
+1544,1660,45896,24,19.55,Wedding,Current,2022-10-13
+1545,1533,41563,12,12.63,Business Expansion,Current,2024-05-02
+1546,1672,51459,12,13.26,Medical,Default,2022-06-25
+1547,759,21303,48,21.09,Business Expansion,Current,2024-08-02
+1548,965,51477,12,14.2,Home Renovation,Current,2024-06-13
+1549,1344,28684,12,16.08,Medical,Current,2025-11-22
+1550,823,123439,48,21.19,Medical,Current,2025-12-30
+1551,378,44847,36,13.93,Vehicle,Default,2024-08-13
+1552,1538,28915,36,15.27,Home Renovation,Default,2025-02-18
+1553,1775,18909,36,10.61,Business Expansion,Current,2022-10-15
+1554,265,19816,24,19.33,Business Expansion,Current,2025-04-03
+1555,997,44775,24,11.09,Business Expansion,Current,2025-01-17
+1556,1838,47376,24,10.17,Education,Default,2024-03-15
+1557,45,20209,36,17.88,Debt Consolidation,Current,2024-08-05
+1558,1090,71477,48,15.25,Home Renovation,Default,2022-04-22
+1559,1290,54966,6,12.88,Home Renovation,Paid Off,2025-08-23
+1560,130,47771,24,16.93,Business Expansion,Default,2023-08-19
+1561,1058,57469,36,18.13,Home Renovation,Default,2022-05-05
+1562,331,80114,60,16.81,Wedding,Current,2024-11-12
+1563,1250,13227,60,10.16,Business Expansion,Current,2023-02-24
+1564,1782,82407,12,16.53,Education,Paid Off,2024-10-11
+1565,997,42174,12,20.69,Debt Consolidation,Paid Off,2025-08-03
+1566,1195,92557,12,13.26,Wedding,Current,2023-09-29
+1567,492,17904,6,19.57,Wedding,Default,2025-07-01
+1568,367,29932,12,10.93,Education,Default,2022-01-01
+1569,209,33154,48,20.5,Home Renovation,Default,2024-11-30
+1570,1969,18415,12,12.05,Home Renovation,Current,2024-08-28
+1571,800,85157,48,15.05,Home Renovation,Current,2022-04-24
+1572,1382,59049,24,14.56,Debt Consolidation,Paid Off,2023-01-12
+1573,879,64296,12,20.02,Medical,Current,2025-01-24
+1574,215,22315,48,18.02,Business Expansion,Default,2025-09-09
+1575,48,30008,6,14.9,Home Renovation,Current,2025-07-26
+1576,1620,13318,12,11.27,Wedding,Default,2026-03-05
+1577,1947,42065,12,11.63,Wedding,Default,2026-02-27
+1578,1157,31873,48,12.0,Medical,Paid Off,2024-09-10
+1579,1582,42452,24,17.84,Vehicle,Default,2025-04-20
+1580,1602,17736,24,17.85,Vehicle,Current,2024-03-12
+1581,374,31094,60,19.5,Vehicle,Paid Off,2024-08-08
+1582,1529,36767,36,11.35,Vehicle,Current,2023-08-04
+1583,763,18635,6,16.55,Business Expansion,Current,2022-01-23
+1584,1216,26136,24,9.93,Wedding,Default,2025-08-25
+1585,96,64378,48,15.06,Education,Current,2023-12-28
+1586,112,209750,36,20.53,Medical,Default,2024-07-27
+1587,1288,29735,6,21.77,Business Expansion,Paid Off,2024-01-03
+1588,1887,29103,48,12.13,Business Expansion,Current,2025-12-17
+1589,1425,31744,36,15.91,Wedding,Paid Off,2022-12-24
+1590,1317,25730,12,13.9,Business Expansion,Current,2026-01-12
+1591,1466,64504,24,15.24,Education,Default,2026-05-31
+1592,1597,33596,24,19.31,Medical,Current,2025-09-10
+1593,507,10000,36,10.35,Vehicle,Default,2025-08-14
+1594,1073,43531,36,21.53,Wedding,Default,2025-05-25
+1595,1354,31497,12,16.7,Debt Consolidation,Default,2024-11-04
+1596,706,35061,60,16.07,Wedding,Default,2022-09-23
+1597,928,16452,24,16.86,Medical,Paid Off,2025-04-04
+1598,1712,139794,48,17.22,Home Renovation,Current,2024-04-06
+1599,749,47058,6,9.87,Education,Current,2026-02-09
+1600,1187,10000,12,10.71,Vehicle,Current,2022-08-06
+1601,483,62965,60,15.46,Education,Current,2026-04-06
+1602,1456,92260,60,19.45,Education,Default,2022-08-04
+1603,1762,32603,60,20.66,Vehicle,Current,2026-03-28
+1604,943,76613,6,10.27,Home Renovation,Current,2023-05-28
+1605,1362,29885,6,20.09,Vehicle,Current,2022-05-30
+1606,1632,78133,24,17.08,Education,Paid Off,2022-03-02
+1607,1173,33058,24,10.85,Vehicle,Current,2024-07-09
+1608,613,122116,12,21.86,Business Expansion,Paid Off,2025-03-21
+1609,405,44595,12,11.95,Vehicle,Default,2024-10-02
+1610,1142,35740,60,13.08,Wedding,Current,2023-02-17
+1611,1365,35448,12,14.93,Debt Consolidation,Current,2024-12-18
+1612,878,22276,12,10.58,Wedding,Paid Off,2022-02-19
+1613,1468,37001,60,10.7,Debt Consolidation,Default,2022-03-10
+1614,194,17644,12,20.67,Debt Consolidation,Default,2024-01-07
+1615,664,36317,36,16.6,Medical,Paid Off,2022-05-28
+1616,1632,56283,12,18.03,Wedding,Paid Off,2026-01-31
+1617,885,12452,48,15.7,Business Expansion,Current,2023-03-01
+1618,602,40938,36,15.76,Business Expansion,Current,2024-01-01
+1619,1338,51345,48,20.17,Vehicle,Current,2022-05-18
+1620,1850,51705,36,17.32,Business Expansion,Paid Off,2022-05-26
+1621,1254,10000,6,11.09,Medical,Current,2024-11-25
+1622,1587,35637,6,10.97,Home Renovation,Current,2023-04-18
+1623,1536,53980,48,16.26,Education,Current,2022-02-16
+1624,676,89764,24,21.03,Vehicle,Paid Off,2023-05-30
+1625,1613,40984,60,13.97,Medical,Paid Off,2022-11-20
+1626,969,12880,6,16.18,Debt Consolidation,Current,2023-05-10
+1627,778,91415,48,21.15,Medical,Paid Off,2024-10-21
+1628,1332,232895,36,17.23,Wedding,Current,2025-01-23
+1629,1543,52216,6,16.78,Wedding,Current,2023-06-23
+1630,154,24246,6,9.9,Medical,Current,2024-05-13
+1631,1398,48330,12,13.68,Home Renovation,Current,2026-04-16
+1632,1197,23762,12,12.05,Medical,Default,2026-02-11
+1633,49,34521,60,20.9,Education,Default,2022-05-08
+1634,510,17513,36,10.41,Business Expansion,Default,2025-02-28
+1635,1092,27623,60,19.94,Medical,Default,2022-03-14
+1636,880,37713,6,21.37,Wedding,Default,2025-05-10
+1637,1094,25343,48,21.12,Vehicle,Current,2025-02-03
+1638,629,37821,12,12.88,Home Renovation,Current,2022-03-27
+1639,1148,86764,6,15.71,Wedding,Current,2023-04-07
+1640,306,34233,24,14.89,Debt Consolidation,Default,2023-09-14
+1641,1584,21900,12,9.77,Home Renovation,Current,2022-04-24
+1642,1404,26000,12,16.18,Wedding,Default,2024-02-16
+1643,1571,38714,60,18.72,Vehicle,Default,2025-02-05
+1644,1282,32947,6,14.34,Wedding,Default,2024-02-12
+1645,1482,78028,12,14.87,Business Expansion,Paid Off,2024-05-24
+1646,163,15059,12,10.94,Business Expansion,Paid Off,2022-08-30
+1647,1947,10536,24,13.9,Vehicle,Default,2023-12-04
+1648,266,31607,6,12.48,Business Expansion,Current,2022-07-08
+1649,1724,12952,6,12.34,Debt Consolidation,Default,2026-03-11
+1650,950,37665,48,16.6,Debt Consolidation,Default,2022-01-31
+1651,1133,37662,60,12.62,Home Renovation,Current,2022-04-27
+1652,691,45808,6,11.08,Medical,Current,2023-01-05
+1653,1646,30275,6,13.43,Wedding,Default,2025-05-18
+1654,506,28232,12,21.98,Business Expansion,Paid Off,2022-09-23
+1655,1618,30228,36,15.48,Wedding,Paid Off,2022-09-08
+1656,632,20260,6,10.45,Education,Current,2025-01-18
+1657,1008,36248,36,18.32,Debt Consolidation,Paid Off,2024-01-02
+1658,478,42135,12,15.04,Medical,Default,2023-09-12
+1659,699,51058,48,13.16,Education,Current,2025-08-31
+1660,1105,26718,48,20.66,Wedding,Current,2023-10-16
+1661,248,54075,48,15.79,Medical,Default,2022-04-21
+1662,1384,22904,36,18.32,Vehicle,Default,2025-06-27
+1663,1649,62460,24,10.48,Debt Consolidation,Default,2022-10-08
+1664,814,21325,48,12.38,Business Expansion,Paid Off,2026-02-28
+1665,243,40688,12,11.03,Debt Consolidation,Current,2026-01-24
+1666,420,50551,12,9.95,Wedding,Paid Off,2023-04-27
+1667,797,27349,36,17.62,Home Renovation,Default,2024-07-18
+1668,1523,60125,6,15.74,Medical,Paid Off,2022-03-11
+1669,1135,62378,24,16.85,Debt Consolidation,Current,2023-09-08
+1670,1783,21157,6,10.25,Vehicle,Default,2025-06-02
+1671,1754,34993,36,9.74,Vehicle,Default,2024-02-23
+1672,1218,31948,36,10.06,Vehicle,Default,2023-02-26
+1673,365,18885,12,17.75,Home Renovation,Current,2024-12-26
+1674,282,33929,60,13.31,Debt Consolidation,Current,2025-01-14
+1675,1496,34251,24,21.22,Debt Consolidation,Current,2025-05-31
+1676,1321,29779,24,21.03,Debt Consolidation,Default,2023-06-22
+1677,117,18951,48,12.21,Medical,Current,2022-02-26
+1678,1454,127990,60,19.87,Debt Consolidation,Current,2024-06-07
+1679,323,23429,36,19.28,Debt Consolidation,Default,2026-02-15
+1680,1820,59125,6,19.59,Vehicle,Current,2025-02-07
+1681,163,30638,60,21.16,Debt Consolidation,Current,2023-08-12
+1682,453,18146,48,15.29,Wedding,Default,2025-03-18
+1683,382,43211,48,19.11,Education,Current,2023-06-17
+1684,156,15418,36,15.34,Education,Current,2023-05-03
+1685,613,75193,6,13.01,Medical,Current,2025-10-29
+1686,47,34239,6,21.99,Business Expansion,Current,2026-04-29
+1687,1598,15566,24,13.72,Home Renovation,Paid Off,2024-03-19
+1688,1460,80974,48,12.93,Wedding,Default,2023-07-05
+1689,94,34198,24,19.28,Business Expansion,Default,2026-04-30
+1690,1791,23830,6,11.05,Wedding,Paid Off,2025-03-10
+1691,759,67171,24,19.95,Vehicle,Current,2023-01-02
+1692,649,14544,36,9.72,Vehicle,Current,2022-01-19
+1693,840,49728,6,21.57,Wedding,Current,2024-09-10
+1694,1661,45862,48,12.22,Business Expansion,Default,2022-04-30
+1695,989,39695,6,12.96,Business Expansion,Current,2025-06-03
+1696,1452,11052,24,21.42,Education,Paid Off,2024-06-21
+1697,1322,118828,24,19.07,Medical,Current,2023-07-20
+1698,898,43441,36,11.09,Education,Current,2025-07-14
+1699,343,32951,12,20.39,Home Renovation,Current,2025-09-05
+1700,2,10000,12,10.93,Education,Current,2022-03-20
+1701,246,22770,60,15.83,Business Expansion,Current,2024-06-20
+1702,748,80225,24,10.02,Education,Current,2026-01-09
+1703,1599,86544,6,21.4,Medical,Paid Off,2023-06-15
+1704,1129,29803,6,17.98,Business Expansion,Paid Off,2023-12-25
+1705,1858,53329,60,10.06,Medical,Default,2023-04-26
+1706,752,35859,6,10.47,Home Renovation,Current,2024-06-27
+1707,1910,34928,48,10.47,Medical,Default,2023-02-22
+1708,1670,25948,48,14.14,Vehicle,Current,2025-10-26
+1709,1045,33830,6,17.52,Education,Current,2023-08-03
+1710,1141,54326,6,13.58,Medical,Default,2024-01-08
+1711,402,25510,36,20.72,Vehicle,Current,2024-02-07
+1712,1734,32673,24,17.27,Medical,Current,2022-11-25
+1713,1089,20336,6,13.14,Business Expansion,Current,2022-11-04
+1714,1873,53898,6,10.83,Debt Consolidation,Current,2023-03-10
+1715,577,14817,24,15.88,Wedding,Current,2026-05-19
+1716,807,31136,48,19.29,Medical,Paid Off,2025-12-30
+1717,1834,128320,12,14.24,Home Renovation,Current,2025-04-08
+1718,1583,10000,60,18.58,Debt Consolidation,Current,2024-02-20
+1719,1098,49556,60,10.48,Education,Default,2022-06-08
+1720,1585,58732,48,15.79,Wedding,Default,2025-03-22
+1721,483,32474,48,18.67,Wedding,Current,2025-01-08
+1722,1516,24791,6,20.09,Debt Consolidation,Current,2024-12-16
+1723,192,27831,6,17.09,Business Expansion,Current,2025-09-12
+1724,525,14297,48,15.01,Education,Default,2023-07-06
+1725,592,12551,48,13.16,Medical,Current,2023-05-15
+1726,200,56445,12,19.49,Education,Default,2024-01-12
+1727,1246,33722,36,13.44,Wedding,Default,2022-08-25
+1728,365,44910,12,15.06,Medical,Default,2024-04-19
+1729,1971,75777,6,13.9,Home Renovation,Current,2024-11-01
+1730,30,37712,24,17.67,Education,Current,2025-05-24
+1731,662,28410,36,19.33,Business Expansion,Paid Off,2023-04-16
+1732,1628,45499,12,21.07,Debt Consolidation,Default,2023-05-17
+1733,1447,15489,36,17.93,Education,Paid Off,2025-09-25
+1734,634,101052,48,12.75,Medical,Default,2023-08-11
+1735,309,88183,24,10.97,Vehicle,Current,2024-04-16
+1736,409,34514,48,21.79,Vehicle,Default,2025-03-25
+1737,227,22001,60,20.52,Education,Current,2023-02-10
+1738,1708,31556,36,9.69,Vehicle,Current,2022-09-05
+1739,162,46392,24,19.07,Vehicle,Paid Off,2025-12-27
+1740,819,89703,60,10.76,Debt Consolidation,Current,2022-03-11
+1741,1664,58964,36,9.8,Home Renovation,Default,2022-12-08
+1742,1293,40807,12,15.94,Vehicle,Current,2024-12-20
+1743,1405,71031,36,13.93,Wedding,Current,2024-04-03
+1744,303,24979,48,12.52,Home Renovation,Default,2023-08-24
+1745,756,52151,24,20.72,Business Expansion,Default,2023-11-21
+1746,1490,23473,48,17.21,Home Renovation,Default,2026-01-19
+1747,921,32724,6,18.73,Vehicle,Paid Off,2023-12-28
+1748,726,30211,36,17.39,Debt Consolidation,Paid Off,2026-02-25
+1749,759,63295,36,13.12,Wedding,Current,2024-09-04
+1750,868,12833,12,18.67,Debt Consolidation,Paid Off,2026-01-22
+1751,1257,62710,48,20.95,Home Renovation,Current,2024-11-09
+1752,1100,13296,12,20.69,Business Expansion,Current,2025-04-30
+1753,1784,10666,24,17.92,Vehicle,Current,2024-07-17
+1754,1290,15639,24,14.98,Wedding,Default,2024-11-07
+1755,956,14059,48,12.99,Home Renovation,Default,2026-05-03
+1756,1331,26478,12,13.22,Home Renovation,Default,2023-11-30
+1757,1184,50544,48,15.97,Business Expansion,Default,2024-12-11
+1758,1573,46322,48,20.05,Medical,Paid Off,2024-05-23
+1759,1377,35891,24,14.3,Education,Default,2026-03-31
+1760,207,51171,12,10.02,Wedding,Paid Off,2026-02-13
+1761,362,75031,12,14.88,Business Expansion,Default,2023-07-24
+1762,171,78961,48,13.43,Medical,Default,2023-12-13
+1763,303,53714,12,10.98,Vehicle,Default,2023-07-15
+1764,610,15587,36,12.3,Medical,Current,2022-12-13
+1765,825,72085,24,21.86,Home Renovation,Current,2026-03-24
+1766,1464,44009,12,17.83,Home Renovation,Current,2022-10-16
+1767,519,27667,12,16.4,Debt Consolidation,Current,2024-11-07
+1768,279,28892,12,9.84,Business Expansion,Current,2022-03-23
+1769,683,25315,48,19.49,Vehicle,Default,2022-01-14
+1770,406,82474,6,14.12,Business Expansion,Paid Off,2023-08-01
+1771,623,16056,36,18.65,Education,Current,2024-12-02
+1772,1776,50006,36,13.19,Wedding,Current,2022-08-13
+1773,5,53832,60,20.99,Vehicle,Paid Off,2022-09-03
+1774,735,18080,36,15.67,Debt Consolidation,Current,2022-06-27
+1775,708,29141,12,21.91,Wedding,Current,2026-02-07
+1776,473,10092,6,21.61,Wedding,Current,2022-06-11
+1777,665,48428,12,18.59,Education,Default,2023-11-01
+1778,1462,45691,48,13.69,Wedding,Default,2024-07-17
+1779,1929,47878,60,15.91,Home Renovation,Default,2026-05-11
+1780,1857,63420,60,18.1,Vehicle,Current,2022-03-20
+1781,1747,28415,6,21.15,Medical,Default,2024-12-03
+1782,1826,16578,12,20.02,Debt Consolidation,Current,2025-09-15
+1783,943,44893,60,9.95,Wedding,Current,2025-07-23
+1784,465,84570,6,12.57,Vehicle,Current,2025-04-15
+1785,401,33568,12,17.92,Vehicle,Default,2023-06-28
+1786,753,18271,12,15.56,Wedding,Current,2023-01-19
+1787,360,63167,36,13.03,Wedding,Paid Off,2023-02-11
+1788,1253,14704,6,21.39,Wedding,Paid Off,2026-01-21
+1789,1350,28100,12,9.54,Vehicle,Paid Off,2022-05-18
+1790,211,31084,48,17.14,Education,Default,2025-12-25
+1791,230,12099,6,14.73,Business Expansion,Current,2023-06-23
+1792,392,23697,36,17.39,Wedding,Current,2023-04-26
+1793,1602,82279,24,15.55,Education,Paid Off,2025-09-07
+1794,1593,10052,24,20.01,Wedding,Current,2023-08-22
+1795,91,14394,36,15.63,Vehicle,Paid Off,2025-07-14
+1796,1083,16747,48,13.96,Medical,Current,2024-09-12
+1797,1682,12157,6,12.24,Debt Consolidation,Current,2026-03-27
+1798,978,53687,24,14.74,Medical,Current,2024-07-04
+1799,1433,58997,12,17.78,Education,Paid Off,2022-08-26
+1800,219,26515,36,21.45,Home Renovation,Paid Off,2025-09-14
+1801,1054,31890,24,18.21,Education,Current,2025-12-14
+1802,276,49416,36,20.0,Business Expansion,Default,2024-09-28
+1803,1235,49694,36,18.09,Medical,Paid Off,2022-03-01
+1804,1507,48112,24,15.84,Vehicle,Default,2026-05-23
+1805,522,29327,6,16.53,Medical,Default,2023-10-24
+1806,1540,16269,60,13.47,Debt Consolidation,Current,2024-03-12
+1807,1096,18024,36,14.81,Home Renovation,Default,2023-06-18
+1808,1052,38821,24,15.57,Medical,Paid Off,2023-03-25
+1809,1581,68861,60,19.73,Vehicle,Current,2023-09-24
+1810,1935,58149,36,12.27,Business Expansion,Default,2022-12-08
+1811,1490,19968,12,19.24,Business Expansion,Current,2022-08-14
+1812,528,11456,48,13.62,Business Expansion,Default,2025-05-23
+1813,605,58533,6,21.38,Debt Consolidation,Paid Off,2022-02-13
+1814,1510,36630,36,10.63,Medical,Current,2025-12-14
+1815,1454,107518,24,19.09,Home Renovation,Paid Off,2025-02-06
+1816,1042,27139,60,10.12,Medical,Current,2023-03-08
+1817,1917,74244,48,11.98,Debt Consolidation,Current,2022-11-18
+1818,1104,152715,48,14.44,Education,Default,2026-01-10
+1819,1046,56625,24,19.52,Medical,Current,2024-02-05
+1820,959,35568,36,12.2,Education,Current,2026-02-10
+1821,1257,43613,6,9.95,Debt Consolidation,Current,2022-02-11
+1822,423,32828,48,10.78,Debt Consolidation,Paid Off,2024-03-25
+1823,1721,71503,36,10.03,Medical,Current,2023-08-03
+1824,1223,14746,6,12.38,Wedding,Current,2026-05-01
+1825,1006,50176,12,9.92,Home Renovation,Current,2026-03-16
+1826,1844,35927,36,17.69,Debt Consolidation,Default,2022-09-26
+1827,1088,108599,60,20.46,Home Renovation,Paid Off,2022-06-23
+1828,1317,59398,6,15.81,Debt Consolidation,Paid Off,2025-12-11
+1829,1178,39899,60,14.69,Wedding,Paid Off,2022-01-31
+1830,1587,28006,48,17.06,Home Renovation,Default,2022-11-07
+1831,147,78797,60,16.85,Education,Current,2024-03-12
+1832,603,28019,48,20.24,Medical,Current,2026-05-27
+1833,1194,26802,36,15.9,Medical,Paid Off,2022-02-17
+1834,1207,39481,24,15.24,Medical,Current,2022-07-24
+1835,917,31192,60,16.7,Medical,Paid Off,2024-02-11
+1836,772,25005,36,10.66,Business Expansion,Current,2024-04-12
+1837,1075,22224,24,15.54,Business Expansion,Default,2025-12-10
+1838,531,15460,48,12.56,Vehicle,Default,2022-02-05
+1839,182,37369,60,14.42,Debt Consolidation,Paid Off,2024-02-03
+1840,300,54617,48,18.43,Education,Default,2024-07-15
+1841,1439,42294,48,21.69,Debt Consolidation,Default,2024-03-24
+1842,781,81765,12,15.09,Business Expansion,Default,2024-09-03
+1843,1641,31204,6,17.54,Education,Current,2023-11-12
+1844,1353,24906,60,21.7,Business Expansion,Current,2022-07-15
+1845,1522,17597,12,12.1,Business Expansion,Default,2024-09-30
+1846,282,73397,12,10.55,Business Expansion,Current,2024-04-05
+1847,219,32360,36,16.04,Debt Consolidation,Current,2025-03-06
+1848,1370,53404,12,10.24,Medical,Current,2024-10-07
+1849,1437,28757,36,13.39,Debt Consolidation,Current,2023-11-23
+1850,794,87924,12,9.96,Business Expansion,Paid Off,2025-11-12
+1851,753,28605,48,14.58,Medical,Paid Off,2022-01-12
+1852,606,104130,60,12.12,Debt Consolidation,Current,2025-02-25
+1853,714,40995,36,16.32,Wedding,Current,2023-10-04
+1854,914,38799,12,13.52,Vehicle,Default,2025-12-22
+1855,937,16196,48,16.44,Wedding,Default,2026-02-23
+1856,718,24600,6,21.02,Wedding,Default,2024-05-21
+1857,579,41781,6,14.2,Home Renovation,Default,2026-03-31
+1858,1292,33390,12,16.0,Education,Default,2022-09-06
+1859,112,38806,12,14.97,Home Renovation,Default,2022-08-21
+1860,1792,44863,36,15.69,Debt Consolidation,Default,2025-07-06
+1861,956,17796,48,15.59,Debt Consolidation,Current,2026-03-14
+1862,578,27715,48,14.73,Medical,Default,2022-01-19
+1863,1940,28135,6,14.94,Wedding,Current,2023-08-26
+1864,474,11177,60,12.89,Business Expansion,Current,2023-10-23
+1865,999,106831,24,16.55,Education,Current,2022-12-06
+1866,1367,95905,24,16.04,Debt Consolidation,Paid Off,2023-02-23
+1867,1064,74011,48,21.4,Business Expansion,Default,2024-01-31
+1868,537,39129,48,12.64,Education,Default,2024-08-05
+1869,1056,52195,24,21.09,Debt Consolidation,Default,2026-01-14
+1870,511,74520,12,11.55,Debt Consolidation,Current,2026-01-04
+1871,952,24243,36,9.62,Education,Current,2024-05-02
+1872,740,25864,12,15.38,Medical,Default,2022-01-12
+1873,1315,50790,60,11.85,Home Renovation,Current,2025-11-22
+1874,920,43253,48,15.23,Home Renovation,Default,2022-07-13
+1875,788,23678,48,15.36,Home Renovation,Paid Off,2022-11-17
+1876,861,77966,24,17.45,Medical,Current,2023-04-08
+1877,1496,102804,60,9.68,Medical,Paid Off,2023-01-30
+1878,535,30424,24,19.76,Business Expansion,Default,2024-05-22
+1879,946,31930,60,13.32,Debt Consolidation,Current,2025-07-02
+1880,598,71554,36,21.18,Business Expansion,Paid Off,2025-02-23
+1881,55,74299,60,17.74,Business Expansion,Paid Off,2022-06-08
+1882,1268,35463,12,10.79,Medical,Paid Off,2023-03-20
+1883,684,13725,12,12.79,Education,Default,2022-07-29
+1884,376,19395,48,16.84,Vehicle,Default,2026-04-18
+1885,374,29094,24,16.7,Business Expansion,Current,2025-04-27
+1886,707,20070,24,21.58,Debt Consolidation,Paid Off,2026-02-18
+1887,92,42120,48,17.86,Education,Default,2024-08-27
+1888,1885,37981,12,9.53,Education,Paid Off,2023-04-20
+1889,1640,44336,6,21.12,Education,Current,2025-06-13
+1890,805,46953,12,11.56,Medical,Default,2022-01-01
+1891,406,28071,6,20.7,Education,Paid Off,2022-04-17
+1892,1711,44131,48,19.59,Wedding,Paid Off,2024-05-21
+1893,1916,82302,36,13.59,Debt Consolidation,Current,2024-10-21
+1894,1359,17403,6,12.51,Vehicle,Current,2024-03-16
+1895,140,27560,36,18.33,Medical,Default,2023-12-29
+1896,1730,24368,48,13.46,Business Expansion,Current,2022-06-10
+1897,1115,36858,12,21.44,Debt Consolidation,Current,2025-07-21
+1898,738,27867,24,18.39,Business Expansion,Current,2024-06-14
+1899,408,19437,36,15.63,Wedding,Paid Off,2023-05-29
+1900,891,13994,6,16.47,Wedding,Paid Off,2024-06-10
+1901,743,48363,24,11.73,Debt Consolidation,Current,2024-01-19
+1902,1500,56610,36,19.13,Wedding,Current,2023-12-10
+1903,623,29097,36,12.17,Education,Current,2025-02-20
+1904,139,64923,36,14.18,Home Renovation,Paid Off,2026-03-12
+1905,1375,34430,12,15.03,Education,Default,2024-12-13
+1906,870,22842,6,16.83,Home Renovation,Default,2023-11-04
+1907,348,52551,24,20.95,Home Renovation,Current,2024-10-26
+1908,1125,14820,48,12.91,Medical,Current,2025-08-18
+1909,1441,54163,60,15.48,Wedding,Current,2022-03-31
+1910,1348,19847,60,12.66,Home Renovation,Current,2025-07-04
+1911,400,34562,48,19.79,Vehicle,Default,2026-01-10
+1912,1667,64147,48,17.4,Education,Current,2024-10-01
+1913,1753,35530,36,18.87,Debt Consolidation,Paid Off,2025-08-19
+1914,1649,26709,48,19.59,Medical,Current,2022-03-20
+1915,1670,48468,6,17.16,Education,Default,2025-12-31
+1916,285,23982,60,18.7,Home Renovation,Current,2022-09-27
+1917,860,48353,36,19.93,Home Renovation,Paid Off,2022-09-02
+1918,120,40739,36,17.47,Medical,Default,2022-05-08
+1919,611,35218,6,20.22,Debt Consolidation,Current,2023-07-23
+1920,546,36643,12,17.69,Home Renovation,Default,2026-02-19
+1921,1858,49279,24,19.97,Wedding,Default,2023-10-11
+1922,1404,29507,12,20.82,Wedding,Current,2025-04-16
+1923,1305,60049,24,15.95,Vehicle,Default,2025-09-22
+1924,1845,27746,36,19.97,Home Renovation,Default,2025-10-03
+1925,1762,28039,6,11.91,Business Expansion,Default,2026-04-09
+1926,1564,22231,12,18.61,Education,Paid Off,2022-06-21
+1927,1337,55494,36,10.06,Education,Default,2025-05-31
+1928,499,45607,60,15.82,Wedding,Current,2022-12-21
+1929,1014,21462,60,20.03,Medical,Paid Off,2022-01-07
+1930,442,48086,24,16.51,Medical,Current,2022-08-30
+1931,333,46463,36,16.6,Home Renovation,Current,2025-11-27
+1932,154,16773,48,21.13,Home Renovation,Current,2022-06-30
+1933,1329,22137,6,11.78,Education,Paid Off,2022-06-26
+1934,132,48935,24,16.89,Debt Consolidation,Current,2022-02-11
+1935,1081,41238,12,19.36,Wedding,Current,2023-03-22
+1936,508,33558,24,15.25,Education,Paid Off,2026-01-23
+1937,1135,62164,24,19.97,Debt Consolidation,Current,2025-08-08
+1938,891,34334,12,18.84,Education,Default,2026-02-20
+1939,1128,31366,24,10.17,Medical,Current,2025-12-16
+1940,663,57603,12,12.99,Medical,Current,2025-03-03
+1941,1896,43957,36,12.32,Medical,Current,2023-01-21
+1942,195,17965,12,11.71,Medical,Current,2023-08-28
+1943,885,41950,60,14.99,Vehicle,Default,2022-07-09
+1944,1599,32357,24,16.73,Debt Consolidation,Current,2023-12-16
+1945,1807,29902,60,16.04,Wedding,Current,2025-07-16
+1946,1846,17573,12,9.96,Vehicle,Default,2025-04-13
+1947,185,56210,12,16.22,Wedding,Default,2023-03-08
+1948,1783,28245,36,13.84,Debt Consolidation,Current,2025-10-28
+1949,498,19205,24,12.09,Business Expansion,Current,2025-12-03
+1950,1792,35517,48,19.87,Home Renovation,Paid Off,2023-07-05
+1951,229,17373,48,19.17,Education,Current,2023-06-13
+1952,1911,24875,36,12.76,Business Expansion,Current,2022-08-25
+1953,271,16609,60,17.39,Education,Paid Off,2024-08-31
+1954,961,55346,36,16.84,Business Expansion,Current,2024-02-02
+1955,1034,24230,36,17.73,Medical,Current,2022-03-11
+1956,1449,16410,60,10.81,Debt Consolidation,Current,2024-01-05
+1957,788,19476,6,11.48,Medical,Current,2024-08-31
+1958,1888,30633,24,17.6,Education,Default,2022-07-25
+1959,1568,13431,24,13.33,Business Expansion,Current,2024-08-14
+1960,28,33564,12,18.9,Debt Consolidation,Current,2024-06-18
+1961,241,43024,48,15.21,Wedding,Current,2025-03-25
+1962,6,49113,36,18.64,Debt Consolidation,Current,2024-08-27
+1963,1113,25753,12,12.66,Business Expansion,Current,2024-02-04
+1964,1936,21365,24,15.53,Medical,Default,2024-04-01
+1965,1001,23423,6,21.63,Debt Consolidation,Paid Off,2023-04-25
+1966,140,81321,48,10.85,Debt Consolidation,Current,2024-05-22
+1967,1955,37796,24,21.42,Business Expansion,Paid Off,2024-03-31
+1968,1688,50840,6,11.55,Medical,Current,2022-12-07
+1969,822,59331,48,21.57,Education,Current,2024-12-09
+1970,648,20578,48,18.9,Wedding,Default,2022-09-24
+1971,585,55514,24,19.36,Home Renovation,Default,2022-04-21
+1972,1522,41439,24,19.41,Debt Consolidation,Current,2022-10-17
+1973,1548,86046,24,15.23,Vehicle,Paid Off,2022-12-05
+1974,1484,77970,6,17.73,Education,Current,2023-02-15
+1975,1462,41962,24,13.34,Education,Default,2023-01-14
+1976,237,17149,12,14.96,Education,Default,2026-01-23
+1977,1510,25445,12,18.06,Medical,Default,2026-05-08
+1978,1291,40073,6,15.47,Home Renovation,Current,2023-12-07
+1979,1301,18962,36,16.37,Wedding,Current,2024-03-18
+1980,1501,54135,12,20.91,Vehicle,Current,2025-09-30
+1981,269,20461,36,18.33,Home Renovation,Default,2026-04-12
+1982,1928,44097,36,11.11,Education,Paid Off,2026-04-12
+1983,14,18016,36,19.17,Debt Consolidation,Default,2023-08-03
+1984,1902,45712,60,18.63,Business Expansion,Paid Off,2024-05-19
+1985,994,33765,36,16.18,Vehicle,Default,2023-12-12
+1986,985,16728,60,18.76,Home Renovation,Current,2025-04-16
+1987,804,55630,12,20.57,Debt Consolidation,Paid Off,2022-12-31
+1988,1989,30774,12,14.11,Business Expansion,Current,2023-11-28
+1989,1810,71757,6,17.13,Vehicle,Paid Off,2026-03-20
+1990,1052,50653,6,17.57,Vehicle,Paid Off,2022-10-10
+1991,38,35121,12,10.05,Vehicle,Paid Off,2023-09-11
+1992,1731,32579,6,13.74,Education,Default,2025-09-01
+1993,1424,48963,36,11.38,Vehicle,Current,2023-09-30
+1994,1827,51866,60,19.77,Medical,Paid Off,2022-03-13
+1995,546,10000,36,11.74,Wedding,Current,2024-03-26
+1996,789,53026,48,19.93,Debt Consolidation,Current,2024-08-10
+1997,599,39117,6,13.83,Home Renovation,Current,2026-02-09
+1998,1969,12880,60,20.28,Education,Default,2022-01-26
+1999,1759,43402,24,11.11,Vehicle,Paid Off,2024-11-04
+2000,1229,16153,60,15.18,Wedding,Current,2024-09-22
+2001,782,141086,60,14.52,Home Renovation,Default,2026-04-29
+2002,1207,45897,24,14.81,Wedding,Current,2026-02-28
+2003,1213,79700,6,17.05,Business Expansion,Default,2024-07-11
+2004,466,30671,24,19.26,Medical,Current,2025-12-29
+2005,1315,55753,48,21.65,Debt Consolidation,Paid Off,2022-08-17
+2006,1107,38461,12,21.76,Debt Consolidation,Default,2024-12-24
+2007,1263,58279,36,20.38,Education,Current,2022-06-13
+2008,546,36367,6,13.71,Business Expansion,Default,2025-12-20
+2009,1180,73562,24,11.97,Wedding,Default,2025-06-12
+2010,1103,23365,36,14.94,Medical,Default,2024-08-09
+2011,377,36594,6,11.02,Vehicle,Current,2024-09-29
+2012,242,70777,24,10.13,Wedding,Current,2025-05-12
+2013,1475,15960,24,12.65,Wedding,Current,2023-11-23
+2014,1926,159127,24,19.09,Business Expansion,Paid Off,2022-02-18
+2015,428,20925,24,11.73,Vehicle,Current,2024-01-01
+2016,1822,16831,6,15.08,Wedding,Paid Off,2023-09-02
+2017,1220,29214,6,16.95,Wedding,Paid Off,2024-01-02
+2018,1792,16229,6,16.14,Education,Current,2024-03-22
+2019,1106,67568,12,10.55,Education,Paid Off,2022-07-13
+2020,1826,129832,60,11.31,Vehicle,Default,2024-10-07
+2021,372,46205,24,13.82,Wedding,Paid Off,2024-07-27
+2022,9,31804,48,12.55,Debt Consolidation,Current,2026-02-09
+2023,1346,17189,48,16.61,Home Renovation,Paid Off,2022-03-25
+2024,1147,43450,24,14.16,Business Expansion,Default,2022-10-28
+2025,206,16258,60,17.47,Vehicle,Default,2022-07-27
+2026,1628,34296,48,21.75,Medical,Paid Off,2022-06-11
+2027,206,42088,60,18.87,Vehicle,Current,2024-05-15
+2028,345,16176,6,11.8,Medical,Default,2026-03-10
+2029,1614,43143,60,17.66,Debt Consolidation,Current,2022-06-12
+2030,1571,26551,36,21.56,Business Expansion,Default,2023-01-28
+2031,51,32770,24,21.94,Business Expansion,Default,2025-06-14
+2032,610,15649,48,20.18,Wedding,Current,2023-05-15
+2033,1200,18718,6,14.18,Education,Default,2024-08-26
+2034,1169,28437,36,12.93,Debt Consolidation,Paid Off,2025-11-11
+2035,979,35157,12,12.96,Home Renovation,Default,2025-10-07
+2036,518,22356,48,14.48,Wedding,Current,2023-01-07
+2037,1438,30952,24,12.91,Education,Current,2024-04-13
+2038,1936,17842,6,19.28,Education,Current,2025-09-07
+2039,1897,37496,24,12.84,Debt Consolidation,Current,2025-05-11
+2040,237,15401,60,13.48,Education,Default,2023-03-30
+2041,1649,15941,6,18.36,Home Renovation,Current,2023-03-29
+2042,342,29524,48,13.1,Business Expansion,Paid Off,2025-12-29
+2043,1705,25567,36,16.85,Business Expansion,Current,2025-07-24
+2044,1347,22599,24,16.27,Business Expansion,Current,2024-09-01
+2045,836,25346,6,13.79,Medical,Paid Off,2023-10-17
+2046,968,30436,36,11.4,Vehicle,Default,2026-03-01
+2047,1694,47360,12,16.15,Wedding,Paid Off,2022-12-15
+2048,1407,26037,36,12.7,Wedding,Current,2022-03-08
+2049,1319,27036,48,21.6,Vehicle,Default,2025-07-17
+2050,171,61900,48,21.81,Education,Default,2022-06-20
+2051,487,46358,60,21.81,Medical,Paid Off,2024-01-27
+2052,1886,33411,24,18.89,Wedding,Default,2024-07-13
+2053,1550,31432,36,9.87,Business Expansion,Default,2025-07-03
+2054,368,70819,12,17.3,Vehicle,Default,2025-03-02
+2055,135,71863,36,21.95,Debt Consolidation,Default,2022-02-17
+2056,951,42577,24,16.46,Education,Paid Off,2024-10-02
+2057,1244,17046,36,21.01,Vehicle,Default,2022-09-27
+2058,1437,11119,48,21.36,Home Renovation,Default,2022-09-10
+2059,1025,16074,36,12.23,Business Expansion,Default,2022-08-15
+2060,1053,18732,24,11.73,Debt Consolidation,Default,2022-11-22
+2061,1056,17595,60,21.74,Vehicle,Default,2025-01-31
+2062,1826,29988,24,18.89,Business Expansion,Current,2024-05-06
+2063,1468,66245,24,13.49,Wedding,Default,2024-01-14
+2064,1386,41711,6,17.8,Wedding,Paid Off,2025-11-07
+2065,1838,56575,60,13.47,Business Expansion,Current,2025-01-01
+2066,1386,61050,36,12.31,Vehicle,Paid Off,2024-04-07
+2067,310,31801,36,13.08,Education,Current,2024-07-09
+2068,1778,33107,12,14.5,Business Expansion,Paid Off,2022-01-07
+2069,1745,11710,24,19.04,Education,Paid Off,2025-09-05
+2070,320,60150,60,20.84,Business Expansion,Default,2024-02-25
+2071,1705,32229,60,14.73,Vehicle,Current,2024-05-06
+2072,1187,13621,12,17.46,Education,Default,2025-06-21
+2073,574,110004,12,17.12,Home Renovation,Current,2024-10-27
+2074,945,104387,48,16.63,Home Renovation,Default,2024-04-17
+2075,1421,38801,24,17.12,Business Expansion,Default,2022-12-07
+2076,518,51617,60,15.4,Medical,Default,2022-07-06
+2077,809,16872,6,18.79,Vehicle,Default,2025-09-01
+2078,1685,122231,48,15.89,Debt Consolidation,Paid Off,2023-01-31
+2079,688,17341,12,15.22,Debt Consolidation,Default,2026-01-20
+2080,410,70053,12,11.69,Education,Current,2025-12-30
+2081,543,29347,24,11.16,Home Renovation,Default,2022-05-13
+2082,207,10000,12,16.72,Education,Default,2024-07-29
+2083,946,34004,60,17.04,Debt Consolidation,Paid Off,2023-05-11
+2084,1506,18385,12,21.66,Wedding,Current,2024-10-21
+2085,611,49831,6,19.55,Debt Consolidation,Default,2023-11-10
+2086,1648,21582,12,12.56,Home Renovation,Default,2026-01-18
+2087,92,36338,6,18.86,Wedding,Paid Off,2025-10-28
+2088,121,74888,36,20.34,Debt Consolidation,Default,2024-08-20
+2089,56,58624,36,10.38,Medical,Paid Off,2024-05-04
+2090,826,22827,60,16.22,Debt Consolidation,Paid Off,2026-01-05
+2091,484,28844,48,17.59,Wedding,Paid Off,2024-12-29
+2092,46,34508,6,14.98,Home Renovation,Paid Off,2026-01-26
+2093,1855,32615,24,19.65,Debt Consolidation,Paid Off,2026-01-25
+2094,711,45293,6,14.04,Business Expansion,Default,2026-01-07
+2095,959,38526,60,17.62,Debt Consolidation,Default,2024-05-27
+2096,1773,29971,6,10.8,Debt Consolidation,Paid Off,2023-06-22
+2097,95,46425,48,18.92,Wedding,Current,2022-08-17
+2098,884,19566,12,14.08,Medical,Current,2025-09-06
+2099,652,59206,12,20.91,Education,Current,2024-09-15
+2100,272,46899,24,10.71,Wedding,Current,2025-08-07
+2101,661,68094,6,15.23,Vehicle,Paid Off,2025-12-23
+2102,1646,11646,12,18.96,Medical,Default,2023-12-03
+2103,143,36746,60,15.06,Vehicle,Paid Off,2026-06-01
+2104,1644,25154,60,12.72,Business Expansion,Paid Off,2023-07-18
+2105,942,21327,6,19.02,Business Expansion,Default,2022-10-31
+2106,955,145597,24,9.82,Business Expansion,Default,2024-01-30
+2107,670,64668,24,18.42,Wedding,Current,2023-09-21
+2108,1426,36835,12,16.6,Vehicle,Paid Off,2023-09-17
+2109,219,13541,60,15.0,Education,Default,2023-08-27
+2110,1202,29834,60,19.56,Education,Current,2022-09-21
+2111,862,24914,48,13.15,Medical,Current,2024-02-26
+2112,1635,44902,60,12.35,Business Expansion,Current,2023-03-10
+2113,318,18166,24,11.35,Medical,Current,2022-01-25
+2114,741,18005,24,18.51,Debt Consolidation,Default,2026-03-07
+2115,1717,59725,48,14.57,Education,Paid Off,2025-06-20
+2116,836,87651,24,17.55,Debt Consolidation,Default,2025-04-17
+2117,1456,137855,48,13.43,Vehicle,Default,2024-02-06
+2118,1251,19192,36,17.6,Vehicle,Current,2024-12-11
+2119,1570,48250,12,15.55,Home Renovation,Current,2024-02-17
+2120,435,25226,60,21.34,Education,Current,2023-12-03
+2121,1180,10922,24,12.08,Medical,Paid Off,2022-11-04
+2122,1010,31380,48,19.23,Wedding,Default,2022-09-02
+2123,1657,43036,12,13.96,Business Expansion,Paid Off,2024-07-29
+2124,931,48167,60,20.83,Debt Consolidation,Default,2026-03-09
+2125,565,43894,48,20.73,Education,Paid Off,2026-02-27
+2126,1068,33301,24,17.8,Wedding,Default,2024-03-27
+2127,327,65169,6,21.4,Home Renovation,Current,2024-11-05
+2128,628,60662,24,16.42,Debt Consolidation,Paid Off,2024-12-31
+2129,148,27030,60,16.22,Debt Consolidation,Default,2022-06-12
+2130,702,47647,6,15.08,Education,Paid Off,2024-12-06
+2131,641,20230,12,12.7,Education,Paid Off,2026-02-23
+2132,1941,39622,60,21.2,Education,Default,2023-05-17
+2133,952,16752,60,18.47,Home Renovation,Current,2022-12-30
+2134,1699,47807,48,12.82,Home Renovation,Default,2023-07-23
+2135,463,21885,60,11.88,Education,Default,2022-05-11
+2136,236,34956,48,13.28,Education,Current,2023-03-02
+2137,943,95289,12,16.82,Vehicle,Current,2025-04-05
+2138,956,50469,36,10.73,Home Renovation,Paid Off,2026-05-20
+2139,534,77710,24,19.38,Education,Paid Off,2022-05-30
+2140,528,34174,36,10.96,Vehicle,Current,2022-06-20
+2141,1592,52975,12,10.75,Education,Current,2025-04-22
+2142,1688,41027,48,15.59,Home Renovation,Default,2025-03-11
+2143,1689,71258,48,14.87,Wedding,Default,2022-08-17
+2144,1218,49166,36,19.22,Business Expansion,Current,2023-02-03
+2145,1557,29382,60,17.18,Home Renovation,Current,2024-07-23
+2146,1570,10000,24,18.93,Medical,Default,2025-05-16
+2147,1164,31433,36,17.39,Business Expansion,Default,2023-11-05
+2148,112,14444,36,15.93,Medical,Default,2025-08-14
+2149,334,36877,24,20.34,Medical,Current,2023-05-25
+2150,924,31667,24,17.97,Medical,Current,2024-10-27
+2151,333,31847,60,15.0,Education,Current,2026-03-30
+2152,1145,69471,36,9.58,Vehicle,Default,2024-11-09
+2153,884,64595,36,11.54,Debt Consolidation,Paid Off,2022-05-15
+2154,258,13557,36,17.91,Debt Consolidation,Current,2022-07-13
+2155,443,14358,36,13.78,Business Expansion,Current,2025-11-07
+2156,746,58101,12,11.92,Debt Consolidation,Current,2022-08-11
+2157,1982,16737,12,12.17,Medical,Default,2024-10-24
+2158,113,59560,24,19.08,Home Renovation,Default,2024-08-24
+2159,1897,24026,60,13.25,Education,Default,2025-06-02
+2160,614,36305,48,17.9,Education,Current,2023-10-26
+2161,1173,37264,12,19.08,Education,Paid Off,2026-05-29
+2162,1081,75395,12,17.13,Medical,Paid Off,2022-11-18
+2163,61,33833,48,21.76,Business Expansion,Paid Off,2025-08-31
+2164,45,54844,36,19.25,Education,Current,2023-07-06
+2165,655,36042,24,15.4,Medical,Default,2023-09-14
+2166,756,108379,12,13.33,Medical,Paid Off,2026-01-28
+2167,1902,33981,60,13.44,Vehicle,Paid Off,2023-09-23
+2168,1760,71261,48,14.42,Home Renovation,Default,2024-05-04
+2169,600,13175,36,10.19,Medical,Default,2024-04-17
+2170,771,46382,60,19.57,Debt Consolidation,Current,2024-07-24
+2171,645,31378,24,9.74,Education,Paid Off,2025-12-13
+2172,639,55160,12,17.78,Medical,Paid Off,2023-06-09
+2173,1963,20532,24,9.8,Debt Consolidation,Current,2024-05-25
+2174,124,14361,36,13.57,Wedding,Current,2025-02-20
+2175,1159,24195,12,19.47,Business Expansion,Default,2025-06-18
+2176,1349,26095,36,20.21,Home Renovation,Current,2022-08-07
+2177,787,52891,12,11.51,Vehicle,Current,2026-01-20
+2178,919,136676,60,16.91,Debt Consolidation,Current,2022-04-05
+2179,1343,29140,60,14.38,Vehicle,Paid Off,2025-12-17
+2180,992,38007,12,13.0,Business Expansion,Current,2025-05-27
+2181,1408,89805,36,10.24,Wedding,Default,2022-04-25
+2182,1352,25759,24,12.95,Vehicle,Current,2024-01-27
+2183,681,16999,24,10.89,Wedding,Default,2022-10-03
+2184,373,38584,6,13.56,Wedding,Current,2026-05-07
+2185,1142,46105,36,19.8,Business Expansion,Paid Off,2022-11-05
+2186,1500,54499,24,16.68,Home Renovation,Default,2025-02-24
+2187,1354,83955,36,12.57,Business Expansion,Default,2025-03-18
+2188,1502,49463,60,12.76,Debt Consolidation,Default,2024-12-23
+2189,1243,20378,24,18.12,Debt Consolidation,Current,2022-10-15
+2190,370,25696,6,20.38,Wedding,Paid Off,2025-12-03
+2191,1824,25753,60,13.42,Debt Consolidation,Current,2024-01-10
+2192,121,21356,36,18.84,Education,Default,2023-03-16
+2193,1550,49758,24,15.35,Medical,Default,2024-08-01
+2194,1295,41665,24,11.99,Medical,Current,2025-12-12
+2195,491,80471,24,17.05,Education,Paid Off,2022-02-17
+2196,723,66632,6,17.53,Vehicle,Paid Off,2024-05-25
+2197,1113,54357,36,19.48,Home Renovation,Default,2024-12-18
+2198,1225,21898,48,14.17,Vehicle,Current,2025-03-04
+2199,159,33997,6,21.5,Debt Consolidation,Paid Off,2023-11-01
+2200,1086,14769,48,15.65,Medical,Default,2025-03-23
+2201,1683,25194,60,10.34,Business Expansion,Paid Off,2022-06-04
+2202,1920,57070,6,21.68,Home Renovation,Current,2026-05-18
+2203,170,50499,48,11.48,Debt Consolidation,Default,2024-11-17
+2204,110,28911,6,16.67,Business Expansion,Default,2024-08-17
+2205,679,61948,60,21.91,Home Renovation,Current,2026-03-20
+2206,39,37588,60,14.89,Vehicle,Paid Off,2023-07-22
+2207,756,27041,36,20.62,Education,Current,2026-02-22
+2208,358,105854,60,13.63,Wedding,Current,2023-01-08
+2209,1779,104667,48,13.75,Debt Consolidation,Default,2024-12-16
+2210,131,18904,60,18.74,Home Renovation,Paid Off,2024-06-04
+2211,1655,20904,36,16.68,Business Expansion,Default,2022-01-14
+2212,910,24391,36,9.74,Medical,Default,2023-04-07
+2213,839,53487,36,11.38,Business Expansion,Default,2023-04-02
+2214,306,20387,60,19.1,Vehicle,Current,2024-12-26
+2215,799,32773,60,17.82,Debt Consolidation,Current,2026-04-26
+2216,1394,32063,48,21.07,Debt Consolidation,Default,2026-01-04
+2217,330,82015,48,11.41,Education,Current,2026-05-03
+2218,314,22091,12,13.36,Home Renovation,Current,2022-07-26
+2219,744,32216,48,17.02,Debt Consolidation,Default,2022-03-22
+2220,115,151601,12,16.25,Medical,Current,2022-05-22
+2221,1335,78132,24,21.11,Education,Default,2025-09-09
+2222,929,13570,12,13.29,Medical,Current,2024-05-18
+2223,1803,49581,12,21.2,Debt Consolidation,Default,2023-03-21
+2224,1840,17716,24,9.84,Home Renovation,Paid Off,2024-06-19
+2225,1818,24138,36,9.82,Debt Consolidation,Current,2026-03-04
+2226,415,52311,60,12.11,Vehicle,Current,2022-04-11
+2227,797,79393,36,14.49,Debt Consolidation,Current,2023-02-26
+2228,798,46533,36,16.88,Home Renovation,Current,2022-09-13
+2229,1952,30880,12,15.83,Wedding,Current,2025-03-30
+2230,747,29773,48,11.02,Education,Paid Off,2026-03-30
+2231,819,40036,6,21.26,Business Expansion,Current,2026-02-25
+2232,252,51078,24,18.87,Vehicle,Current,2023-10-11
+2233,1712,61424,12,12.13,Debt Consolidation,Paid Off,2022-07-05
+2234,1729,25650,48,14.0,Business Expansion,Current,2023-06-07
+2235,492,28620,6,21.31,Home Renovation,Current,2022-02-03
+2236,1455,20242,36,19.54,Debt Consolidation,Default,2024-03-30
+2237,1692,60708,6,13.93,Debt Consolidation,Current,2023-09-27
+2238,757,40682,6,14.93,Medical,Paid Off,2025-08-28
+2239,1771,24973,12,22.0,Wedding,Current,2022-06-22
+2240,1798,19432,60,19.63,Home Renovation,Current,2024-08-23
+2241,1986,23563,24,18.62,Home Renovation,Current,2023-10-25
+2242,319,90258,12,20.09,Business Expansion,Current,2022-12-30
+2243,1994,63882,6,11.1,Education,Current,2022-11-15
+2244,74,88352,60,15.37,Home Renovation,Paid Off,2022-03-21
+2245,1385,52696,48,19.53,Wedding,Default,2026-02-24
+2246,778,111243,24,14.15,Debt Consolidation,Current,2024-04-29
+2247,308,23510,12,14.74,Business Expansion,Default,2022-12-24
+2248,770,42785,12,18.77,Education,Paid Off,2025-10-01
+2249,1621,35317,24,20.49,Debt Consolidation,Current,2022-08-13
+2250,565,14513,12,9.87,Medical,Current,2023-02-22
+2251,1045,47982,36,17.32,Business Expansion,Default,2023-06-28
+2252,1983,220233,24,9.86,Medical,Paid Off,2022-02-22
+2253,1560,59651,6,20.61,Wedding,Current,2022-03-12
+2254,614,60250,12,20.92,Business Expansion,Paid Off,2022-04-06
+2255,1777,90854,36,19.03,Business Expansion,Current,2026-01-19
+2256,804,98903,12,11.48,Medical,Paid Off,2022-01-31
+2257,1298,25462,12,10.65,Home Renovation,Current,2022-05-16
+2258,1625,36680,36,15.31,Debt Consolidation,Current,2024-04-30
+2259,353,48656,48,15.01,Debt Consolidation,Default,2025-05-20
+2260,1680,58398,60,9.51,Vehicle,Current,2024-09-02
+2261,1572,37532,24,11.1,Business Expansion,Current,2025-09-06
+2262,14,59621,24,21.46,Wedding,Default,2025-09-30
+2263,566,32449,6,15.47,Debt Consolidation,Current,2026-03-14
+2264,45,25163,48,11.95,Business Expansion,Current,2023-03-26
+2265,987,58013,12,19.57,Education,Paid Off,2022-10-20
+2266,1243,56256,60,10.53,Wedding,Default,2022-07-14
+2267,500,18399,36,13.03,Home Renovation,Default,2025-06-13
+2268,1400,17211,12,12.33,Wedding,Default,2023-01-14
+2269,1371,25608,60,13.26,Vehicle,Current,2025-12-26
+2270,288,59020,60,16.88,Business Expansion,Paid Off,2024-11-24
+2271,1913,26368,24,19.0,Medical,Paid Off,2022-09-27
+2272,1940,72208,36,14.18,Business Expansion,Paid Off,2022-10-25
+2273,1664,13099,60,21.18,Wedding,Default,2022-03-12
+2274,1209,12980,36,17.4,Education,Default,2023-02-10
+2275,1595,28677,6,11.29,Debt Consolidation,Paid Off,2022-03-11
+2276,1119,39169,12,11.52,Home Renovation,Current,2023-10-23
+2277,1565,35370,48,15.51,Education,Default,2023-12-06
+2278,644,47608,60,20.37,Vehicle,Default,2025-03-28
+2279,1316,47481,36,21.91,Business Expansion,Current,2024-07-17
+2280,1244,65935,24,16.32,Wedding,Current,2022-08-30
+2281,260,43727,24,17.69,Medical,Paid Off,2024-11-19
+2282,51,34158,24,21.96,Medical,Current,2023-01-17
+2283,550,25609,24,19.59,Debt Consolidation,Paid Off,2024-09-25
+2284,480,31218,48,15.2,Wedding,Paid Off,2022-07-17
+2285,1442,24144,24,19.04,Home Renovation,Default,2023-06-23
+2286,131,26981,24,14.83,Business Expansion,Current,2022-02-22
+2287,964,57531,12,10.68,Debt Consolidation,Paid Off,2024-07-25
+2288,1209,18281,6,11.0,Medical,Paid Off,2025-12-30
+2289,53,31740,12,20.42,Vehicle,Current,2023-09-21
+2290,948,30890,36,16.42,Debt Consolidation,Default,2022-06-19
+2291,658,33585,48,11.78,Education,Current,2024-11-12
+2292,337,21451,12,20.0,Debt Consolidation,Current,2023-03-31
+2293,28,46077,6,11.98,Medical,Current,2026-03-05
+2294,929,33515,48,17.01,Business Expansion,Default,2022-11-07
+2295,951,67490,48,16.06,Medical,Paid Off,2024-12-27
+2296,488,11848,48,12.38,Education,Current,2024-12-23
+2297,428,85405,24,11.48,Education,Current,2025-10-25
+2298,408,49064,60,17.43,Education,Current,2025-06-20
+2299,1053,46611,60,11.4,Vehicle,Paid Off,2025-06-02
+2300,1371,12725,12,12.98,Medical,Default,2024-03-31
+2301,105,15101,36,20.76,Vehicle,Current,2024-05-12
+2302,908,93934,36,13.52,Medical,Default,2026-01-17
+2303,959,10000,6,10.44,Business Expansion,Paid Off,2025-12-21
+2304,1763,63139,60,13.4,Business Expansion,Default,2026-02-11
+2305,451,26545,48,21.49,Debt Consolidation,Default,2022-05-02
+2306,1783,15232,36,11.25,Debt Consolidation,Default,2024-09-11
+2307,1550,20096,12,19.06,Vehicle,Current,2023-05-12
+2308,1222,15843,12,17.58,Business Expansion,Current,2024-03-11
+2309,75,58341,12,12.61,Home Renovation,Paid Off,2023-12-19
+2310,420,26771,12,21.54,Education,Current,2023-07-20
+2311,2000,25339,36,11.04,Business Expansion,Current,2026-02-23
+2312,1066,20809,60,11.4,Education,Paid Off,2024-06-27
+2313,1015,31162,60,12.94,Home Renovation,Current,2023-11-02
+2314,1936,15093,60,10.97,Business Expansion,Current,2023-09-30
+2315,1107,66819,6,19.15,Vehicle,Paid Off,2025-05-10
+2316,1427,36331,12,17.76,Debt Consolidation,Current,2023-09-04
+2317,1788,54114,6,16.27,Vehicle,Current,2025-06-03
+2318,1791,29693,12,10.38,Wedding,Default,2026-03-25
+2319,474,76577,24,20.44,Vehicle,Current,2022-03-25
+2320,1671,22201,24,10.91,Vehicle,Paid Off,2024-08-13
+2321,332,21135,48,11.61,Wedding,Current,2025-12-24
+2322,1329,30998,36,18.98,Business Expansion,Current,2023-04-06
+2323,271,39757,6,10.61,Business Expansion,Default,2026-02-07
+2324,1825,50537,48,20.31,Debt Consolidation,Current,2023-05-10
+2325,1984,111555,60,15.68,Vehicle,Current,2025-12-07
+2326,1331,108807,36,10.21,Debt Consolidation,Current,2022-08-04
+2327,864,56543,24,20.03,Medical,Default,2026-02-09
+2328,1890,60413,24,17.5,Vehicle,Default,2023-11-05
+2329,998,49589,60,19.95,Home Renovation,Current,2024-01-01
+2330,1961,53823,6,10.76,Education,Current,2024-09-21
+2331,1224,196369,48,15.69,Vehicle,Default,2025-04-25
+2332,497,157033,60,12.82,Debt Consolidation,Default,2026-05-19
+2333,1752,28111,60,15.6,Debt Consolidation,Current,2025-05-27
+2334,457,76418,48,14.2,Debt Consolidation,Current,2024-11-28
+2335,1192,11178,60,14.28,Home Renovation,Paid Off,2025-05-17
+2336,1272,64986,48,19.98,Home Renovation,Current,2025-08-09
+2337,1327,41361,48,10.69,Education,Current,2026-04-14
+2338,1211,10565,24,16.75,Business Expansion,Default,2025-12-23
+2339,407,24362,36,19.69,Wedding,Current,2026-01-11
+2340,1400,44065,6,13.84,Debt Consolidation,Default,2024-06-20
+2341,725,66204,36,16.67,Home Renovation,Default,2024-12-06
+2342,50,22860,36,19.66,Wedding,Current,2025-07-10
+2343,1740,46877,36,17.86,Education,Current,2022-02-22
+2344,1489,15721,48,11.76,Medical,Current,2025-07-15
+2345,422,29571,6,13.15,Debt Consolidation,Current,2024-04-24
+2346,978,19717,6,18.61,Medical,Current,2023-06-04
+2347,763,26553,60,13.8,Medical,Paid Off,2023-05-25
+2348,287,34016,36,19.3,Vehicle,Current,2023-10-27
+2349,741,22722,60,21.89,Debt Consolidation,Current,2023-06-23
+2350,1626,50267,12,12.12,Debt Consolidation,Paid Off,2026-04-28
+2351,1708,40918,48,17.6,Vehicle,Default,2026-02-25
+2352,1575,58332,24,19.26,Debt Consolidation,Current,2022-12-19
+2353,715,33472,36,20.21,Medical,Default,2023-11-15
+2354,1658,45944,48,16.23,Medical,Current,2023-04-12
+2355,557,28923,24,10.77,Home Renovation,Current,2026-01-18
+2356,34,54740,60,14.58,Vehicle,Current,2025-06-27
+2357,1108,40494,60,11.83,Education,Default,2024-02-23
+2358,887,10475,24,20.2,Medical,Default,2024-09-21
+2359,130,14943,24,19.57,Debt Consolidation,Default,2024-01-11
+2360,341,53570,12,21.49,Home Renovation,Paid Off,2023-10-24
+2361,1820,72079,6,11.87,Business Expansion,Current,2023-09-28
+2362,1756,42574,60,17.53,Debt Consolidation,Default,2023-08-30
+2363,1653,60099,48,16.23,Business Expansion,Default,2024-03-26
+2364,236,26453,60,10.45,Home Renovation,Current,2022-07-11
+2365,716,35441,60,16.97,Vehicle,Current,2025-09-20
+2366,203,12718,24,11.32,Business Expansion,Current,2023-11-28
+2367,1917,10000,24,14.46,Home Renovation,Current,2024-02-28
+2368,633,43661,60,19.68,Business Expansion,Current,2023-08-25
+2369,1282,62890,48,21.63,Education,Paid Off,2023-10-26
+2370,1453,26105,36,19.83,Business Expansion,Default,2023-05-19
+2371,40,57199,12,17.84,Home Renovation,Default,2023-07-15
+2372,895,281317,36,12.31,Education,Default,2025-11-24
+2373,1901,34659,12,20.44,Wedding,Default,2024-06-20
+2374,809,95961,12,11.32,Education,Current,2023-08-31
+2375,315,21293,6,20.22,Debt Consolidation,Current,2024-09-16
+2376,1843,21878,36,14.68,Business Expansion,Current,2025-02-02
+2377,121,80794,12,14.65,Business Expansion,Default,2024-11-28
+2378,908,45963,36,17.34,Wedding,Paid Off,2024-03-03
+2379,173,36643,24,18.33,Debt Consolidation,Default,2024-01-16
+2380,417,76966,24,14.89,Education,Paid Off,2024-01-17
+2381,383,59507,24,16.25,Wedding,Default,2022-06-07
+2382,1017,27648,12,13.52,Education,Current,2025-12-09
+2383,1792,81482,48,16.74,Debt Consolidation,Current,2022-07-17
+2384,858,42444,48,18.35,Medical,Current,2025-01-01
+2385,951,18024,6,19.59,Education,Current,2025-05-22
+2386,1197,93565,60,13.85,Wedding,Current,2025-12-08
+2387,1509,100571,48,19.76,Vehicle,Current,2023-04-04
+2388,1659,29343,24,16.68,Vehicle,Paid Off,2022-04-19
+2389,1374,24856,48,14.97,Vehicle,Default,2025-04-25
+2390,484,26128,6,21.41,Home Renovation,Current,2022-12-17
+2391,558,57906,48,15.11,Home Renovation,Current,2025-08-24
+2392,595,46994,24,15.46,Education,Default,2025-12-17
+2393,81,45619,6,18.03,Wedding,Paid Off,2022-05-14
+2394,1033,37027,24,16.62,Home Renovation,Current,2026-01-30
+2395,1365,66578,60,16.97,Wedding,Default,2024-06-01
+2396,1572,35319,12,21.83,Wedding,Paid Off,2023-03-17
+2397,1158,42652,36,13.37,Wedding,Paid Off,2025-11-28
+2398,1994,27723,24,13.63,Debt Consolidation,Current,2025-03-13
+2399,1720,19993,48,21.33,Debt Consolidation,Paid Off,2022-10-23
+2400,941,45105,48,21.75,Medical,Default,2025-04-16
+2401,1016,24882,6,21.64,Wedding,Current,2022-04-19
+2402,722,50454,24,16.84,Home Renovation,Current,2026-05-06
+2403,201,90387,48,10.3,Wedding,Current,2024-04-27
+2404,1973,24179,12,18.66,Business Expansion,Default,2023-05-25
+2405,1574,37035,12,19.95,Wedding,Current,2022-03-02
+2406,1551,25533,36,18.61,Home Renovation,Paid Off,2023-11-11
+2407,759,19645,6,21.33,Wedding,Default,2025-03-21
+2408,600,52737,60,14.34,Vehicle,Current,2024-04-14
+2409,1030,41871,60,15.43,Education,Current,2023-12-05
+2410,985,47491,6,13.39,Wedding,Default,2022-12-30
+2411,23,37551,36,20.49,Home Renovation,Current,2024-10-20
+2412,1059,14351,12,12.76,Education,Current,2023-02-15
+2413,247,24430,24,21.82,Home Renovation,Current,2025-07-20
+2414,140,16392,24,15.15,Business Expansion,Current,2022-07-12
+2415,1105,30822,24,9.76,Home Renovation,Default,2025-05-26
+2416,1793,75314,48,10.24,Home Renovation,Default,2024-02-04
+2417,1048,47378,12,9.52,Home Renovation,Paid Off,2024-12-19
+2418,668,35220,6,13.59,Home Renovation,Current,2023-09-20
+2419,753,24485,48,16.54,Education,Paid Off,2022-05-23
+2420,202,25729,12,17.46,Education,Default,2024-10-17
+2421,1555,20190,48,12.23,Home Renovation,Paid Off,2023-12-09
+2422,1506,58729,60,20.91,Medical,Paid Off,2025-05-13
+2423,1267,14105,48,11.71,Wedding,Default,2024-06-21
+2424,1201,26660,12,15.84,Home Renovation,Current,2024-06-30
+2425,1017,29977,48,9.98,Debt Consolidation,Current,2025-01-05
+2426,1634,24974,6,19.59,Medical,Paid Off,2023-10-01
+2427,968,25093,6,13.86,Business Expansion,Current,2023-01-05
+2428,1841,38564,48,11.59,Vehicle,Current,2022-07-24
+2429,1595,51072,12,17.04,Medical,Current,2025-06-09
+2430,2000,65820,36,21.11,Debt Consolidation,Paid Off,2025-01-27
+2431,1231,30139,36,19.3,Wedding,Paid Off,2022-08-27
+2432,883,23638,48,10.32,Medical,Current,2023-05-20
+2433,491,43097,12,12.49,Education,Current,2024-10-02
+2434,634,25530,36,10.02,Vehicle,Current,2022-05-01
+2435,1629,28260,60,18.35,Home Renovation,Current,2025-04-25
+2436,1011,25970,48,10.64,Medical,Default,2025-09-03
+2437,1301,10913,48,16.54,Business Expansion,Default,2025-12-09
+2438,1375,12396,48,14.43,Wedding,Current,2025-01-23
+2439,1894,15002,12,13.03,Vehicle,Paid Off,2022-10-05
+2440,977,114465,12,13.16,Vehicle,Current,2025-07-06
+2441,1716,41657,36,14.94,Vehicle,Default,2022-06-18
+2442,276,11097,6,15.64,Business Expansion,Default,2023-10-21
+2443,275,25414,36,17.12,Vehicle,Default,2023-09-19
+2444,764,124773,24,19.14,Home Renovation,Paid Off,2025-12-02
+2445,813,13718,48,19.89,Home Renovation,Default,2023-01-21
+2446,943,11143,24,20.65,Business Expansion,Default,2026-03-12
+2447,389,54375,48,11.67,Wedding,Current,2023-10-05
+2448,1384,26015,6,16.18,Medical,Default,2022-04-07
+2449,1116,19674,36,11.85,Home Renovation,Paid Off,2025-01-06
+2450,632,60200,60,20.42,Business Expansion,Default,2026-02-21
+2451,755,64018,48,20.12,Medical,Default,2024-11-07
+2452,864,54562,60,18.24,Home Renovation,Current,2023-03-16
+2453,837,12360,36,21.37,Wedding,Paid Off,2023-03-30
+2454,57,44706,24,10.41,Vehicle,Current,2023-02-21
+2455,352,44212,12,16.64,Home Renovation,Paid Off,2025-06-09
+2456,448,23432,6,21.03,Wedding,Current,2023-02-26
+2457,995,124322,6,21.05,Education,Current,2022-01-10
+2458,1008,30282,60,19.67,Education,Default,2023-11-09
+2459,1564,108086,36,19.83,Debt Consolidation,Paid Off,2024-02-01
+2460,1668,59824,36,10.06,Business Expansion,Default,2022-10-18
+2461,1953,27605,12,17.27,Vehicle,Current,2023-06-13
+2462,1808,122338,60,16.63,Medical,Current,2025-07-06
+2463,1414,54533,12,21.25,Wedding,Paid Off,2025-08-31
+2464,1964,111982,24,14.62,Vehicle,Current,2022-01-21
+2465,963,21674,36,14.21,Debt Consolidation,Default,2023-01-24
+2466,1960,36111,36,12.67,Wedding,Current,2022-01-22
+2467,1142,50069,60,14.44,Debt Consolidation,Current,2025-11-26
+2468,645,89633,36,11.11,Education,Current,2025-11-13
+2469,1987,39243,6,17.47,Education,Current,2022-08-25
+2470,96,71913,36,10.33,Medical,Default,2025-01-04
+2471,764,10528,12,21.29,Wedding,Current,2023-06-10
+2472,1660,21651,60,21.13,Medical,Paid Off,2024-03-26
+2473,539,28271,48,13.08,Medical,Paid Off,2025-03-13
+2474,1112,14487,6,19.01,Debt Consolidation,Current,2024-03-19
+2475,554,38120,12,21.38,Debt Consolidation,Default,2025-02-10
+2476,1374,41416,36,12.01,Home Renovation,Default,2024-11-27
+2477,665,10000,36,15.49,Education,Current,2022-08-17
+2478,1056,49636,6,19.91,Home Renovation,Paid Off,2023-01-13
+2479,2,10000,60,19.58,Vehicle,Current,2023-05-11
+2480,878,68676,48,14.14,Education,Current,2026-02-21
+2481,773,29158,36,16.96,Wedding,Current,2022-03-26
+2482,1181,28769,48,19.08,Debt Consolidation,Paid Off,2023-01-23
+2483,1930,55197,12,18.56,Business Expansion,Paid Off,2022-03-31
+2484,1791,30146,6,21.36,Debt Consolidation,Current,2023-12-01
+2485,1331,72026,24,21.02,Vehicle,Paid Off,2023-12-19
+2486,1038,53579,12,20.77,Vehicle,Current,2022-04-26
+2487,1233,86107,36,11.41,Business Expansion,Paid Off,2023-08-21
+2488,1271,32727,6,12.32,Education,Current,2025-07-08
+2489,740,52970,24,17.73,Home Renovation,Default,2024-06-17
+2490,289,94296,36,10.37,Business Expansion,Current,2023-05-19
+2491,1408,89191,48,13.1,Education,Default,2022-11-26
+2492,329,24386,48,21.55,Home Renovation,Current,2022-04-27
+2493,170,36528,60,10.31,Business Expansion,Default,2024-11-26
+2494,1550,45920,6,17.23,Wedding,Paid Off,2022-12-14
+2495,1728,13758,24,14.13,Home Renovation,Default,2022-10-21
+2496,359,22337,60,12.42,Home Renovation,Paid Off,2024-02-20
+2497,903,38753,48,10.23,Debt Consolidation,Default,2024-03-04
+2498,780,41749,48,11.0,Debt Consolidation,Current,2023-04-05
+2499,1727,22237,60,9.94,Home Renovation,Paid Off,2025-01-22
+2500,1679,43776,6,17.61,Business Expansion,Paid Off,2024-09-02
+2501,107,23045,60,14.33,Business Expansion,Default,2025-11-05
+2502,1564,10322,36,15.12,Education,Paid Off,2026-03-13
+2503,1831,17986,60,15.63,Medical,Default,2023-05-28
+2504,1446,37195,60,15.19,Vehicle,Paid Off,2022-11-10
+2505,64,21409,48,20.49,Education,Current,2023-04-04
+2506,1259,21604,24,17.46,Vehicle,Current,2022-12-24
+2507,1537,26166,24,20.52,Wedding,Default,2024-01-24
+2508,910,34969,6,14.9,Education,Current,2023-09-07
+2509,1763,76138,6,15.25,Business Expansion,Default,2025-12-26
+2510,824,95916,12,21.84,Debt Consolidation,Paid Off,2022-09-14
+2511,966,30945,60,13.91,Vehicle,Current,2024-04-11
+2512,1446,14605,36,15.26,Vehicle,Paid Off,2024-07-15
+2513,103,40513,36,15.29,Medical,Default,2023-11-23
+2514,749,10000,60,14.49,Business Expansion,Current,2026-01-21
+2515,1739,33205,12,12.58,Education,Default,2025-12-30
+2516,1089,37727,48,11.93,Wedding,Default,2026-02-02
+2517,1750,20854,48,14.04,Business Expansion,Paid Off,2024-08-06
+2518,1094,20451,36,14.19,Education,Default,2023-09-21
+2519,972,31823,36,11.27,Business Expansion,Current,2022-08-11
+2520,334,83328,60,15.15,Debt Consolidation,Current,2026-05-06
+2521,1840,20873,48,14.65,Education,Default,2023-02-13
+2522,1961,21808,24,16.4,Wedding,Current,2022-11-17
+2523,1445,32115,36,21.21,Education,Current,2024-06-03
+2524,1347,21187,36,9.8,Vehicle,Default,2023-02-27
+2525,1844,87486,48,17.84,Wedding,Default,2023-07-14
+2526,100,55816,60,16.54,Wedding,Default,2022-11-16
+2527,1567,28814,36,16.69,Education,Current,2023-02-10
+2528,1531,47293,36,13.46,Debt Consolidation,Current,2023-05-19
+2529,49,20677,60,11.13,Medical,Current,2024-09-23
+2530,26,54994,48,21.16,Business Expansion,Paid Off,2025-06-08
+2531,946,20924,60,17.35,Wedding,Current,2022-03-14
+2532,202,38449,6,19.34,Home Renovation,Default,2022-06-25
+2533,1414,72937,6,21.0,Medical,Current,2022-04-19
+2534,1745,32862,6,13.42,Education,Paid Off,2024-01-01
+2535,764,30409,60,11.38,Medical,Paid Off,2023-03-13
+2536,1366,32746,6,14.04,Business Expansion,Default,2023-10-09
+2537,229,45533,36,15.44,Education,Current,2025-12-11
+2538,1560,91525,24,13.29,Education,Current,2025-02-24
+2539,1438,55588,12,11.54,Business Expansion,Current,2022-08-31
+2540,925,23621,48,14.62,Business Expansion,Current,2025-02-24
+2541,134,19610,60,15.37,Wedding,Current,2023-07-30
+2542,103,52304,12,21.7,Education,Default,2025-09-21
+2543,1792,19710,36,10.71,Education,Current,2022-03-22
+2544,849,11471,36,15.41,Education,Default,2024-09-03
+2545,885,44245,6,16.83,Vehicle,Current,2024-01-13
+2546,130,79183,48,16.65,Home Renovation,Current,2024-07-05
+2547,541,45012,36,21.33,Medical,Current,2025-03-06
+2548,613,47138,24,21.85,Home Renovation,Paid Off,2024-01-28
+2549,1491,41375,12,11.19,Wedding,Current,2023-09-07
+2550,1683,42907,36,20.96,Debt Consolidation,Default,2022-08-16
+2551,1118,47984,60,11.96,Medical,Default,2025-07-22
+2552,329,31319,24,18.39,Home Renovation,Current,2026-05-30
+2553,584,32001,24,17.04,Home Renovation,Default,2024-10-10
+2554,129,29398,48,20.64,Education,Paid Off,2024-05-05
+2555,337,47992,24,20.14,Business Expansion,Default,2023-01-29
+2556,1812,61780,24,21.78,Vehicle,Default,2022-02-18
+2557,625,99830,24,20.82,Wedding,Current,2022-04-17
+2558,304,15043,12,18.26,Vehicle,Current,2023-06-23
+2559,311,91341,36,13.72,Wedding,Paid Off,2023-07-13
+2560,1346,23635,60,15.23,Medical,Current,2022-06-14
+2561,1028,37752,48,9.89,Home Renovation,Paid Off,2025-07-02
+2562,1212,60068,60,16.67,Vehicle,Current,2023-09-12
+2563,535,33193,12,20.81,Vehicle,Current,2024-02-18
+2564,1061,51973,6,18.19,Wedding,Current,2023-07-08
+2565,1232,55966,36,13.7,Debt Consolidation,Default,2024-11-15
+2566,57,32548,36,14.59,Education,Current,2023-12-02
+2567,1725,47293,24,18.49,Education,Default,2025-02-05
+2568,865,35812,36,13.02,Vehicle,Current,2022-06-20
+2569,147,39398,60,10.56,Medical,Paid Off,2025-09-26
+2570,1374,19441,48,20.7,Debt Consolidation,Default,2022-02-17
+2571,582,82226,12,19.58,Education,Current,2022-08-08
+2572,376,97894,6,11.71,Education,Paid Off,2022-05-14
+2573,634,33722,48,19.52,Home Renovation,Current,2026-05-15
+2574,399,69238,6,9.62,Wedding,Paid Off,2022-01-28
+2575,1355,19597,24,20.38,Home Renovation,Default,2025-06-18
+2576,448,69893,12,16.78,Wedding,Current,2024-08-01
+2577,64,33907,24,19.33,Business Expansion,Current,2022-08-05
+2578,312,23407,6,10.2,Education,Paid Off,2022-10-12
+2579,1648,27169,60,21.08,Home Renovation,Default,2023-01-16
+2580,875,16925,60,21.39,Vehicle,Paid Off,2022-01-08
+2581,31,23530,60,12.41,Wedding,Current,2022-04-13
+2582,1130,10000,6,14.34,Business Expansion,Default,2025-07-04
+2583,1451,52630,12,15.45,Wedding,Default,2023-02-09
+2584,1101,74341,36,17.07,Vehicle,Current,2023-01-17
+2585,1972,23480,24,18.64,Debt Consolidation,Current,2025-04-27
+2586,247,46857,6,15.03,Home Renovation,Paid Off,2024-11-05
+2587,186,12582,6,11.7,Medical,Current,2023-02-09
+2588,741,17758,12,20.48,Education,Default,2025-03-24
+2589,129,31625,60,11.05,Home Renovation,Default,2026-04-09
+2590,967,53537,12,11.84,Debt Consolidation,Default,2023-10-21
+2591,478,35559,12,11.53,Debt Consolidation,Current,2025-07-25
+2592,969,65487,48,13.21,Business Expansion,Default,2024-04-24
+2593,1785,14210,60,13.07,Medical,Current,2024-05-23
+2594,965,18176,24,18.69,Home Renovation,Current,2024-12-22
+2595,1064,67988,60,20.63,Medical,Paid Off,2025-10-31
+2596,1713,95570,24,18.93,Home Renovation,Paid Off,2022-05-13
+2597,1624,20454,6,15.67,Home Renovation,Paid Off,2026-02-10
+2598,349,21567,48,18.95,Home Renovation,Paid Off,2024-05-30
+2599,892,10000,60,19.06,Vehicle,Current,2026-01-06
+2600,177,48511,6,21.71,Home Renovation,Current,2025-10-13
+2601,549,88688,24,16.85,Wedding,Default,2024-01-11
+2602,595,32298,60,17.07,Business Expansion,Default,2022-05-15
+2603,1708,46841,24,18.59,Vehicle,Default,2023-10-16
+2604,347,53779,24,18.78,Medical,Paid Off,2024-09-10
+2605,1797,27338,36,13.25,Medical,Paid Off,2024-09-28
+2606,1545,54549,48,21.99,Education,Default,2023-01-25
+2607,857,54990,48,11.63,Medical,Current,2025-11-15
+2608,1774,32436,36,15.31,Medical,Paid Off,2024-08-03
+2609,323,54721,36,15.3,Vehicle,Default,2024-08-09
+2610,1071,56388,12,11.28,Vehicle,Current,2026-03-18
+2611,412,46156,36,21.37,Debt Consolidation,Current,2022-10-13
+2612,471,127388,24,14.27,Education,Current,2025-07-18
+2613,1084,26580,36,14.07,Debt Consolidation,Default,2024-06-08
+2614,613,26374,60,20.82,Business Expansion,Current,2022-11-06
+2615,1392,30051,12,12.21,Vehicle,Current,2022-02-03
+2616,701,26224,36,11.37,Education,Current,2023-11-22
+2617,382,31440,6,15.72,Medical,Current,2022-11-21
+2618,1163,48179,48,12.97,Vehicle,Default,2023-01-25
+2619,90,56728,48,18.55,Vehicle,Default,2024-06-05
+2620,459,18613,12,15.59,Home Renovation,Default,2025-09-25
+2621,1093,49317,24,21.52,Medical,Default,2022-05-18
+2622,1902,25418,60,15.46,Education,Current,2023-08-16
+2623,897,14463,12,15.98,Debt Consolidation,Default,2024-10-09
+2624,406,71133,12,14.7,Medical,Paid Off,2022-01-27
+2625,804,26733,60,11.48,Medical,Current,2025-07-15
+2626,1145,31797,60,17.23,Home Renovation,Paid Off,2025-06-06
+2627,79,49900,48,11.12,Medical,Current,2023-08-01
+2628,1624,29031,60,14.17,Debt Consolidation,Current,2025-11-11
+2629,1583,19201,12,14.12,Home Renovation,Current,2024-08-27
+2630,669,45366,6,15.09,Education,Current,2024-05-04
+2631,1231,53886,12,21.31,Education,Default,2025-11-10
+2632,91,38522,24,17.42,Debt Consolidation,Current,2024-09-02
+2633,713,31654,24,16.44,Debt Consolidation,Paid Off,2025-03-28
+2634,105,40216,24,18.23,Medical,Current,2022-09-18
+2635,9,48541,60,16.65,Wedding,Current,2023-04-14
+2636,293,28037,48,17.12,Vehicle,Current,2023-05-26
+2637,1262,21345,48,15.37,Medical,Default,2022-02-09
+2638,909,24524,48,20.51,Debt Consolidation,Paid Off,2024-02-26
+2639,1237,13427,12,17.3,Business Expansion,Paid Off,2022-06-16
+2640,969,21875,36,15.28,Medical,Current,2026-01-30
+2641,627,32244,6,15.12,Education,Default,2026-05-12
+2642,1513,45291,24,18.4,Debt Consolidation,Current,2024-01-16
+2643,1614,40480,6,15.42,Wedding,Current,2023-04-03
+2644,799,11522,6,13.59,Vehicle,Paid Off,2025-06-25
+2645,1929,56641,48,11.33,Medical,Current,2023-07-13
+2646,1490,14342,36,21.82,Business Expansion,Paid Off,2025-05-23
+2647,754,40244,12,19.8,Education,Current,2025-08-15
+2648,887,32141,48,17.06,Wedding,Default,2023-08-29
+2649,1614,40142,6,18.69,Business Expansion,Current,2023-02-04
+2650,82,36268,48,13.03,Vehicle,Default,2024-02-10
+2651,1577,80973,60,19.73,Medical,Current,2022-01-23
+2652,1368,25895,24,12.05,Home Renovation,Current,2023-08-30
+2653,1372,110557,6,17.65,Vehicle,Current,2026-04-11
+2654,497,17439,6,14.11,Education,Default,2026-05-08
+2655,579,23515,36,17.32,Education,Current,2025-02-11
+2656,156,35964,48,15.05,Home Renovation,Paid Off,2023-10-06
+2657,1498,24319,24,15.2,Wedding,Current,2023-02-10
+2658,835,66873,48,15.17,Business Expansion,Paid Off,2022-11-30
+2659,1096,40104,12,13.54,Home Renovation,Paid Off,2022-02-04
+2660,1866,50942,6,20.35,Vehicle,Current,2025-02-05
+2661,1505,53179,24,11.27,Vehicle,Current,2026-01-15
+2662,754,16206,48,9.82,Wedding,Paid Off,2024-06-08
+2663,1025,117603,24,14.44,Business Expansion,Default,2023-10-31
+2664,222,73774,6,17.55,Business Expansion,Current,2023-10-26
+2665,1522,16068,48,9.99,Home Renovation,Default,2024-11-13
+2666,1684,48288,60,18.47,Vehicle,Default,2022-09-28
+2667,1857,37173,6,21.09,Education,Paid Off,2022-10-14
+2668,829,45973,6,16.03,Education,Paid Off,2026-01-01
+2669,766,11548,6,18.93,Medical,Current,2024-01-02
+2670,1246,38711,6,14.66,Home Renovation,Paid Off,2026-03-18
+2671,776,21382,36,14.51,Business Expansion,Current,2022-05-08
+2672,1283,43317,36,17.52,Wedding,Current,2024-03-21
+2673,1529,33336,12,16.35,Debt Consolidation,Paid Off,2022-07-03
+2674,345,34563,12,15.11,Debt Consolidation,Default,2022-08-25
+2675,530,21552,24,12.34,Wedding,Default,2022-04-26
+2676,177,52552,60,16.47,Wedding,Paid Off,2022-04-18
+2677,1664,40409,60,12.32,Home Renovation,Default,2022-03-28
+2678,819,31300,12,18.98,Debt Consolidation,Default,2022-11-09
+2679,1469,42785,12,15.76,Vehicle,Current,2023-10-24
+2680,1367,33828,60,17.88,Business Expansion,Paid Off,2022-02-09
+2681,1537,60302,24,15.65,Wedding,Current,2025-10-03
+2682,1275,38412,60,14.69,Home Renovation,Default,2022-05-20
+2683,1615,84027,12,16.87,Education,Default,2023-03-04
+2684,686,31851,48,15.64,Wedding,Default,2023-12-17
+2685,115,80545,6,16.77,Business Expansion,Paid Off,2024-01-24
+2686,1840,32812,12,14.46,Business Expansion,Paid Off,2022-11-08
+2687,1986,28899,6,20.94,Business Expansion,Default,2026-03-05
+2688,1727,30118,24,12.82,Business Expansion,Default,2024-02-06
+2689,227,47993,36,11.5,Debt Consolidation,Current,2023-02-17
+2690,563,33210,48,12.7,Medical,Default,2023-02-05
+2691,655,61569,24,14.41,Medical,Current,2025-08-25
+2692,1146,12828,36,9.86,Wedding,Current,2025-05-20
+2693,7,44611,60,15.9,Education,Paid Off,2024-04-10
+2694,1162,21942,12,10.91,Debt Consolidation,Paid Off,2024-03-04
+2695,1399,40190,6,18.79,Education,Current,2023-02-26
+2696,1047,29568,48,18.7,Debt Consolidation,Default,2023-09-04
+2697,1792,140787,60,17.93,Debt Consolidation,Default,2025-04-29
+2698,428,49931,24,14.01,Wedding,Current,2022-04-22
+2699,352,48520,60,12.37,Education,Current,2023-06-01
+2700,988,46802,48,9.8,Education,Paid Off,2022-01-26
+2701,437,33197,12,20.25,Vehicle,Current,2023-02-27
+2702,1221,49744,60,14.36,Vehicle,Current,2023-11-02
+2703,1105,12814,36,17.02,Vehicle,Default,2022-12-05
+2704,590,56976,36,16.51,Debt Consolidation,Current,2023-08-08
+2705,340,105480,60,20.22,Home Renovation,Current,2023-05-24
+2706,1391,99889,48,10.84,Debt Consolidation,Default,2022-01-01
+2707,147,77841,6,17.24,Medical,Current,2022-01-23
+2708,1944,12838,6,13.29,Wedding,Default,2024-02-21
+2709,938,33759,48,21.52,Home Renovation,Current,2022-07-19
+2710,1583,14632,24,12.19,Vehicle,Current,2023-01-26
+2711,556,24895,60,20.46,Medical,Paid Off,2022-06-05
+2712,1038,35598,36,17.67,Debt Consolidation,Current,2023-09-02
+2713,452,62087,6,20.73,Education,Paid Off,2023-09-11
+2714,528,23719,24,15.21,Home Renovation,Default,2023-02-24
+2715,274,29056,60,18.8,Debt Consolidation,Current,2025-10-28
+2716,1242,23524,6,20.5,Education,Default,2024-09-02
+2717,567,45364,6,10.91,Education,Current,2026-01-24
+2718,870,31912,36,20.37,Wedding,Default,2025-04-02
+2719,1963,60283,48,12.91,Wedding,Paid Off,2022-02-16
+2720,1191,32772,48,15.5,Wedding,Paid Off,2026-02-06
+2721,22,102500,12,12.19,Wedding,Current,2024-03-25
+2722,1685,40285,36,9.87,Vehicle,Current,2024-10-15
+2723,126,124215,36,14.66,Business Expansion,Default,2022-01-28
+2724,672,13500,6,17.71,Medical,Paid Off,2026-04-26
+2725,585,124463,60,13.02,Education,Default,2024-09-08
+2726,1625,36445,24,9.81,Debt Consolidation,Default,2023-07-11
+2727,881,92906,12,12.44,Debt Consolidation,Current,2024-07-06
+2728,1303,96863,6,21.95,Debt Consolidation,Current,2022-04-01
+2729,1010,27254,48,19.94,Business Expansion,Current,2024-06-10
+2730,412,37446,60,15.61,Wedding,Paid Off,2023-04-20
+2731,1045,41402,60,10.09,Home Renovation,Default,2024-01-16
+2732,811,58618,48,14.09,Business Expansion,Default,2024-08-25
+2733,1222,12570,12,14.17,Wedding,Paid Off,2024-01-31
+2734,494,43974,48,16.26,Wedding,Current,2023-10-19
+2735,1553,40852,60,13.83,Business Expansion,Current,2022-12-23
+2736,1611,13767,36,14.15,Debt Consolidation,Default,2023-12-13
+2737,621,17393,24,11.35,Debt Consolidation,Current,2025-10-09
+2738,1818,23975,36,17.95,Medical,Current,2024-04-15
+2739,341,121551,36,10.58,Education,Current,2023-06-03
+2740,1222,33126,24,21.06,Vehicle,Current,2025-08-14
+2741,1817,61346,36,18.92,Education,Paid Off,2025-10-25
+2742,1795,41015,6,13.79,Education,Default,2025-07-04
+2743,698,83083,48,13.77,Debt Consolidation,Current,2025-07-19
+2744,607,29539,60,11.49,Education,Current,2025-03-20
+2745,1283,35300,12,19.81,Home Renovation,Current,2024-03-22
+2746,1223,14430,36,20.51,Business Expansion,Default,2024-10-23
+2747,100,50350,6,15.99,Home Renovation,Default,2025-03-24
+2748,841,22634,24,21.18,Education,Default,2025-09-23
+2749,248,82798,60,12.33,Debt Consolidation,Current,2025-12-24
+2750,1431,23023,24,15.61,Wedding,Current,2023-10-29
+2751,1823,31227,24,16.36,Business Expansion,Current,2024-03-19
+2752,585,44048,60,19.74,Business Expansion,Current,2023-03-25
+2753,1036,24810,24,18.87,Debt Consolidation,Paid Off,2025-11-09
+2754,1291,20462,6,12.32,Vehicle,Current,2025-08-11
+2755,312,52763,12,19.93,Education,Default,2026-03-23
+2756,11,62435,60,9.51,Debt Consolidation,Default,2024-10-30
+2757,267,28879,6,15.69,Wedding,Default,2022-05-28
+2758,1676,55607,24,12.52,Medical,Paid Off,2024-04-11
+2759,155,39282,12,16.27,Debt Consolidation,Current,2022-07-17
+2760,372,44289,12,9.79,Medical,Current,2022-03-05
+2761,678,63849,6,12.09,Wedding,Paid Off,2026-05-09
+2762,362,17336,6,10.34,Home Renovation,Current,2024-07-15
+2763,1902,47600,36,21.31,Vehicle,Paid Off,2025-09-16
+2764,966,61407,6,18.22,Medical,Paid Off,2023-09-07
+2765,281,14839,36,14.19,Vehicle,Current,2023-09-15
+2766,1410,44971,48,16.87,Wedding,Default,2024-09-06
+2767,1966,65311,48,16.92,Vehicle,Default,2025-10-22
+2768,751,34938,6,15.75,Home Renovation,Current,2023-12-21
+2769,1654,52692,24,18.26,Debt Consolidation,Default,2024-02-25
+2770,1691,27272,48,19.12,Wedding,Current,2024-05-15
+2771,1427,40048,48,17.25,Wedding,Current,2023-12-20
+2772,1386,25212,36,21.93,Home Renovation,Current,2024-02-18
+2773,642,59361,36,18.99,Vehicle,Default,2022-06-27
+2774,960,50542,24,16.3,Education,Current,2022-06-19
+2775,798,17571,60,19.88,Home Renovation,Default,2025-07-16
+2776,516,23910,36,14.25,Education,Current,2023-11-22
+2777,1605,28641,48,21.8,Medical,Current,2022-03-12
+2778,1549,20428,24,16.41,Debt Consolidation,Current,2025-12-12
+2779,103,32297,36,12.21,Home Renovation,Current,2024-04-20
+2780,1905,14862,6,18.05,Debt Consolidation,Paid Off,2025-04-30
+2781,1616,44129,60,19.26,Vehicle,Current,2024-11-02
+2782,193,40754,6,15.78,Medical,Paid Off,2024-08-06
+2783,1700,61708,60,16.56,Wedding,Default,2025-01-02
+2784,210,49058,60,10.11,Home Renovation,Current,2025-04-14
+2785,988,30038,60,15.96,Vehicle,Current,2022-12-23
+2786,644,35988,24,20.17,Medical,Paid Off,2022-03-23
+2787,1708,99622,48,13.64,Wedding,Current,2022-08-13
+2788,66,49694,12,21.61,Education,Paid Off,2022-06-07
+2789,846,65037,36,15.58,Vehicle,Current,2022-01-12
+2790,89,67301,60,19.59,Debt Consolidation,Current,2022-12-28
+2791,1288,10000,36,10.05,Education,Current,2023-01-10
+2792,1905,38612,24,20.32,Debt Consolidation,Current,2025-04-10
+2793,1592,36954,36,12.36,Debt Consolidation,Default,2024-06-29
+2794,594,27550,60,21.35,Home Renovation,Default,2022-08-26
+2795,1353,26339,12,11.24,Business Expansion,Default,2026-02-25
+2796,239,56418,48,9.8,Medical,Current,2024-10-13
+2797,1710,36882,60,14.87,Business Expansion,Current,2025-12-21
+2798,1198,30568,60,14.1,Home Renovation,Paid Off,2025-01-18
+2799,1225,23232,36,15.42,Vehicle,Default,2023-07-26
+2800,1941,97775,48,18.28,Home Renovation,Paid Off,2022-05-18
+2801,220,64694,6,12.78,Medical,Paid Off,2025-09-23
+2802,1376,18793,36,14.52,Education,Paid Off,2023-05-14
+2803,633,21982,6,9.8,Business Expansion,Current,2022-06-26
+2804,880,39832,12,17.81,Wedding,Current,2024-07-02
+2805,838,34989,48,14.17,Vehicle,Current,2023-06-23
+2806,381,41172,6,21.64,Education,Default,2025-09-06
+2807,1619,25179,48,14.67,Home Renovation,Current,2025-02-20
+2808,1140,19112,12,12.03,Education,Current,2023-09-08
+2809,1433,47825,60,18.27,Medical,Default,2022-01-23
+2810,887,106655,6,15.88,Home Renovation,Paid Off,2022-01-25
+2811,1224,21138,48,17.82,Business Expansion,Default,2025-04-14
+2812,587,41410,6,13.29,Medical,Paid Off,2022-10-08
+2813,51,18788,12,20.26,Education,Current,2023-03-14
+2814,1581,94951,60,15.43,Education,Default,2024-09-07
+2815,1863,155312,6,11.66,Wedding,Paid Off,2025-02-06
+2816,956,49273,60,16.27,Education,Default,2022-05-26
+2817,405,12591,60,11.09,Education,Default,2024-11-10
+2818,1686,19457,6,15.47,Business Expansion,Current,2022-05-29
+2819,1932,56025,12,12.59,Vehicle,Current,2026-03-23
+2820,189,57831,60,14.02,Debt Consolidation,Default,2023-04-07
+2821,121,62678,24,14.58,Vehicle,Current,2026-03-21
+2822,1693,61089,6,20.38,Vehicle,Current,2026-05-18
+2823,1981,82554,6,11.91,Medical,Current,2026-01-27
+2824,1456,41112,36,15.12,Wedding,Default,2023-04-06
+2825,208,21428,12,15.49,Vehicle,Current,2024-11-09
+2826,42,28207,60,20.4,Education,Current,2025-07-25
+2827,864,22567,12,16.99,Vehicle,Default,2023-08-13
+2828,172,23214,6,14.91,Vehicle,Default,2022-03-05
+2829,855,15276,6,16.52,Debt Consolidation,Paid Off,2025-12-13
+2830,970,23375,12,19.16,Medical,Default,2022-03-23
+2831,607,29011,24,14.42,Wedding,Default,2024-08-09
+2832,943,24906,24,13.29,Business Expansion,Current,2025-01-01
+2833,486,21962,24,20.99,Business Expansion,Current,2024-08-20
+2834,1829,33277,36,14.33,Business Expansion,Current,2025-11-10
+2835,1164,99416,60,16.5,Business Expansion,Current,2025-10-29
+2836,290,111150,48,17.76,Education,Paid Off,2025-03-21
+2837,1321,80938,36,13.71,Vehicle,Current,2025-11-17
+2838,1452,33911,24,16.16,Wedding,Paid Off,2025-06-16
+2839,887,27651,6,12.64,Medical,Current,2023-07-04
+2840,818,151677,24,16.93,Medical,Default,2023-04-12
+2841,1062,26849,24,20.84,Education,Current,2025-03-05
+2842,156,55487,24,21.65,Debt Consolidation,Paid Off,2023-01-28
+2843,1780,65452,24,15.97,Medical,Default,2024-04-22
+2844,1781,37817,24,16.97,Wedding,Current,2025-10-03
+2845,85,29999,12,19.1,Education,Current,2026-05-31
+2846,48,40461,60,13.19,Wedding,Paid Off,2025-11-08
+2847,253,30282,24,18.41,Medical,Current,2025-02-06
+2848,280,25107,12,19.48,Business Expansion,Current,2025-04-06
+2849,25,54108,12,10.97,Medical,Current,2026-01-20
+2850,13,14297,60,12.59,Debt Consolidation,Paid Off,2025-05-09
+2851,105,27866,60,19.88,Wedding,Paid Off,2023-01-10
+2852,1381,56816,36,14.19,Vehicle,Default,2024-03-13
+2853,794,99653,60,12.88,Vehicle,Current,2025-03-09
+2854,487,26227,48,13.77,Business Expansion,Paid Off,2023-06-06
+2855,1944,28016,6,12.66,Debt Consolidation,Paid Off,2024-02-11
+2856,1242,35926,48,21.8,Home Renovation,Default,2022-01-07
+2857,1735,93438,12,19.65,Vehicle,Paid Off,2023-06-06
+2858,1666,21180,36,21.18,Business Expansion,Paid Off,2025-02-01
+2859,768,19360,24,15.89,Education,Default,2024-05-11
+2860,33,50792,24,10.14,Wedding,Default,2024-05-25
+2861,1595,47756,36,16.94,Vehicle,Paid Off,2024-09-02
+2862,1779,28717,36,13.41,Education,Current,2022-10-14
+2863,155,11580,6,14.02,Home Renovation,Default,2022-04-22
+2864,1653,14102,6,12.97,Business Expansion,Current,2025-01-28
+2865,755,39044,24,11.09,Wedding,Paid Off,2022-07-16
+2866,1458,88303,60,14.79,Wedding,Current,2022-03-23
+2867,374,27905,48,10.25,Medical,Current,2022-08-17
+2868,667,37463,48,18.49,Vehicle,Default,2023-08-06
+2869,1324,84640,12,12.38,Business Expansion,Current,2025-06-20
+2870,588,22037,48,18.9,Medical,Paid Off,2025-02-05
+2871,425,18294,12,11.4,Business Expansion,Current,2025-02-07
+2872,1493,41766,24,19.03,Debt Consolidation,Paid Off,2022-12-18
+2873,1688,47932,36,12.04,Home Renovation,Paid Off,2025-06-16
+2874,754,29027,12,10.64,Business Expansion,Default,2026-02-25
+2875,938,17873,24,19.62,Home Renovation,Current,2022-09-13
+2876,187,31265,12,20.07,Education,Default,2023-03-29
+2877,1620,61524,36,17.12,Education,Current,2022-12-22
+2878,333,26350,24,10.84,Wedding,Current,2023-05-05
+2879,954,75591,24,14.94,Debt Consolidation,Default,2025-05-13
+2880,205,37095,36,15.08,Home Renovation,Current,2023-04-21
+2881,739,54902,6,14.61,Vehicle,Current,2024-06-28
+2882,70,39349,12,18.74,Debt Consolidation,Paid Off,2024-02-27
+2883,1745,37023,48,18.88,Business Expansion,Default,2022-02-17
+2884,1016,58877,24,12.06,Vehicle,Current,2025-10-10
+2885,504,28233,36,19.37,Medical,Default,2024-12-09
+2886,1472,10771,24,9.76,Business Expansion,Current,2024-11-05
+2887,70,16441,36,19.98,Education,Current,2025-05-27
+2888,1378,17427,24,11.31,Business Expansion,Paid Off,2022-06-08
+2889,835,15973,60,18.04,Debt Consolidation,Current,2022-12-11
+2890,1044,14473,36,12.09,Medical,Default,2023-10-06
+2891,386,30195,36,12.93,Medical,Current,2026-01-04
+2892,728,10000,12,14.24,Home Renovation,Paid Off,2024-08-19
+2893,1474,12593,60,21.19,Wedding,Current,2023-05-15
+2894,995,53286,60,10.31,Debt Consolidation,Paid Off,2025-12-31
+2895,1839,11865,6,14.36,Medical,Current,2023-12-08
+2896,1589,29466,36,9.76,Wedding,Paid Off,2024-06-12
+2897,1629,17387,36,20.86,Vehicle,Default,2022-07-03
+2898,1809,61879,24,13.85,Medical,Paid Off,2023-07-06
+2899,704,88516,24,15.48,Education,Current,2022-12-12
+2900,896,22699,48,17.56,Business Expansion,Paid Off,2025-05-11
+2901,470,54647,12,20.07,Medical,Current,2024-02-21
+2902,197,75990,6,19.01,Wedding,Current,2022-07-04
+2903,1010,45108,12,10.65,Business Expansion,Current,2025-11-25
+2904,1619,36301,6,12.63,Medical,Paid Off,2024-12-11
+2905,539,31212,36,11.36,Debt Consolidation,Default,2022-10-18
+2906,1315,31048,36,12.98,Education,Current,2023-01-16
+2907,849,24663,36,13.39,Home Renovation,Paid Off,2024-12-02
+2908,673,22792,12,20.4,Home Renovation,Current,2025-06-25
+2909,1319,27280,48,17.68,Debt Consolidation,Current,2026-05-26
+2910,915,26024,60,11.7,Vehicle,Current,2025-01-27
+2911,1277,37079,36,20.69,Home Renovation,Current,2023-04-29
+2912,313,22780,12,17.03,Home Renovation,Default,2022-06-07
+2913,1122,44158,6,12.86,Education,Current,2026-05-23
+2914,801,28887,48,11.05,Business Expansion,Paid Off,2024-08-05
+2915,86,61289,24,18.54,Business Expansion,Current,2022-11-09
+2916,1059,24145,12,12.57,Medical,Current,2022-01-18
+2917,1508,27687,12,19.08,Debt Consolidation,Paid Off,2024-11-17
+2918,115,18945,6,15.76,Vehicle,Current,2022-04-27
+2919,1700,42052,12,11.59,Education,Current,2024-08-18
+2920,715,40087,12,12.52,Debt Consolidation,Current,2025-06-01
+2921,797,31103,24,16.67,Vehicle,Current,2023-07-26
+2922,946,35725,12,15.19,Home Renovation,Default,2025-12-25
+2923,1211,14186,60,12.6,Business Expansion,Current,2025-08-03
+2924,1379,95971,6,10.34,Education,Current,2024-02-12
+2925,225,31607,6,13.09,Debt Consolidation,Paid Off,2024-12-19
+2926,119,48277,36,17.97,Business Expansion,Current,2024-03-19
+2927,1191,56461,48,18.58,Vehicle,Paid Off,2024-12-11
+2928,1556,34829,60,21.29,Debt Consolidation,Current,2023-12-26
+2929,38,34279,48,16.72,Vehicle,Paid Off,2026-03-15
+2930,455,18381,24,16.04,Education,Default,2024-04-14
+2931,656,76896,48,20.22,Debt Consolidation,Current,2022-09-16
+2932,213,63988,6,12.09,Medical,Current,2025-05-13
+2933,1049,33542,24,10.94,Vehicle,Current,2024-04-24
+2934,50,39347,36,13.24,Medical,Current,2022-02-18
+2935,1000,18420,36,11.98,Education,Current,2022-02-02
+2936,1377,23757,36,19.19,Education,Current,2026-03-17
+2937,949,27991,36,20.31,Wedding,Current,2026-04-03
+2938,1432,33384,12,17.61,Vehicle,Current,2023-09-11
+2939,1109,12155,12,11.28,Vehicle,Current,2023-04-11
+2940,1555,28029,24,15.58,Wedding,Paid Off,2024-08-13
+2941,975,27251,36,14.14,Vehicle,Current,2023-02-24
+2942,220,22557,12,14.7,Education,Paid Off,2022-04-16
+2943,203,34976,12,20.71,Medical,Paid Off,2022-07-27
+2944,132,75258,24,10.16,Vehicle,Current,2024-08-10
+2945,1337,89362,60,20.4,Business Expansion,Default,2022-06-09
+2946,760,50041,24,13.93,Business Expansion,Default,2024-11-15
+2947,1739,18847,36,10.01,Home Renovation,Paid Off,2024-09-08
+2948,890,35160,24,13.64,Business Expansion,Default,2023-09-28
+2949,1903,37261,12,9.64,Education,Current,2022-07-27
+2950,96,29698,60,18.39,Home Renovation,Current,2023-07-07
+2951,770,23172,6,15.87,Business Expansion,Current,2025-07-15
+2952,1666,29142,24,9.8,Medical,Default,2024-04-06
+2953,942,31808,48,15.25,Medical,Default,2025-06-27
+2954,721,32194,24,14.1,Business Expansion,Paid Off,2024-11-24
+2955,1205,17048,6,20.54,Vehicle,Paid Off,2026-04-03
+2956,1079,10825,36,19.05,Wedding,Current,2022-03-16
+2957,1220,29083,48,18.61,Business Expansion,Current,2025-03-05
+2958,1903,19643,6,21.98,Debt Consolidation,Current,2022-11-11
+2959,1813,58478,36,13.63,Vehicle,Current,2026-01-02
+2960,54,55062,60,18.53,Education,Default,2023-07-02
+2961,475,11287,12,19.03,Home Renovation,Paid Off,2023-02-07
+2962,662,81048,48,14.3,Education,Current,2024-03-18
+2963,1521,29724,6,10.05,Education,Default,2022-01-25
+2964,461,45771,12,14.73,Vehicle,Current,2023-02-01
+2965,1612,31809,12,14.84,Medical,Current,2025-03-09
+2966,592,13299,12,9.51,Education,Current,2022-05-16
+2967,1624,33646,6,12.82,Debt Consolidation,Current,2024-09-15
+2968,1893,10000,6,12.24,Wedding,Default,2022-12-06
+2969,666,50204,36,10.93,Vehicle,Default,2025-10-02
+2970,411,25305,24,17.21,Debt Consolidation,Current,2024-02-02
+2971,884,44590,36,21.45,Business Expansion,Default,2023-06-13
+2972,1628,69787,48,16.35,Medical,Default,2026-02-28
+2973,824,10000,60,17.81,Education,Paid Off,2024-12-14
+2974,1900,28455,60,18.02,Business Expansion,Current,2026-01-07
+2975,516,51786,48,18.03,Debt Consolidation,Default,2025-05-01
+2976,479,65789,12,12.33,Vehicle,Current,2022-02-15
+2977,777,29625,36,12.9,Medical,Default,2024-11-08
+2978,1908,49910,36,21.66,Home Renovation,Default,2024-04-08
+2979,642,33506,48,13.25,Home Renovation,Current,2023-06-12
+2980,888,24220,12,16.44,Education,Default,2026-05-24
+2981,174,32466,12,15.3,Home Renovation,Current,2022-11-10
+2982,935,22164,60,16.28,Vehicle,Default,2024-01-14
+2983,1474,33940,60,14.5,Medical,Default,2025-03-06
+2984,1977,25143,24,10.51,Business Expansion,Current,2022-11-29
+2985,827,57284,36,21.36,Home Renovation,Paid Off,2025-09-19
+2986,1798,38716,24,21.08,Vehicle,Default,2022-04-27
+2987,1119,34329,36,19.69,Vehicle,Default,2022-11-12
+2988,537,42647,36,21.73,Medical,Current,2023-11-15
+2989,421,27181,6,13.35,Vehicle,Default,2024-09-23
+2990,922,43455,36,16.86,Vehicle,Current,2024-04-10
+2991,598,114303,12,13.08,Debt Consolidation,Paid Off,2025-06-04
+2992,1946,25020,12,13.7,Medical,Current,2025-05-09
+2993,856,28916,48,14.21,Home Renovation,Default,2022-06-19
+2994,512,53528,6,10.53,Home Renovation,Default,2026-02-19
+2995,515,29046,12,16.25,Home Renovation,Paid Off,2024-10-05
+2996,842,55990,60,17.6,Home Renovation,Paid Off,2022-04-16
+2997,1099,10000,36,11.72,Medical,Paid Off,2022-10-01
+2998,721,24520,24,17.98,Medical,Current,2025-12-04
+2999,633,43631,60,16.65,Education,Current,2022-03-24
+3000,1537,63479,24,13.63,Business Expansion,Default,2022-03-21
