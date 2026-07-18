@@ -1,5 +1,7 @@
 # Credit Risk Analytics Pipeline
 
+[![CI](https://github.com/KrishPitrola/CreditPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/KrishPitrola/CreditPulse/actions/workflows/ci.yml)
+
 An end-to-end data engineering pipeline that models loan and repayment
 behavior for a retail lending business — from raw data ingestion
 through relational modeling, SQL analytics, distributed processing,
