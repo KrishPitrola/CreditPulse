@@ -6,3 +6,7 @@ uvicorn
 pyspark
 boto3
 pytest
+psycopg2-binary
+sqlalchemy
+dbt-core
+dbt-postgres

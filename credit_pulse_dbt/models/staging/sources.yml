@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: public
+    description: >
+      Raw tables loaded into Postgres by load_data_postgres.py --
+      the same customers/loans/repayments data used everywhere else
+      in the pipeline.
+    tables:
+      - name: customers
+      - name: loans
+      - name: repayments

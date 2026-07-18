@@ -1,0 +1,2137 @@
+[0m00:27:29.559039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028726535160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028728C33ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028728C33750>]}
+
+
+============================== 00:27:29.565266 | 748de7ac-c6ed-4f01-8115-5d2fa5969e40 ==============================
+[0m00:27:29.565266 [info ] [MainThread]: Running with dbt=1.12.0
+[0m00:27:29.565942 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'S:\\CreditPulse\\credit_pulse_dbt\\logs'}
+[0m00:27:29.592962 [info ] [MainThread]: dbt version: 1.12.0
+[0m00:27:29.593540 [info ] [MainThread]: python version: 3.13.7
+[0m00:27:29.594120 [info ] [MainThread]: python path: S:\CreditPulse\.venv\Scripts\python.exe
+[0m00:27:29.594734 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:27:29.680729 [info ] [MainThread]: Using profiles dir at .
+[0m00:27:29.681368 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m00:27:29.681789 [info ] [MainThread]: Using dbt_project.yml file at S:\CreditPulse\credit_pulse_dbt\dbt_project.yml
+[0m00:27:29.682841 [info ] [MainThread]: adapter type: postgres
+[0m00:27:29.683211 [info ] [MainThread]: adapter version: 1.11.0
+[0m00:27:29.811752 [info ] [MainThread]: Configuration:
+[0m00:27:29.812345 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:27:29.812810 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:27:29.813276 [info ] [MainThread]: Required dependencies:
+[0m00:27:29.813778 [debug] [MainThread]: Executing "git --help"
+[0m00:27:29.877326 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:27:29.877829 [debug] [MainThread]: STDERR: "b''"
+[0m00:27:29.878246 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:27:29.878713 [info ] [MainThread]: Connection:
+[0m00:27:29.879119 [info ] [MainThread]:   host: localhost
+[0m00:27:29.879499 [info ] [MainThread]:   port: 5432
+[0m00:27:29.879890 [info ] [MainThread]:   user: postgres
+[0m00:27:29.880285 [info ] [MainThread]:   database: credit_pipeline
+[0m00:27:29.880660 [info ] [MainThread]:   schema: public
+[0m00:27:29.881082 [info ] [MainThread]:   connect_timeout: 10
+[0m00:27:29.881454 [info ] [MainThread]:   role: None
+[0m00:27:29.881818 [info ] [MainThread]:   search_path: None
+[0m00:27:29.882191 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:27:29.882552 [info ] [MainThread]:   sslmode: None
+[0m00:27:29.882913 [info ] [MainThread]:   sslcert: None
+[0m00:27:29.883339 [info ] [MainThread]:   sslkey: None
+[0m00:27:29.883799 [info ] [MainThread]:   sslrootcert: None
+[0m00:27:29.884236 [info ] [MainThread]:   application_name: dbt
+[0m00:27:29.884624 [info ] [MainThread]:   autocommit: False
+[0m00:27:29.885026 [info ] [MainThread]:   retries: 1
+[0m00:27:29.885656 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:27:30.192653 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:27:33.545637 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:27:33.546867 [debug] [MainThread]: On debug: select 1 as id
+[0m00:27:33.547481 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:27:33.706263 [debug] [MainThread]: SQL status: SELECT 1 in 0.159 seconds
+[0m00:27:33.707224 [debug] [MainThread]: On debug: Close
+[0m00:27:33.707627 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:27:33.708150 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:27:33.709270 [debug] [MainThread]: Command `dbt debug` succeeded at 00:27:33.709114 after 4.30 seconds
+[0m00:27:33.709645 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:27:33.710036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028729268FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287290096D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028728EFB570>]}
+[0m00:27:33.710435 [debug] [MainThread]: Flushing usage events
+[0m00:27:35.006978 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:27:46.391644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6928A9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B69500FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B69500F750>]}
+
+
+============================== 00:27:46.403761 | fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1 ==============================
+[0m00:27:46.403761 [info ] [MainThread]: Running with dbt=1.12.0
+[0m00:27:46.405141 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'S:\\CreditPulse\\credit_pulse_dbt\\logs'}
+[0m00:27:46.844127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B692F7D940>]}
+[0m00:27:46.932499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B690DDDBF0>]}
+[0m00:27:46.934248 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:27:47.243973 [debug] [MainThread]: checksum: 4d5ca91f13fa75a78f00116abaee763d5e4efc9b1bea403b821062e48bc32324, vars: {}, profile: credit_pulse, target: dev, version: 1.12.0
+[0m00:27:47.245061 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:27:47.245619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6950C1750>]}
+[0m00:27:50.167519 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'risk_by_credit_tier' in package 'credit_pulse' (models\marts\marts_schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m00:27:50.168257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695614C80>]}
+[0m00:27:50.552670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695AF34D0>]}
+[0m00:27:50.705489 [debug] [MainThread]: Wrote artifact WritableManifest to S:\CreditPulse\credit_pulse_dbt\target\manifest.json
+[0m00:27:50.731046 [debug] [MainThread]: Wrote artifact SemanticManifest to S:\CreditPulse\credit_pulse_dbt\target\semantic_manifest.json
+[0m00:27:50.757151 [debug] [MainThread]: Wrote artifact OsiDocument to S:\CreditPulse\credit_pulse_dbt\target\osi_document.json
+[0m00:27:50.775042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695BD3C70>]}
+[0m00:27:50.775714 [info ] [MainThread]: Found 7 models, 25 data tests, 3 sources, 477 macros
+[0m00:27:50.776209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695B88C50>]}
+[0m00:27:50.778543 [info ] [MainThread]: 
+[0m00:27:50.778976 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:27:50.779339 [info ] [MainThread]: 
+[0m00:27:50.779900 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m00:27:50.784766 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_pipeline'
+[0m00:27:50.870364 [debug] [ThreadPool]: Using postgres connection "list_credit_pipeline"
+[0m00:27:50.870764 [debug] [ThreadPool]: On list_credit_pipeline: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "list_credit_pipeline"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m00:27:50.871121 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:27:50.923238 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.052 seconds
+[0m00:27:50.925498 [debug] [ThreadPool]: On list_credit_pipeline: Close
+[0m00:27:50.929012 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_pipeline_public'
+[0m00:27:50.936706 [debug] [ThreadPool]: Using postgres connection "list_credit_pipeline_public"
+[0m00:27:50.937393 [debug] [ThreadPool]: On list_credit_pipeline_public: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "list_credit_pipeline_public"} */
+select
+      'credit_pipeline' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'credit_pipeline' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'credit_pipeline' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+    union all
+    select distinct
+     'credit_pipeline' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'public'
+  
+[0m00:27:50.937774 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:27:51.012417 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.075 seconds
+[0m00:27:51.014332 [debug] [ThreadPool]: On list_credit_pipeline_public: ROLLBACK
+[0m00:27:51.016234 [debug] [ThreadPool]: On list_credit_pipeline_public: Close
+[0m00:27:51.021921 [debug] [MainThread]: Using postgres connection "master"
+[0m00:27:51.022553 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m00:27:51.023016 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:27:51.066859 [debug] [MainThread]: SQL status: SELECT 0 in 0.044 seconds
+[0m00:27:51.068087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695DD8E10>]}
+[0m00:27:51.068686 [debug] [MainThread]: On master: ROLLBACK
+[0m00:27:51.070196 [debug] [MainThread]: On master: COMMIT
+[0m00:27:51.071034 [debug] [MainThread]: Using postgres connection "master"
+[0m00:27:51.071512 [debug] [MainThread]: On master: COMMIT
+[0m00:27:51.073185 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m00:27:51.073544 [debug] [MainThread]: On master: Close
+[0m00:27:51.082282 [debug] [Thread-1 (]: Began running node model.credit_pulse.stg_customers
+[0m00:27:51.082902 [debug] [Thread-3 (]: Began running node model.credit_pulse.stg_repayments
+[0m00:27:51.083407 [debug] [Thread-2 (]: Began running node model.credit_pulse.stg_loans
+[0m00:27:51.083958 [info ] [Thread-1 (]: 1 of 7 START sql view model public.stg_customers ............................... [RUN]
+[0m00:27:51.086647 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.credit_pulse.stg_customers'
+[0m00:27:51.087044 [debug] [Thread-1 (]: Began compiling node model.credit_pulse.stg_customers
+[0m00:27:51.095099 [debug] [Thread-1 (]: Writing injected SQL for node "model.credit_pulse.stg_customers"
+[0m00:27:51.084718 [info ] [Thread-3 (]: 3 of 7 START sql view model public.stg_repayments .............................. [RUN]
+[0m00:27:51.085856 [info ] [Thread-2 (]: 2 of 7 START sql view model public.stg_loans ................................... [RUN]
+[0m00:27:51.096471 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.credit_pulse.stg_repayments'
+[0m00:27:51.097489 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.credit_pulse.stg_loans'
+[0m00:27:51.098215 [debug] [Thread-3 (]: Began compiling node model.credit_pulse.stg_repayments
+[0m00:27:51.098695 [debug] [Thread-2 (]: Began compiling node model.credit_pulse.stg_loans
+[0m00:27:51.102263 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_pulse.stg_repayments"
+[0m00:27:51.108023 [debug] [Thread-2 (]: Writing injected SQL for node "model.credit_pulse.stg_loans"
+[0m00:27:51.114375 [debug] [Thread-2 (]: Began executing node model.credit_pulse.stg_loans
+[0m00:27:51.167428 [debug] [Thread-2 (]: Writing runtime sql for node "model.credit_pulse.stg_loans"
+[0m00:27:51.168902 [debug] [Thread-1 (]: Began executing node model.credit_pulse.stg_customers
+[0m00:27:51.169821 [debug] [Thread-3 (]: Began executing node model.credit_pulse.stg_repayments
+[0m00:27:51.177615 [debug] [Thread-1 (]: Writing runtime sql for node "model.credit_pulse.stg_customers"
+[0m00:27:51.183908 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_pulse.stg_repayments"
+[0m00:27:51.187046 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.stg_customers"
+[0m00:27:51.188290 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.stg_loans"
+[0m00:27:51.189364 [debug] [Thread-1 (]: On model.credit_pulse.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_customers"} */
+
+  create view "credit_pipeline"."public"."stg_customers__dbt_tmp"
+    
+    
+  as (
+    -- Thin pass-through view over the raw customers table. Staging
+-- models exist so downstream marts never reference raw sources
+-- directly -- if the raw schema changes, only this file needs to
+-- change, not every mart built on top of it.
+
+select
+    customer_id,
+    name,
+    age,
+    monthly_income,
+    credit_score,
+    region,
+    employment_type,
+    signup_date
+from "credit_pipeline"."public"."customers"
+  );
+[0m00:27:51.190044 [debug] [Thread-2 (]: On model.credit_pulse.stg_loans: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_loans"} */
+
+  create view "credit_pipeline"."public"."stg_loans__dbt_tmp"
+    
+    
+  as (
+    select
+    loan_id,
+    customer_id,
+    loan_amount,
+    term_months,
+    interest_rate,
+    purpose,
+    loan_status,
+    disbursed_date
+from "credit_pipeline"."public"."loans"
+  );
+[0m00:27:51.191224 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:27:51.191917 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:27:51.192668 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.stg_repayments"
+[0m00:27:51.193616 [debug] [Thread-3 (]: On model.credit_pulse.stg_repayments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_repayments"} */
+
+  create view "credit_pipeline"."public"."stg_repayments__dbt_tmp"
+    
+    
+  as (
+    select
+    repayment_id,
+    loan_id,
+    payment_date,
+    amount_paid,
+    days_late
+from "credit_pipeline"."public"."repayments"
+  );
+[0m00:27:51.194917 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:27:51.258314 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.066 seconds
+[0m00:27:51.265103 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.070 seconds
+[0m00:27:51.266831 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.stg_loans"
+[0m00:27:51.267271 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.076 seconds
+[0m00:27:51.269535 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.stg_repayments"
+[0m00:27:51.270159 [debug] [Thread-2 (]: On model.credit_pulse.stg_loans: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_loans"} */
+alter table "credit_pipeline"."public"."stg_loans__dbt_tmp" rename to "stg_loans"
+[0m00:27:51.273529 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.stg_customers"
+[0m00:27:51.274074 [debug] [Thread-3 (]: On model.credit_pulse.stg_repayments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_repayments"} */
+alter table "credit_pipeline"."public"."stg_repayments__dbt_tmp" rename to "stg_repayments"
+[0m00:27:51.274601 [debug] [Thread-1 (]: On model.credit_pulse.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_customers"} */
+alter table "credit_pipeline"."public"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m00:27:51.276610 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m00:27:51.277521 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m00:27:51.278157 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m00:27:51.298607 [debug] [Thread-2 (]: On model.credit_pulse.stg_loans: COMMIT
+[0m00:27:51.300901 [debug] [Thread-3 (]: On model.credit_pulse.stg_repayments: COMMIT
+[0m00:27:51.302928 [debug] [Thread-1 (]: On model.credit_pulse.stg_customers: COMMIT
+[0m00:27:51.303392 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.stg_loans"
+[0m00:27:51.303825 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.stg_repayments"
+[0m00:27:51.304256 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.stg_customers"
+[0m00:27:51.304700 [debug] [Thread-2 (]: On model.credit_pulse.stg_loans: COMMIT
+[0m00:27:51.305112 [debug] [Thread-3 (]: On model.credit_pulse.stg_repayments: COMMIT
+[0m00:27:51.305499 [debug] [Thread-1 (]: On model.credit_pulse.stg_customers: COMMIT
+[0m00:27:51.310217 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m00:27:51.310718 [debug] [Thread-3 (]: SQL status: COMMIT in 0.005 seconds
+[0m00:27:51.311088 [debug] [Thread-2 (]: SQL status: COMMIT in 0.005 seconds
+[0m00:27:51.322689 [debug] [Thread-1 (]: Applying DROP to: "credit_pipeline"."public"."stg_customers__dbt_backup"
+[0m00:27:51.324424 [debug] [Thread-3 (]: Applying DROP to: "credit_pipeline"."public"."stg_repayments__dbt_backup"
+[0m00:27:51.326114 [debug] [Thread-2 (]: Applying DROP to: "credit_pipeline"."public"."stg_loans__dbt_backup"
+[0m00:27:51.332085 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.stg_customers"
+[0m00:27:51.333291 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.stg_repayments"
+[0m00:27:51.334456 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.stg_loans"
+[0m00:27:51.335157 [debug] [Thread-1 (]: On model.credit_pulse.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_customers"} */
+drop view if exists "credit_pipeline"."public"."stg_customers__dbt_backup" cascade
+[0m00:27:51.335712 [debug] [Thread-3 (]: On model.credit_pulse.stg_repayments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_repayments"} */
+drop view if exists "credit_pipeline"."public"."stg_repayments__dbt_backup" cascade
+[0m00:27:51.336113 [debug] [Thread-2 (]: On model.credit_pulse.stg_loans: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.stg_loans"} */
+drop view if exists "credit_pipeline"."public"."stg_loans__dbt_backup" cascade
+[0m00:27:51.340267 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m00:27:51.341003 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.004 seconds
+[0m00:27:51.341493 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.005 seconds
+[0m00:27:51.344297 [debug] [Thread-2 (]: On model.credit_pulse.stg_loans: Close
+[0m00:27:51.345693 [debug] [Thread-3 (]: On model.credit_pulse.stg_repayments: Close
+[0m00:27:51.347252 [debug] [Thread-1 (]: On model.credit_pulse.stg_customers: Close
+[0m00:27:51.352649 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695E8AD50>]}
+[0m00:27:51.353246 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695E9B4A0>]}
+[0m00:27:51.354780 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B69279E650>]}
+[0m00:27:51.354397 [info ] [Thread-3 (]: 3 of 7 OK created sql view model public.stg_repayments ......................... [[32mCREATE VIEW[0m in 0.25s]
+[0m00:27:51.357269 [debug] [Thread-3 (]: Finished running node model.credit_pulse.stg_repayments
+[0m00:27:51.355866 [info ] [Thread-2 (]: 2 of 7 OK created sql view model public.stg_loans .............................. [[32mCREATE VIEW[0m in 0.25s]
+[0m00:27:51.358105 [debug] [Thread-2 (]: Finished running node model.credit_pulse.stg_loans
+[0m00:27:51.358788 [debug] [Thread-4 (]: Began running node model.credit_pulse.late_payment_vs_default
+[0m00:27:51.356667 [info ] [Thread-1 (]: 1 of 7 OK created sql view model public.stg_customers .......................... [[32mCREATE VIEW[0m in 0.27s]
+[0m00:27:51.360370 [debug] [Thread-1 (]: Finished running node model.credit_pulse.stg_customers
+[0m00:27:51.359376 [info ] [Thread-4 (]: 4 of 7 START sql table model public.late_payment_vs_default .................... [RUN]
+[0m00:27:51.362559 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.credit_pulse.late_payment_vs_default'
+[0m00:27:51.363690 [debug] [Thread-1 (]: Began running node model.credit_pulse.top_borrowers_by_region
+[0m00:27:51.364773 [debug] [Thread-3 (]: Began running node model.credit_pulse.default_rate_by_region
+[0m00:27:51.365282 [debug] [Thread-2 (]: Began running node model.credit_pulse.risk_by_credit_tier
+[0m00:27:51.365704 [debug] [Thread-4 (]: Began compiling node model.credit_pulse.late_payment_vs_default
+[0m00:27:51.366276 [info ] [Thread-1 (]: 7 of 7 START sql table model public.top_borrowers_by_region .................... [RUN]
+[0m00:27:51.372923 [debug] [Thread-4 (]: Writing injected SQL for node "model.credit_pulse.late_payment_vs_default"
+[0m00:27:51.366836 [info ] [Thread-3 (]: 5 of 7 START sql table model public.default_rate_by_region ..................... [RUN]
+[0m00:27:51.375194 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.credit_pulse.stg_customers, now model.credit_pulse.top_borrowers_by_region)
+[0m00:27:51.367732 [info ] [Thread-2 (]: 6 of 7 START sql table model public.risk_by_credit_tier ........................ [RUN]
+[0m00:27:51.377159 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_pulse.stg_repayments, now model.credit_pulse.default_rate_by_region)
+[0m00:27:51.377785 [debug] [Thread-1 (]: Began compiling node model.credit_pulse.top_borrowers_by_region
+[0m00:27:51.378536 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.credit_pulse.stg_loans, now model.credit_pulse.risk_by_credit_tier)
+[0m00:27:51.379286 [debug] [Thread-3 (]: Began compiling node model.credit_pulse.default_rate_by_region
+[0m00:27:51.384491 [debug] [Thread-1 (]: Writing injected SQL for node "model.credit_pulse.top_borrowers_by_region"
+[0m00:27:51.385355 [debug] [Thread-2 (]: Began compiling node model.credit_pulse.risk_by_credit_tier
+[0m00:27:51.388583 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_pulse.default_rate_by_region"
+[0m00:27:51.393677 [debug] [Thread-2 (]: Writing injected SQL for node "model.credit_pulse.risk_by_credit_tier"
+[0m00:27:51.394577 [debug] [Thread-4 (]: Began executing node model.credit_pulse.late_payment_vs_default
+[0m00:27:51.425325 [debug] [Thread-4 (]: Writing runtime sql for node "model.credit_pulse.late_payment_vs_default"
+[0m00:27:51.426183 [debug] [Thread-1 (]: Began executing node model.credit_pulse.top_borrowers_by_region
+[0m00:27:51.429341 [debug] [Thread-1 (]: Writing runtime sql for node "model.credit_pulse.top_borrowers_by_region"
+[0m00:27:51.430155 [debug] [Thread-3 (]: Began executing node model.credit_pulse.default_rate_by_region
+[0m00:27:51.434810 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_pulse.default_rate_by_region"
+[0m00:27:51.435308 [debug] [Thread-2 (]: Began executing node model.credit_pulse.risk_by_credit_tier
+[0m00:27:51.442532 [debug] [Thread-2 (]: Writing runtime sql for node "model.credit_pulse.risk_by_credit_tier"
+[0m00:27:51.443449 [debug] [Thread-4 (]: Using postgres connection "model.credit_pulse.late_payment_vs_default"
+[0m00:27:51.444338 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.top_borrowers_by_region"
+[0m00:27:51.445126 [debug] [Thread-4 (]: On model.credit_pulse.late_payment_vs_default: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.late_payment_vs_default"} */
+
+  
+    
+
+  create  table "credit_pipeline"."public"."late_payment_vs_default__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    l.loan_status,
+    round(avg(r.days_late), 2) as avg_days_late
+from "credit_pipeline"."public"."stg_loans" l
+join "credit_pipeline"."public"."stg_repayments" r on l.loan_id = r.loan_id
+group by l.loan_status
+order by avg_days_late desc
+  );
+  
+[0m00:27:51.445813 [debug] [Thread-1 (]: On model.credit_pulse.top_borrowers_by_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.top_borrowers_by_region"} */
+
+  
+    
+
+  create  table "credit_pipeline"."public"."top_borrowers_by_region__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    c.region,
+    c.name,
+    sum(l.loan_amount) as total_borrowed,
+    rank() over (
+        partition by c.region
+        order by sum(l.loan_amount) desc
+    ) as rank_in_region
+from "credit_pipeline"."public"."stg_customers" c
+join "credit_pipeline"."public"."stg_loans" l on c.customer_id = l.customer_id
+group by c.region, c.customer_id, c.name
+order by c.region, rank_in_region
+  );
+  
+[0m00:27:51.446270 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:27:51.446823 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:27:51.447486 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.default_rate_by_region"
+[0m00:27:51.448294 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.risk_by_credit_tier"
+[0m00:27:51.448976 [debug] [Thread-3 (]: On model.credit_pulse.default_rate_by_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.default_rate_by_region"} */
+
+  
+    
+
+  create  table "credit_pipeline"."public"."default_rate_by_region__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select
+    c.region,
+    count(*) as total_loans,
+    sum(case when l.loan_status = 'Default' then 1 else 0 end) as defaults,
+    round(
+        100.0 * sum(case when l.loan_status = 'Default' then 1 else 0 end) / count(*),
+        2
+    ) as default_rate_pct
+from "credit_pipeline"."public"."stg_loans" l
+join "credit_pipeline"."public"."stg_customers" c on l.customer_id = c.customer_id
+group by c.region
+order by default_rate_pct desc
+  );
+  
+[0m00:27:51.449487 [debug] [Thread-2 (]: On model.credit_pulse.risk_by_credit_tier: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.risk_by_credit_tier"} */
+
+  
+    
+
+  create  table "credit_pipeline"."public"."risk_by_credit_tier__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with scored_customers as (
+    select
+        customer_id,
+        credit_score,
+        case
+            when credit_score >= 750 then 'Excellent'
+            when credit_score >= 650 then 'Good'
+            when credit_score >= 550 then 'Fair'
+            else 'Poor'
+        end as credit_tier
+    from "credit_pipeline"."public"."stg_customers"
+)
+
+select
+    sc.credit_tier,
+    count(distinct l.loan_id) as total_loans,
+    round(avg(l.loan_amount), 2) as avg_loan_amount,
+    sum(case when l.loan_status = 'Default' then 1 else 0 end) as defaults
+from scored_customers sc
+join "credit_pipeline"."public"."stg_loans" l on sc.customer_id = l.customer_id
+group by sc.credit_tier
+order by defaults desc
+  );
+  
+[0m00:27:51.449983 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:27:51.450427 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:27:51.516946 [debug] [Thread-3 (]: SQL status: SELECT 8 in 0.067 seconds
+[0m00:27:51.525496 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.default_rate_by_region"
+[0m00:27:51.525951 [debug] [Thread-3 (]: On model.credit_pulse.default_rate_by_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.default_rate_by_region"} */
+alter table "credit_pipeline"."public"."default_rate_by_region__dbt_tmp" rename to "default_rate_by_region"
+[0m00:27:51.526405 [debug] [Thread-1 (]: SQL status: SELECT 1549 in 0.080 seconds
+[0m00:27:51.526927 [debug] [Thread-2 (]: SQL status: SELECT 4 in 0.076 seconds
+[0m00:27:51.531236 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.top_borrowers_by_region"
+[0m00:27:51.531751 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m00:27:51.534555 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.risk_by_credit_tier"
+[0m00:27:51.535135 [debug] [Thread-4 (]: SQL status: SELECT 3 in 0.089 seconds
+[0m00:27:51.535615 [debug] [Thread-1 (]: On model.credit_pulse.top_borrowers_by_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.top_borrowers_by_region"} */
+alter table "credit_pipeline"."public"."top_borrowers_by_region__dbt_tmp" rename to "top_borrowers_by_region"
+[0m00:27:51.537507 [debug] [Thread-3 (]: On model.credit_pulse.default_rate_by_region: COMMIT
+[0m00:27:51.537953 [debug] [Thread-2 (]: On model.credit_pulse.risk_by_credit_tier: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.risk_by_credit_tier"} */
+alter table "credit_pipeline"."public"."risk_by_credit_tier__dbt_tmp" rename to "risk_by_credit_tier"
+[0m00:27:51.540338 [debug] [Thread-4 (]: Using postgres connection "model.credit_pulse.late_payment_vs_default"
+[0m00:27:51.541018 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.default_rate_by_region"
+[0m00:27:51.541711 [debug] [Thread-4 (]: On model.credit_pulse.late_payment_vs_default: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.late_payment_vs_default"} */
+alter table "credit_pipeline"."public"."late_payment_vs_default__dbt_tmp" rename to "late_payment_vs_default"
+[0m00:27:51.542438 [debug] [Thread-3 (]: On model.credit_pulse.default_rate_by_region: COMMIT
+[0m00:27:51.543592 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m00:27:51.544116 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m00:27:51.546494 [debug] [Thread-1 (]: On model.credit_pulse.top_borrowers_by_region: COMMIT
+[0m00:27:51.548962 [debug] [Thread-2 (]: On model.credit_pulse.risk_by_credit_tier: COMMIT
+[0m00:27:51.549530 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m00:27:51.549958 [debug] [Thread-3 (]: SQL status: COMMIT in 0.005 seconds
+[0m00:27:51.550456 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.top_borrowers_by_region"
+[0m00:27:51.551182 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.risk_by_credit_tier"
+[0m00:27:51.552966 [debug] [Thread-4 (]: On model.credit_pulse.late_payment_vs_default: COMMIT
+[0m00:27:51.554826 [debug] [Thread-3 (]: Applying DROP to: "credit_pipeline"."public"."default_rate_by_region__dbt_backup"
+[0m00:27:51.555422 [debug] [Thread-1 (]: On model.credit_pulse.top_borrowers_by_region: COMMIT
+[0m00:27:51.555894 [debug] [Thread-2 (]: On model.credit_pulse.risk_by_credit_tier: COMMIT
+[0m00:27:51.556380 [debug] [Thread-4 (]: Using postgres connection "model.credit_pulse.late_payment_vs_default"
+[0m00:27:51.559694 [debug] [Thread-3 (]: Using postgres connection "model.credit_pulse.default_rate_by_region"
+[0m00:27:51.560337 [debug] [Thread-4 (]: On model.credit_pulse.late_payment_vs_default: COMMIT
+[0m00:27:51.560931 [debug] [Thread-3 (]: On model.credit_pulse.default_rate_by_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.default_rate_by_region"} */
+drop table if exists "credit_pipeline"."public"."default_rate_by_region__dbt_backup" cascade
+[0m00:27:51.563425 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m00:27:51.564164 [debug] [Thread-2 (]: SQL status: COMMIT in 0.004 seconds
+[0m00:27:51.564678 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m00:27:51.565094 [debug] [Thread-4 (]: SQL status: COMMIT in 0.004 seconds
+[0m00:27:51.566504 [debug] [Thread-3 (]: On model.credit_pulse.default_rate_by_region: Close
+[0m00:27:51.568201 [debug] [Thread-2 (]: Applying DROP to: "credit_pipeline"."public"."risk_by_credit_tier__dbt_backup"
+[0m00:27:51.570150 [debug] [Thread-1 (]: Applying DROP to: "credit_pipeline"."public"."top_borrowers_by_region__dbt_backup"
+[0m00:27:51.572336 [debug] [Thread-4 (]: Applying DROP to: "credit_pipeline"."public"."late_payment_vs_default__dbt_backup"
+[0m00:27:51.573501 [debug] [Thread-2 (]: Using postgres connection "model.credit_pulse.risk_by_credit_tier"
+[0m00:27:51.574147 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695F97770>]}
+[0m00:27:51.574998 [debug] [Thread-1 (]: Using postgres connection "model.credit_pulse.top_borrowers_by_region"
+[0m00:27:51.576499 [debug] [Thread-4 (]: Using postgres connection "model.credit_pulse.late_payment_vs_default"
+[0m00:27:51.577858 [debug] [Thread-2 (]: On model.credit_pulse.risk_by_credit_tier: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.risk_by_credit_tier"} */
+drop table if exists "credit_pipeline"."public"."risk_by_credit_tier__dbt_backup" cascade
+[0m00:27:51.579742 [debug] [Thread-1 (]: On model.credit_pulse.top_borrowers_by_region: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.top_borrowers_by_region"} */
+drop table if exists "credit_pipeline"."public"."top_borrowers_by_region__dbt_backup" cascade
+[0m00:27:51.580209 [debug] [Thread-4 (]: On model.credit_pulse.late_payment_vs_default: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "model.credit_pulse.late_payment_vs_default"} */
+drop table if exists "credit_pipeline"."public"."late_payment_vs_default__dbt_backup" cascade
+[0m00:27:51.579054 [info ] [Thread-3 (]: 5 of 7 OK created sql table model public.default_rate_by_region ................ [[32mSELECT 8[0m in 0.20s]
+[0m00:27:51.581370 [debug] [Thread-3 (]: Finished running node model.credit_pulse.default_rate_by_region
+[0m00:27:51.582174 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m00:27:51.582669 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m00:27:51.584576 [debug] [Thread-4 (]: On model.credit_pulse.late_payment_vs_default: Close
+[0m00:27:51.585143 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m00:27:51.586666 [debug] [Thread-2 (]: On model.credit_pulse.risk_by_credit_tier: Close
+[0m00:27:51.588328 [debug] [Thread-1 (]: On model.credit_pulse.top_borrowers_by_region: Close
+[0m00:27:51.589065 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695E7FD10>]}
+[0m00:27:51.594237 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695E7F2F0>]}
+[0m00:27:51.592463 [info ] [Thread-4 (]: 4 of 7 OK created sql table model public.late_payment_vs_default ............... [[32mSELECT 3[0m in 0.23s]
+[0m00:27:51.595383 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcbe3c8a-6e0d-4ebe-a6fa-f26e0bd1a3f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695E7EF90>]}
+[0m00:27:51.597935 [debug] [Thread-4 (]: Finished running node model.credit_pulse.late_payment_vs_default
+[0m00:27:51.596631 [info ] [Thread-2 (]: 6 of 7 OK created sql table model public.risk_by_credit_tier ................... [[32mSELECT 4[0m in 0.22s]
+[0m00:27:51.599840 [debug] [Thread-2 (]: Finished running node model.credit_pulse.risk_by_credit_tier
+[0m00:27:51.598815 [info ] [Thread-1 (]: 7 of 7 OK created sql table model public.top_borrowers_by_region ............... [[32mSELECT 1549[0m in 0.22s]
+[0m00:27:51.601769 [debug] [Thread-1 (]: Finished running node model.credit_pulse.top_borrowers_by_region
+[0m00:27:51.605626 [debug] [MainThread]: On master: COMMIT
+[0m00:27:51.606667 [debug] [MainThread]: Using postgres connection "master"
+[0m00:27:51.607555 [debug] [MainThread]: On master: COMMIT
+[0m00:27:51.608286 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:27:51.634378 [debug] [MainThread]: SQL status: COMMIT in 0.026 seconds
+[0m00:27:51.634908 [debug] [MainThread]: On master: Close
+[0m00:27:51.635700 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:27:51.636517 [debug] [MainThread]: Connection 'list_credit_pipeline' was properly closed.
+[0m00:27:51.636847 [debug] [MainThread]: Connection 'list_credit_pipeline_public' was properly closed.
+[0m00:27:51.637668 [debug] [MainThread]: Connection 'model.credit_pulse.top_borrowers_by_region' was properly closed.
+[0m00:27:51.638155 [debug] [MainThread]: Connection 'model.credit_pulse.default_rate_by_region' was properly closed.
+[0m00:27:51.638500 [debug] [MainThread]: Connection 'model.credit_pulse.risk_by_credit_tier' was properly closed.
+[0m00:27:51.638801 [debug] [MainThread]: Connection 'model.credit_pulse.late_payment_vs_default' was properly closed.
+[0m00:27:51.639654 [info ] [MainThread]: 
+[0m00:27:51.640473 [info ] [MainThread]: Finished running 4 table models, 3 view models in 0 hours 0 minutes and 0.86 seconds (0.86s).
+[0m00:27:51.642701 [debug] [MainThread]: Command end result
+[0m00:27:51.689617 [debug] [MainThread]: Wrote artifact WritableManifest to S:\CreditPulse\credit_pulse_dbt\target\manifest.json
+[0m00:27:51.693748 [debug] [MainThread]: Wrote artifact SemanticManifest to S:\CreditPulse\credit_pulse_dbt\target\semantic_manifest.json
+[0m00:27:51.697639 [debug] [MainThread]: Wrote artifact OsiDocument to S:\CreditPulse\credit_pulse_dbt\target\osi_document.json
+[0m00:27:51.706609 [debug] [MainThread]: Wrote artifact RunExecutionResult to S:\CreditPulse\credit_pulse_dbt\target\run_results.json
+[0m00:27:51.707223 [info ] [MainThread]: 
+[0m00:27:51.707905 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:27:51.708447 [info ] [MainThread]: 
+[0m00:27:51.709000 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=7
+[0m00:27:51.709719 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 4 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m00:27:51.711100 [debug] [MainThread]: Command `dbt run` succeeded at 00:27:51.710944 after 5.61 seconds
+[0m00:27:51.711544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B692F357F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B695A69A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B692E31910>]}
+[0m00:27:51.711958 [debug] [MainThread]: Flushing usage events
+[0m00:27:52.966417 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:28:09.422487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694A3E9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694CB5BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694CB5B750>]}
+
+
+============================== 00:28:09.429170 | 7db37a33-97a6-4770-8e62-991e5094a95e ==============================
+[0m00:28:09.429170 [info ] [MainThread]: Running with dbt=1.12.0
+[0m00:28:09.430018 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'S:\\CreditPulse\\credit_pulse_dbt\\logs'}
+[0m00:28:09.700099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7db37a33-97a6-4770-8e62-991e5094a95e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694AACD940>]}
+[0m00:28:09.773558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7db37a33-97a6-4770-8e62-991e5094a95e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694891DBF0>]}
+[0m00:28:09.774987 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:28:10.082769 [debug] [MainThread]: checksum: 4d5ca91f13fa75a78f00116abaee763d5e4efc9b1bea403b821062e48bc32324, vars: {}, profile: credit_pulse, target: dev, version: 1.12.0
+[0m00:28:10.398624 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:28:10.399049 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:28:10.399337 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:28:10.410340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7db37a33-97a6-4770-8e62-991e5094a95e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694D206B50>]}
+[0m00:28:10.622266 [debug] [MainThread]: Wrote artifact WritableManifest to S:\CreditPulse\credit_pulse_dbt\target\manifest.json
+[0m00:28:10.626893 [debug] [MainThread]: Wrote artifact SemanticManifest to S:\CreditPulse\credit_pulse_dbt\target\semantic_manifest.json
+[0m00:28:10.663156 [debug] [MainThread]: Wrote artifact OsiDocument to S:\CreditPulse\credit_pulse_dbt\target\osi_document.json
+[0m00:28:10.694682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7db37a33-97a6-4770-8e62-991e5094a95e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694D33D6D0>]}
+[0m00:28:10.695208 [info ] [MainThread]: Found 7 models, 25 data tests, 3 sources, 477 macros
+[0m00:28:10.695701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7db37a33-97a6-4770-8e62-991e5094a95e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694D31F4D0>]}
+[0m00:28:10.698851 [info ] [MainThread]: 
+[0m00:28:10.699398 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:28:10.699811 [info ] [MainThread]: 
+[0m00:28:10.700443 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m00:28:10.705343 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_pipeline_public'
+[0m00:28:10.802195 [debug] [ThreadPool]: Using postgres connection "list_credit_pipeline_public"
+[0m00:28:10.802633 [debug] [ThreadPool]: On list_credit_pipeline_public: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "list_credit_pipeline_public"} */
+select
+      'credit_pipeline' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'credit_pipeline' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'credit_pipeline' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+    union all
+    select distinct
+     'credit_pipeline' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'public'
+  
+[0m00:28:10.803033 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:28:10.839800 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.037 seconds
+[0m00:28:10.841394 [debug] [ThreadPool]: On list_credit_pipeline_public: ROLLBACK
+[0m00:28:10.842522 [debug] [ThreadPool]: On list_credit_pipeline_public: Close
+[0m00:28:10.848480 [debug] [MainThread]: Using postgres connection "master"
+[0m00:28:10.849053 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m00:28:10.849455 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:28:10.878854 [debug] [MainThread]: SQL status: SELECT 3 in 0.029 seconds
+[0m00:28:10.881055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7db37a33-97a6-4770-8e62-991e5094a95e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694D6B4050>]}
+[0m00:28:10.881515 [debug] [MainThread]: On master: ROLLBACK
+[0m00:28:10.882644 [debug] [MainThread]: On master: COMMIT
+[0m00:28:10.882992 [debug] [MainThread]: Using postgres connection "master"
+[0m00:28:10.883300 [debug] [MainThread]: On master: COMMIT
+[0m00:28:10.884724 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m00:28:10.885077 [debug] [MainThread]: On master: Close
+[0m00:28:10.890112 [debug] [Thread-4 (]: Began running node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:10.891028 [debug] [Thread-3 (]: Began running node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:10.891513 [debug] [Thread-1 (]: Began running node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:10.890628 [info ] [Thread-4 (]: 4 of 25 START test not_null_default_rate_by_region_default_rate_pct ............ [RUN]
+[0m00:28:10.891974 [debug] [Thread-2 (]: Began running node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:10.892356 [info ] [Thread-3 (]: 3 of 25 START test assert_valid_default_rate_pct ............................... [RUN]
+[0m00:28:10.893283 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714'
+[0m00:28:10.892711 [info ] [Thread-1 (]: 1 of 25 START test accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor  [RUN]
+[0m00:28:10.894293 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.credit_pulse.assert_valid_default_rate_pct'
+[0m00:28:10.893794 [info ] [Thread-2 (]: 2 of 25 START test accepted_values_stg_loans_loan_status__Current__Paid_Off__Default  [RUN]
+[0m00:28:10.894786 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:10.895269 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e'
+[0m00:28:10.895670 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:10.896182 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c'
+[0m00:28:10.915213 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714"
+[0m00:28:10.915820 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:10.917960 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.assert_valid_default_rate_pct"
+[0m00:28:10.918477 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:10.949493 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e"
+[0m00:28:10.969079 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c"
+[0m00:28:10.970750 [debug] [Thread-3 (]: Began executing node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:10.991844 [debug] [Thread-3 (]: Writing runtime sql for node "test.credit_pulse.assert_valid_default_rate_pct"
+[0m00:28:10.992596 [debug] [Thread-4 (]: Began executing node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:10.994804 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714"
+[0m00:28:10.995399 [debug] [Thread-2 (]: Began executing node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:10.997607 [debug] [Thread-2 (]: Writing runtime sql for node "test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c"
+[0m00:28:10.999090 [debug] [Thread-1 (]: Began executing node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:11.001341 [debug] [Thread-1 (]: Writing runtime sql for node "test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e"
+[0m00:28:11.002342 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714"
+[0m00:28:11.003205 [debug] [Thread-4 (]: On test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select default_rate_pct
+from "credit_pipeline"."public"."default_rate_by_region"
+where default_rate_pct is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.004193 [debug] [Thread-3 (]: Using postgres connection "test.credit_pulse.assert_valid_default_rate_pct"
+[0m00:28:11.004980 [debug] [Thread-2 (]: Using postgres connection "test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c"
+[0m00:28:11.005440 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:28:11.006033 [debug] [Thread-3 (]: On test.credit_pulse.assert_valid_default_rate_pct: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.assert_valid_default_rate_pct"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  -- Singular test: a dbt test passes if this query returns ZERO rows.
+-- Here, it fails if any region's default rate falls outside a valid
+-- percentage range -- catching a calculation bug that a generic
+-- not_null/unique test wouldn't.
+
+select *
+from "credit_pipeline"."public"."default_rate_by_region"
+where default_rate_pct < 0 or default_rate_pct > 100
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.006663 [debug] [Thread-2 (]: On test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        loan_status as value_field,
+        count(*) as n_records
+
+    from "credit_pipeline"."public"."stg_loans"
+    group by loan_status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Current','Paid Off','Default'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.007343 [debug] [Thread-1 (]: Using postgres connection "test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e"
+[0m00:28:11.008030 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:28:11.008429 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:28:11.008925 [debug] [Thread-1 (]: On test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        credit_tier as value_field,
+        count(*) as n_records
+
+    from "credit_pipeline"."public"."risk_by_credit_tier"
+    group by credit_tier
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Excellent','Good','Fair','Poor'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.009879 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:28:11.034751 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.029 seconds
+[0m00:28:11.042986 [debug] [Thread-4 (]: On test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714: ROLLBACK
+[0m00:28:11.043757 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.036 seconds
+[0m00:28:11.047231 [debug] [Thread-3 (]: On test.credit_pulse.assert_valid_default_rate_pct: ROLLBACK
+[0m00:28:11.048555 [debug] [Thread-4 (]: On test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714: Close
+[0m00:28:11.051600 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.042 seconds
+[0m00:28:11.052482 [debug] [Thread-3 (]: On test.credit_pulse.assert_valid_default_rate_pct: Close
+[0m00:28:11.050502 [info ] [Thread-4 (]: 4 of 25 PASS not_null_default_rate_by_region_default_rate_pct .................. [[32mPASS[0m in 0.16s]
+[0m00:28:11.055156 [debug] [Thread-1 (]: On test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e: ROLLBACK
+[0m00:28:11.056625 [debug] [Thread-4 (]: Finished running node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:11.058803 [debug] [Thread-4 (]: Began running node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:11.062386 [debug] [Thread-1 (]: On test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e: Close
+[0m00:28:11.057479 [info ] [Thread-3 (]: 3 of 25 PASS assert_valid_default_rate_pct ..................................... [[32mPASS[0m in 0.16s]
+[0m00:28:11.064693 [debug] [Thread-3 (]: Finished running node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:11.061189 [info ] [Thread-4 (]: 5 of 25 START test not_null_default_rate_by_region_region ...................... [RUN]
+[0m00:28:11.068568 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:11.066588 [info ] [Thread-1 (]: 1 of 25 PASS accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor  [[32mPASS[0m in 0.17s]
+[0m00:28:11.070525 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714, now test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf)
+[0m00:28:11.071766 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.063 seconds
+[0m00:28:11.073428 [debug] [Thread-1 (]: Finished running node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:11.071206 [info ] [Thread-3 (]: 6 of 25 START test not_null_late_payment_vs_default_loan_status ................ [RUN]
+[0m00:28:11.074645 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:11.077323 [debug] [Thread-2 (]: On test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c: ROLLBACK
+[0m00:28:11.077996 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:11.078677 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.assert_valid_default_rate_pct, now test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254)
+[0m00:28:11.094977 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf"
+[0m00:28:11.096917 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:11.095978 [info ] [Thread-1 (]: 7 of 25 START test not_null_risk_by_credit_tier_credit_tier .................... [RUN]
+[0m00:28:11.098525 [debug] [Thread-2 (]: On test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c: Close
+[0m00:28:11.114301 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254"
+[0m00:28:11.116023 [debug] [Thread-4 (]: Began executing node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:11.116856 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e, now test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4)
+[0m00:28:11.124719 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf"
+[0m00:28:11.118728 [info ] [Thread-2 (]: 2 of 25 PASS accepted_values_stg_loans_loan_status__Current__Paid_Off__Default . [[32mPASS[0m in 0.22s]
+[0m00:28:11.125790 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:11.127055 [debug] [Thread-2 (]: Finished running node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:11.128418 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:11.145294 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4"
+[0m00:28:11.146835 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:11.152270 [debug] [Thread-3 (]: Writing runtime sql for node "test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254"
+[0m00:28:11.153316 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf"
+[0m00:28:11.154097 [info ] [Thread-2 (]: 8 of 25 START test not_null_stg_customers_credit_score ......................... [RUN]
+[0m00:28:11.155006 [debug] [Thread-4 (]: On test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region
+from "credit_pipeline"."public"."default_rate_by_region"
+where region is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.156072 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c, now test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97)
+[0m00:28:11.156957 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m00:28:11.157702 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:11.158256 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:11.168984 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97"
+[0m00:28:11.174567 [debug] [Thread-1 (]: Writing runtime sql for node "test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4"
+[0m00:28:11.175154 [debug] [Thread-3 (]: Using postgres connection "test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254"
+[0m00:28:11.176068 [debug] [Thread-3 (]: On test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_status
+from "credit_pipeline"."public"."late_payment_vs_default"
+where loan_status is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.177231 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:28:11.179272 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:11.180536 [debug] [Thread-1 (]: Using postgres connection "test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4"
+[0m00:28:11.184922 [debug] [Thread-2 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97"
+[0m00:28:11.186409 [debug] [Thread-1 (]: On test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select credit_tier
+from "credit_pipeline"."public"."risk_by_credit_tier"
+where credit_tier is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.188229 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:28:11.189466 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.032 seconds
+[0m00:28:11.193819 [debug] [Thread-4 (]: On test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf: ROLLBACK
+[0m00:28:11.194939 [debug] [Thread-2 (]: Using postgres connection "test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97"
+[0m00:28:11.195610 [debug] [Thread-4 (]: On test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf: Close
+[0m00:28:11.196138 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select credit_score
+from "credit_pipeline"."public"."stg_customers"
+where credit_score is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.196922 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:28:11.198657 [info ] [Thread-4 (]: 5 of 25 PASS not_null_default_rate_by_region_region ............................ [[32mPASS[0m in 0.13s]
+[0m00:28:11.200781 [debug] [Thread-4 (]: Finished running node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:11.201916 [debug] [Thread-4 (]: Began running node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:11.202699 [info ] [Thread-4 (]: 9 of 25 START test not_null_stg_customers_customer_id .......................... [RUN]
+[0m00:28:11.204035 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf, now test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m00:28:11.205385 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:11.206336 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.029 seconds
+[0m00:28:11.222174 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m00:28:11.226010 [debug] [Thread-3 (]: On test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254: ROLLBACK
+[0m00:28:11.227556 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.039 seconds
+[0m00:28:11.230270 [debug] [Thread-1 (]: On test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4: ROLLBACK
+[0m00:28:11.230852 [debug] [Thread-3 (]: On test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254: Close
+[0m00:28:11.231954 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.035 seconds
+[0m00:28:11.233227 [debug] [Thread-1 (]: On test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4: Close
+[0m00:28:11.237340 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97: ROLLBACK
+[0m00:28:11.242489 [debug] [Thread-4 (]: Began executing node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:11.239656 [info ] [Thread-3 (]: 6 of 25 PASS not_null_late_payment_vs_default_loan_status ...................... [[32mPASS[0m in 0.16s]
+[0m00:28:11.248097 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m00:28:11.248842 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97: Close
+[0m00:28:11.244364 [info ] [Thread-1 (]: 7 of 25 PASS not_null_risk_by_credit_tier_credit_tier .......................... [[32mPASS[0m in 0.13s]
+[0m00:28:11.249809 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:11.251075 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:11.253449 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:11.260094 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:11.252224 [info ] [Thread-2 (]: 8 of 25 PASS not_null_stg_customers_credit_score ............................... [[32mPASS[0m in 0.10s]
+[0m00:28:11.296614 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:11.291775 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m00:28:11.298461 [debug] [Thread-4 (]: On test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "credit_pipeline"."public"."stg_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.277096 [info ] [Thread-3 (]: 10 of 25 START test not_null_stg_customers_name ................................ [RUN]
+[0m00:28:11.297527 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:11.283260 [info ] [Thread-1 (]: 11 of 25 START test not_null_stg_loans_customer_id ............................. [RUN]
+[0m00:28:11.317869 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254, now test.credit_pulse.not_null_stg_customers_name.89de04c00e)
+[0m00:28:11.299528 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m00:28:11.325003 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4, now test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729)
+[0m00:28:11.323976 [info ] [Thread-2 (]: 12 of 25 START test not_null_stg_loans_loan_id ................................. [RUN]
+[0m00:28:11.327007 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:11.328555 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:11.329501 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97, now test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c)
+[0m00:28:11.357757 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_customers_name.89de04c00e"
+[0m00:28:11.383331 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:11.396081 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.096 seconds
+[0m00:28:11.402738 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729"
+[0m00:28:11.417636 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c"
+[0m00:28:11.419858 [debug] [Thread-4 (]: On test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa: ROLLBACK
+[0m00:28:11.421065 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:11.426213 [debug] [Thread-3 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_customers_name.89de04c00e"
+[0m00:28:11.427222 [debug] [Thread-4 (]: On test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa: Close
+[0m00:28:11.428670 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:11.430104 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:11.437487 [debug] [Thread-1 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729"
+[0m00:28:11.431826 [info ] [Thread-4 (]: 9 of 25 PASS not_null_stg_customers_customer_id ................................ [[32mPASS[0m in 0.23s]
+[0m00:28:11.442046 [debug] [Thread-2 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c"
+[0m00:28:11.444070 [debug] [Thread-4 (]: Finished running node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:11.445181 [debug] [Thread-3 (]: Using postgres connection "test.credit_pulse.not_null_stg_customers_name.89de04c00e"
+[0m00:28:11.446008 [debug] [Thread-4 (]: Began running node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:11.446975 [debug] [Thread-3 (]: On test.credit_pulse.not_null_stg_customers_name.89de04c00e: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_customers_name.89de04c00e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select name
+from "credit_pipeline"."public"."stg_customers"
+where name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.450009 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:28:11.452733 [debug] [Thread-1 (]: Using postgres connection "test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729"
+[0m00:28:11.454111 [debug] [Thread-2 (]: Using postgres connection "test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c"
+[0m00:28:11.447876 [info ] [Thread-4 (]: 13 of 25 START test not_null_stg_loans_loan_status ............................. [RUN]
+[0m00:28:11.455938 [debug] [Thread-1 (]: On test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "credit_pipeline"."public"."stg_loans"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.456671 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_id
+from "credit_pipeline"."public"."stg_loans"
+where loan_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.458220 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257)
+[0m00:28:11.459421 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:28:11.460087 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:28:11.460925 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:11.480855 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257"
+[0m00:28:11.483853 [debug] [Thread-4 (]: Began executing node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:11.489745 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257"
+[0m00:28:11.493296 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257"
+[0m00:28:11.494453 [debug] [Thread-4 (]: On test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_status
+from "credit_pipeline"."public"."stg_loans"
+where loan_status is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.495572 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.046 seconds
+[0m00:28:11.496518 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m00:28:11.500302 [debug] [Thread-3 (]: On test.credit_pulse.not_null_stg_customers_name.89de04c00e: ROLLBACK
+[0m00:28:11.501099 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.041 seconds
+[0m00:28:11.502014 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.043 seconds
+[0m00:28:11.505952 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c: ROLLBACK
+[0m00:28:11.506551 [debug] [Thread-3 (]: On test.credit_pulse.not_null_stg_customers_name.89de04c00e: Close
+[0m00:28:11.509162 [debug] [Thread-1 (]: On test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729: ROLLBACK
+[0m00:28:11.512353 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c: Close
+[0m00:28:11.511352 [info ] [Thread-3 (]: 10 of 25 PASS not_null_stg_customers_name ...................................... [[32mPASS[0m in 0.19s]
+[0m00:28:11.513490 [debug] [Thread-1 (]: On test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729: Close
+[0m00:28:11.515144 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:11.517496 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:11.516233 [info ] [Thread-2 (]: 12 of 25 PASS not_null_stg_loans_loan_id ....................................... [[32mPASS[0m in 0.19s]
+[0m00:28:11.520379 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:11.518865 [info ] [Thread-3 (]: 14 of 25 START test not_null_stg_repayments_days_late .......................... [RUN]
+[0m00:28:11.521768 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:11.524486 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_customers_name.89de04c00e, now test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb)
+[0m00:28:11.523338 [info ] [Thread-1 (]: 11 of 25 PASS not_null_stg_loans_customer_id ................................... [[32mPASS[0m in 0.20s]
+[0m00:28:11.527739 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:11.527079 [info ] [Thread-2 (]: 15 of 25 START test not_null_stg_repayments_loan_id ............................ [RUN]
+[0m00:28:11.528939 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:11.535849 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.039 seconds
+[0m00:28:11.543760 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb"
+[0m00:28:11.544771 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c, now test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad)
+[0m00:28:11.546256 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:11.548813 [debug] [Thread-4 (]: On test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257: ROLLBACK
+[0m00:28:11.549625 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:11.563099 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad"
+[0m00:28:11.563651 [debug] [Thread-4 (]: On test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257: Close
+[0m00:28:11.550413 [info ] [Thread-1 (]: 16 of 25 START test not_null_stg_repayments_repayment_id ....................... [RUN]
+[0m00:28:11.565648 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729, now test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a)
+[0m00:28:11.567503 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:11.568413 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:11.569723 [info ] [Thread-4 (]: 13 of 25 PASS not_null_stg_loans_loan_status ................................... [[32mPASS[0m in 0.11s]
+[0m00:28:11.584285 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a"
+[0m00:28:11.587593 [debug] [Thread-3 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb"
+[0m00:28:11.589659 [debug] [Thread-4 (]: Finished running node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:11.591252 [debug] [Thread-4 (]: Began running node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:11.591953 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:11.614628 [debug] [Thread-3 (]: Using postgres connection "test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb"
+[0m00:28:11.616573 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:11.617288 [debug] [Thread-2 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad"
+[0m00:28:11.592862 [info ] [Thread-4 (]: 17 of 25 START test not_null_top_borrowers_by_region_rank_in_region ............ [RUN]
+[0m00:28:11.618704 [debug] [Thread-3 (]: On test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select days_late
+from "credit_pipeline"."public"."stg_repayments"
+where days_late is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.621814 [debug] [Thread-1 (]: Writing runtime sql for node "test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a"
+[0m00:28:11.623539 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257, now test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7)
+[0m00:28:11.624947 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:28:11.627404 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:11.629892 [debug] [Thread-2 (]: Using postgres connection "test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad"
+[0m00:28:11.645633 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7"
+[0m00:28:11.646378 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select loan_id
+from "credit_pipeline"."public"."stg_repayments"
+where loan_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.647451 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:28:11.648852 [debug] [Thread-1 (]: Using postgres connection "test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a"
+[0m00:28:11.650054 [debug] [Thread-1 (]: On test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repayment_id
+from "credit_pipeline"."public"."stg_repayments"
+where repayment_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.651425 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:28:11.653109 [debug] [Thread-4 (]: Began executing node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:11.658658 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7"
+[0m00:28:11.661094 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7"
+[0m00:28:11.662333 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.037 seconds
+[0m00:28:11.663190 [debug] [Thread-4 (]: On test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select rank_in_region
+from "credit_pipeline"."public"."top_borrowers_by_region"
+where rank_in_region is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.666049 [debug] [Thread-3 (]: On test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb: ROLLBACK
+[0m00:28:11.666887 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m00:28:11.668629 [debug] [Thread-3 (]: On test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb: Close
+[0m00:28:11.671093 [info ] [Thread-3 (]: 14 of 25 PASS not_null_stg_repayments_days_late ................................ [[32mPASS[0m in 0.15s]
+[0m00:28:11.672951 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:11.674264 [debug] [Thread-3 (]: Began running node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:11.675445 [info ] [Thread-3 (]: 18 of 25 START test relationships_stg_loans_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m00:28:11.678457 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb, now test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9)
+[0m00:28:11.679433 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.032 seconds
+[0m00:28:11.680241 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:11.684976 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad: ROLLBACK
+[0m00:28:11.691505 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.040 seconds
+[0m00:28:11.717720 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9"
+[0m00:28:11.718731 [debug] [Thread-2 (]: On test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad: Close
+[0m00:28:11.719474 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.053 seconds
+[0m00:28:11.721446 [debug] [Thread-1 (]: On test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a: ROLLBACK
+[0m00:28:11.724169 [debug] [Thread-4 (]: On test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7: ROLLBACK
+[0m00:28:11.725927 [info ] [Thread-2 (]: 15 of 25 PASS not_null_stg_repayments_loan_id .................................. [[32mPASS[0m in 0.18s]
+[0m00:28:11.727428 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:11.727942 [debug] [Thread-1 (]: On test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a: Close
+[0m00:28:11.728438 [debug] [Thread-4 (]: On test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7: Close
+[0m00:28:11.728992 [debug] [Thread-2 (]: Began running node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:11.729769 [debug] [Thread-3 (]: Began executing node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:11.730970 [info ] [Thread-1 (]: 16 of 25 PASS not_null_stg_repayments_repayment_id ............................. [[32mPASS[0m in 0.17s]
+[0m00:28:11.732346 [info ] [Thread-2 (]: 19 of 25 START test relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_  [RUN]
+[0m00:28:11.735876 [debug] [Thread-3 (]: Writing runtime sql for node "test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9"
+[0m00:28:11.736615 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:11.733734 [info ] [Thread-4 (]: 17 of 25 PASS not_null_top_borrowers_by_region_rank_in_region .................. [[32mPASS[0m in 0.11s]
+[0m00:28:11.737218 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad, now test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368)
+[0m00:28:11.738078 [debug] [Thread-1 (]: Began running node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:11.739039 [debug] [Thread-4 (]: Finished running node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:11.739525 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:11.740786 [debug] [Thread-4 (]: Began running node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:11.740090 [info ] [Thread-1 (]: 20 of 25 START test unique_default_rate_by_region_region ....................... [RUN]
+[0m00:28:11.754713 [debug] [Thread-3 (]: Using postgres connection "test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9"
+[0m00:28:11.761462 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368"
+[0m00:28:11.762807 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a, now test.credit_pulse.unique_default_rate_by_region_region.e319e76966)
+[0m00:28:11.762176 [info ] [Thread-4 (]: 21 of 25 START test unique_late_payment_vs_default_loan_status ................. [RUN]
+[0m00:28:11.763814 [debug] [Thread-3 (]: On test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from "credit_pipeline"."public"."stg_loans"
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from "credit_pipeline"."public"."stg_customers"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.764624 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:11.765323 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7, now test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a)
+[0m00:28:11.765958 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:28:11.780708 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.unique_default_rate_by_region_region.e319e76966"
+[0m00:28:11.781340 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:11.781890 [debug] [Thread-2 (]: Began executing node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:11.790432 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a"
+[0m00:28:11.793987 [debug] [Thread-2 (]: Writing runtime sql for node "test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368"
+[0m00:28:11.795406 [debug] [Thread-1 (]: Began executing node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:11.797904 [debug] [Thread-1 (]: Writing runtime sql for node "test.credit_pulse.unique_default_rate_by_region_region.e319e76966"
+[0m00:28:11.798831 [debug] [Thread-4 (]: Began executing node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:11.799629 [debug] [Thread-2 (]: Using postgres connection "test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368"
+[0m00:28:11.801793 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a"
+[0m00:28:11.802439 [debug] [Thread-2 (]: On test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select loan_id as from_field
+    from "credit_pipeline"."public"."stg_repayments"
+    where loan_id is not null
+),
+
+parent as (
+    select loan_id as to_field
+    from "credit_pipeline"."public"."stg_loans"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.803237 [debug] [Thread-1 (]: Using postgres connection "test.credit_pulse.unique_default_rate_by_region_region.e319e76966"
+[0m00:28:11.803665 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:28:11.806821 [debug] [Thread-1 (]: On test.credit_pulse.unique_default_rate_by_region_region.e319e76966: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.unique_default_rate_by_region_region.e319e76966"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    region as unique_field,
+    count(*) as n_records
+
+from "credit_pipeline"."public"."default_rate_by_region"
+where region is not null
+group by region
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.807525 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.042 seconds
+[0m00:28:11.808047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:28:11.808567 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a"
+[0m00:28:11.810134 [debug] [Thread-3 (]: On test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9: ROLLBACK
+[0m00:28:11.810869 [debug] [Thread-4 (]: On test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    loan_status as unique_field,
+    count(*) as n_records
+
+from "credit_pipeline"."public"."late_payment_vs_default"
+where loan_status is not null
+group by loan_status
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.811548 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m00:28:11.812065 [debug] [Thread-3 (]: On test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9: Close
+[0m00:28:11.813600 [info ] [Thread-3 (]: 18 of 25 PASS relationships_stg_loans_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 0.14s]
+[0m00:28:11.815029 [debug] [Thread-3 (]: Finished running node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:11.816053 [debug] [Thread-3 (]: Began running node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:11.817379 [info ] [Thread-3 (]: 22 of 25 START test unique_risk_by_credit_tier_credit_tier ..................... [RUN]
+[0m00:28:11.820308 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9, now test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d)
+[0m00:28:11.821207 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:11.830171 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d"
+[0m00:28:11.833034 [debug] [Thread-3 (]: Began executing node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:11.835947 [debug] [Thread-3 (]: Writing runtime sql for node "test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d"
+[0m00:28:11.838246 [debug] [Thread-3 (]: Using postgres connection "test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d"
+[0m00:28:11.839302 [debug] [Thread-3 (]: On test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    credit_tier as unique_field,
+    count(*) as n_records
+
+from "credit_pipeline"."public"."risk_by_credit_tier"
+where credit_tier is not null
+group by credit_tier
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.839911 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.028 seconds
+[0m00:28:11.840352 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.032 seconds
+[0m00:28:11.840766 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m00:28:11.841252 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.038 seconds
+[0m00:28:11.842942 [debug] [Thread-4 (]: On test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a: ROLLBACK
+[0m00:28:11.844283 [debug] [Thread-1 (]: On test.credit_pulse.unique_default_rate_by_region_region.e319e76966: ROLLBACK
+[0m00:28:11.845799 [debug] [Thread-2 (]: On test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368: ROLLBACK
+[0m00:28:11.847679 [debug] [Thread-2 (]: On test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368: Close
+[0m00:28:11.848279 [debug] [Thread-4 (]: On test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a: Close
+[0m00:28:11.848937 [debug] [Thread-1 (]: On test.credit_pulse.unique_default_rate_by_region_region.e319e76966: Close
+[0m00:28:11.850991 [info ] [Thread-2 (]: 19 of 25 PASS relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_ .... [[32mPASS[0m in 0.11s]
+[0m00:28:11.855372 [debug] [Thread-2 (]: Finished running node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:11.852740 [info ] [Thread-1 (]: 20 of 25 PASS unique_default_rate_by_region_region ............................. [[32mPASS[0m in 0.09s]
+[0m00:28:11.856108 [debug] [Thread-2 (]: Began running node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:11.853992 [info ] [Thread-4 (]: 21 of 25 PASS unique_late_payment_vs_default_loan_status ....................... [[32mPASS[0m in 0.09s]
+[0m00:28:11.857609 [debug] [Thread-1 (]: Finished running node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:11.858987 [debug] [Thread-4 (]: Finished running node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:11.858358 [info ] [Thread-2 (]: 23 of 25 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m00:28:11.859564 [debug] [Thread-1 (]: Began running node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:11.860069 [debug] [Thread-4 (]: Began running node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:11.860573 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368, now test.credit_pulse.unique_stg_customers_customer_id.c7614daada)
+[0m00:28:11.862334 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:11.861172 [info ] [Thread-1 (]: 24 of 25 START test unique_stg_loans_loan_id ................................... [RUN]
+[0m00:28:11.871532 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.unique_stg_customers_customer_id.c7614daada"
+[0m00:28:11.872791 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_default_rate_by_region_region.e319e76966, now test.credit_pulse.unique_stg_loans_loan_id.be67636b63)
+[0m00:28:11.861679 [info ] [Thread-4 (]: 25 of 25 START test unique_stg_repayments_repayment_id ......................... [RUN]
+[0m00:28:11.873752 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:11.874455 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a, now test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9)
+[0m00:28:11.882431 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.unique_stg_loans_loan_id.be67636b63"
+[0m00:28:11.883157 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:11.883651 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.043 seconds
+[0m00:28:11.884728 [debug] [Thread-2 (]: Began executing node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:11.893360 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9"
+[0m00:28:11.895493 [debug] [Thread-3 (]: On test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d: ROLLBACK
+[0m00:28:11.897760 [debug] [Thread-2 (]: Writing runtime sql for node "test.credit_pulse.unique_stg_customers_customer_id.c7614daada"
+[0m00:28:11.899559 [debug] [Thread-1 (]: Began executing node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:11.900816 [debug] [Thread-3 (]: On test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d: Close
+[0m00:28:11.903353 [debug] [Thread-1 (]: Writing runtime sql for node "test.credit_pulse.unique_stg_loans_loan_id.be67636b63"
+[0m00:28:11.905569 [debug] [Thread-2 (]: Using postgres connection "test.credit_pulse.unique_stg_customers_customer_id.c7614daada"
+[0m00:28:11.906734 [debug] [Thread-4 (]: Began executing node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:11.904751 [info ] [Thread-3 (]: 22 of 25 PASS unique_risk_by_credit_tier_credit_tier ........................... [[32mPASS[0m in 0.08s]
+[0m00:28:11.907455 [debug] [Thread-2 (]: On test.credit_pulse.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.unique_stg_customers_customer_id.c7614daada"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "credit_pipeline"."public"."stg_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.909532 [debug] [Thread-4 (]: Writing runtime sql for node "test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9"
+[0m00:28:11.910228 [debug] [Thread-3 (]: Finished running node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:11.910672 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m00:28:11.911187 [debug] [Thread-1 (]: Using postgres connection "test.credit_pulse.unique_stg_loans_loan_id.be67636b63"
+[0m00:28:11.912200 [debug] [Thread-1 (]: On test.credit_pulse.unique_stg_loans_loan_id.be67636b63: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.unique_stg_loans_loan_id.be67636b63"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    loan_id as unique_field,
+    count(*) as n_records
+
+from "credit_pipeline"."public"."stg_loans"
+where loan_id is not null
+group by loan_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.912653 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:28:11.913589 [debug] [Thread-4 (]: Using postgres connection "test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9"
+[0m00:28:11.914363 [debug] [Thread-4 (]: On test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "node_id": "test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    repayment_id as unique_field,
+    count(*) as n_records
+
+from "credit_pipeline"."public"."stg_repayments"
+where repayment_id is not null
+group by repayment_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m00:28:11.915153 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m00:28:11.934012 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.023 seconds
+[0m00:28:11.937303 [debug] [Thread-2 (]: On test.credit_pulse.unique_stg_customers_customer_id.c7614daada: ROLLBACK
+[0m00:28:11.937964 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.025 seconds
+[0m00:28:11.939731 [debug] [Thread-1 (]: On test.credit_pulse.unique_stg_loans_loan_id.be67636b63: ROLLBACK
+[0m00:28:11.940247 [debug] [Thread-2 (]: On test.credit_pulse.unique_stg_customers_customer_id.c7614daada: Close
+[0m00:28:11.942684 [debug] [Thread-1 (]: On test.credit_pulse.unique_stg_loans_loan_id.be67636b63: Close
+[0m00:28:11.941932 [info ] [Thread-2 (]: 23 of 25 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.08s]
+[0m00:28:11.944681 [debug] [Thread-2 (]: Finished running node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:11.945733 [info ] [Thread-1 (]: 24 of 25 PASS unique_stg_loans_loan_id ......................................... [[32mPASS[0m in 0.07s]
+[0m00:28:11.947026 [debug] [Thread-1 (]: Finished running node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:11.968149 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.053 seconds
+[0m00:28:11.969997 [debug] [Thread-4 (]: On test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9: ROLLBACK
+[0m00:28:11.971527 [debug] [Thread-4 (]: On test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9: Close
+[0m00:28:11.972418 [info ] [Thread-4 (]: 25 of 25 PASS unique_stg_repayments_repayment_id ............................... [[32mPASS[0m in 0.10s]
+[0m00:28:11.973250 [debug] [Thread-4 (]: Finished running node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:11.975227 [debug] [MainThread]: On master: COMMIT
+[0m00:28:11.975654 [debug] [MainThread]: Using postgres connection "master"
+[0m00:28:11.975989 [debug] [MainThread]: On master: COMMIT
+[0m00:28:11.976343 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:28:11.994549 [debug] [MainThread]: SQL status: COMMIT in 0.018 seconds
+[0m00:28:11.995316 [debug] [MainThread]: On master: Close
+[0m00:28:11.996157 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:28:11.996658 [debug] [MainThread]: Connection 'list_credit_pipeline_public' was properly closed.
+[0m00:28:11.997000 [debug] [MainThread]: Connection 'test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9' was properly closed.
+[0m00:28:11.997332 [debug] [MainThread]: Connection 'test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d' was properly closed.
+[0m00:28:11.997635 [debug] [MainThread]: Connection 'test.credit_pulse.unique_stg_loans_loan_id.be67636b63' was properly closed.
+[0m00:28:11.997927 [debug] [MainThread]: Connection 'test.credit_pulse.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m00:28:11.998294 [info ] [MainThread]: 
+[0m00:28:11.998789 [info ] [MainThread]: Finished running 25 data tests in 0 hours 0 minutes and 1.30 seconds (1.30s).
+[0m00:28:12.003901 [debug] [MainThread]: Command end result
+[0m00:28:12.047081 [debug] [MainThread]: Wrote artifact WritableManifest to S:\CreditPulse\credit_pulse_dbt\target\manifest.json
+[0m00:28:12.050758 [debug] [MainThread]: Wrote artifact SemanticManifest to S:\CreditPulse\credit_pulse_dbt\target\semantic_manifest.json
+[0m00:28:12.054971 [debug] [MainThread]: Wrote artifact OsiDocument to S:\CreditPulse\credit_pulse_dbt\target\osi_document.json
+[0m00:28:12.064746 [debug] [MainThread]: Wrote artifact RunExecutionResult to S:\CreditPulse\credit_pulse_dbt\target\run_results.json
+[0m00:28:12.065153 [info ] [MainThread]: 
+[0m00:28:12.065685 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:28:12.066210 [info ] [MainThread]: 
+[0m00:28:12.066847 [info ] [MainThread]: Done. PASS=25 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=25
+[0m00:28:12.070637 [debug] [MainThread]: Command `dbt test` succeeded at 00:28:12.070450 after 2.86 seconds
+[0m00:28:12.071094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694C7F3F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694D327AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002694D327EE0>]}
+[0m00:28:12.071511 [debug] [MainThread]: Flushing usage events
+[0m00:28:13.141965 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:28:25.883139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D531B5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D5592FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D5592F9D0>]}
+
+
+============================== 00:28:25.887949 | 846088ad-73f4-428b-a8ac-df86d2bfe696 ==============================
+[0m00:28:25.887949 [info ] [MainThread]: Running with dbt=1.12.0
+[0m00:28:25.888652 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs generate', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'S:\\CreditPulse\\credit_pulse_dbt\\logs'}
+[0m00:28:26.120913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '846088ad-73f4-428b-a8ac-df86d2bfe696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D5389D940>]}
+[0m00:28:26.195181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '846088ad-73f4-428b-a8ac-df86d2bfe696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D516EDBF0>]}
+[0m00:28:26.196826 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:28:26.504083 [debug] [MainThread]: checksum: 4d5ca91f13fa75a78f00116abaee763d5e4efc9b1bea403b821062e48bc32324, vars: {}, profile: credit_pulse, target: dev, version: 1.12.0
+[0m00:28:26.745298 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:28:26.745740 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:28:26.746035 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:28:26.755907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '846088ad-73f4-428b-a8ac-df86d2bfe696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D5600AB50>]}
+[0m00:28:26.824186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '846088ad-73f4-428b-a8ac-df86d2bfe696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D55F61220>]}
+[0m00:28:26.824707 [info ] [MainThread]: Found 7 models, 25 data tests, 3 sources, 477 macros
+[0m00:28:26.825235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '846088ad-73f4-428b-a8ac-df86d2bfe696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D560EAB30>]}
+[0m00:28:26.827929 [info ] [MainThread]: 
+[0m00:28:26.828425 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:28:26.828880 [info ] [MainThread]: 
+[0m00:28:26.829537 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m00:28:26.833985 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_pipeline_public'
+[0m00:28:26.927618 [debug] [ThreadPool]: Using postgres connection "list_credit_pipeline_public"
+[0m00:28:26.928075 [debug] [ThreadPool]: On list_credit_pipeline_public: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "list_credit_pipeline_public"} */
+select
+      'credit_pipeline' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'credit_pipeline' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'credit_pipeline' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+    union all
+    select distinct
+     'credit_pipeline' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'public'
+  
+[0m00:28:26.928439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:28:26.957206 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.029 seconds
+[0m00:28:26.958641 [debug] [ThreadPool]: On list_credit_pipeline_public: ROLLBACK
+[0m00:28:26.959610 [debug] [ThreadPool]: On list_credit_pipeline_public: Close
+[0m00:28:26.965796 [debug] [MainThread]: Using postgres connection "master"
+[0m00:28:26.966232 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m00:28:26.966655 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:28:26.983815 [debug] [MainThread]: SQL status: SELECT 3 in 0.017 seconds
+[0m00:28:26.985719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '846088ad-73f4-428b-a8ac-df86d2bfe696', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D561CB1E0>]}
+[0m00:28:26.986113 [debug] [MainThread]: On master: ROLLBACK
+[0m00:28:26.987365 [debug] [MainThread]: On master: Close
+[0m00:28:26.992157 [debug] [Thread-2 (]: Began running node model.credit_pulse.stg_loans
+[0m00:28:26.992663 [debug] [Thread-3 (]: Began running node model.credit_pulse.stg_repayments
+[0m00:28:26.993032 [debug] [Thread-1 (]: Began running node model.credit_pulse.stg_customers
+[0m00:28:26.993628 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.credit_pulse.stg_loans'
+[0m00:28:26.994152 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.credit_pulse.stg_repayments'
+[0m00:28:26.994643 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.credit_pulse.stg_customers'
+[0m00:28:26.995030 [debug] [Thread-2 (]: Began compiling node model.credit_pulse.stg_loans
+[0m00:28:26.995395 [debug] [Thread-3 (]: Began compiling node model.credit_pulse.stg_repayments
+[0m00:28:26.995753 [debug] [Thread-1 (]: Began compiling node model.credit_pulse.stg_customers
+[0m00:28:27.001845 [debug] [Thread-2 (]: Writing injected SQL for node "model.credit_pulse.stg_loans"
+[0m00:28:27.003663 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_pulse.stg_repayments"
+[0m00:28:27.005878 [debug] [Thread-1 (]: Writing injected SQL for node "model.credit_pulse.stg_customers"
+[0m00:28:27.006887 [debug] [Thread-2 (]: Began executing node model.credit_pulse.stg_loans
+[0m00:28:27.007753 [debug] [Thread-2 (]: Finished running node model.credit_pulse.stg_loans
+[0m00:28:27.008155 [debug] [Thread-3 (]: Began executing node model.credit_pulse.stg_repayments
+[0m00:28:27.009047 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:27.009659 [debug] [Thread-1 (]: Began executing node model.credit_pulse.stg_customers
+[0m00:28:27.010276 [debug] [Thread-4 (]: Began running node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:27.011480 [debug] [Thread-3 (]: Finished running node model.credit_pulse.stg_repayments
+[0m00:28:27.012185 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.credit_pulse.stg_loans, now test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729)
+[0m00:28:27.013281 [debug] [Thread-1 (]: Finished running node model.credit_pulse.stg_customers
+[0m00:28:27.014046 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c'
+[0m00:28:27.014679 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:27.015209 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:27.015726 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:27.016247 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:27.016911 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_pulse.stg_repayments, now test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c)
+[0m00:28:27.031692 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729"
+[0m00:28:27.032229 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.credit_pulse.stg_customers, now test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257)
+[0m00:28:27.040808 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:27.054647 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c"
+[0m00:28:27.055239 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:27.063994 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c"
+[0m00:28:27.070090 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257"
+[0m00:28:27.070978 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:27.072089 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729
+[0m00:28:27.072585 [debug] [Thread-4 (]: Began executing node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:27.073184 [debug] [Thread-2 (]: Began running node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:27.073721 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:27.074422 [debug] [Thread-4 (]: Finished running node test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c
+[0m00:28:27.074759 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:27.075176 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_loans_customer_id.3c9bd19729, now test.credit_pulse.unique_stg_loans_loan_id.be67636b63)
+[0m00:28:27.075852 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257
+[0m00:28:27.076259 [debug] [Thread-4 (]: Began running node model.credit_pulse.late_payment_vs_default
+[0m00:28:27.076922 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c
+[0m00:28:27.077322 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:27.077727 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:27.078146 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.accepted_values_stg_loans_loan_status__Current__Paid_Off__Default.ee5233413c, now model.credit_pulse.late_payment_vs_default)
+[0m00:28:27.078551 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:27.087103 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.unique_stg_loans_loan_id.be67636b63"
+[0m00:28:27.087627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_loans_loan_status.6d17dcb257, now test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb)
+[0m00:28:27.088079 [debug] [Thread-4 (]: Began compiling node model.credit_pulse.late_payment_vs_default
+[0m00:28:27.088501 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_loans_loan_id.b77c69982c, now test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad)
+[0m00:28:27.089059 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:27.091255 [debug] [Thread-4 (]: Writing injected SQL for node "model.credit_pulse.late_payment_vs_default"
+[0m00:28:27.091717 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:27.097426 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb"
+[0m00:28:27.104771 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad"
+[0m00:28:27.105199 [debug] [Thread-2 (]: Began executing node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:27.105912 [debug] [Thread-4 (]: Began executing node model.credit_pulse.late_payment_vs_default
+[0m00:28:27.106947 [debug] [Thread-2 (]: Finished running node test.credit_pulse.unique_stg_loans_loan_id.be67636b63
+[0m00:28:27.107869 [debug] [Thread-4 (]: Finished running node model.credit_pulse.late_payment_vs_default
+[0m00:28:27.108372 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:27.108979 [debug] [Thread-4 (]: Began running node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:27.109355 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:27.109697 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:27.110279 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_stg_loans_loan_id.be67636b63, now test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a)
+[0m00:28:27.110717 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.credit_pulse.late_payment_vs_default, now test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368)
+[0m00:28:27.111410 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb
+[0m00:28:27.112075 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad
+[0m00:28:27.112458 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:27.112824 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:27.113219 [debug] [Thread-1 (]: Began running node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:27.113613 [debug] [Thread-3 (]: Began running node model.credit_pulse.default_rate_by_region
+[0m00:28:27.120245 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a"
+[0m00:28:27.133545 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_repayments_days_late.d00b6c07fb, now test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9)
+[0m00:28:27.134096 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_repayments_loan_id.0fe0d3d8ad, now model.credit_pulse.default_rate_by_region)
+[0m00:28:27.138650 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368"
+[0m00:28:27.139170 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:27.139620 [debug] [Thread-3 (]: Began compiling node model.credit_pulse.default_rate_by_region
+[0m00:28:27.145933 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9"
+[0m00:28:27.146339 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:27.148168 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_pulse.default_rate_by_region"
+[0m00:28:27.149321 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a
+[0m00:28:27.149918 [debug] [Thread-4 (]: Began executing node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:27.150718 [debug] [Thread-2 (]: Began running node model.credit_pulse.risk_by_credit_tier
+[0m00:28:27.151619 [debug] [Thread-4 (]: Finished running node test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368
+[0m00:28:27.152135 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_repayments_repayment_id.a52651794a, now model.credit_pulse.risk_by_credit_tier)
+[0m00:28:27.152573 [debug] [Thread-1 (]: Began executing node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:27.153029 [debug] [Thread-4 (]: Began running node model.credit_pulse.top_borrowers_by_region
+[0m00:28:27.153425 [debug] [Thread-2 (]: Began compiling node model.credit_pulse.risk_by_credit_tier
+[0m00:28:27.153851 [debug] [Thread-3 (]: Began executing node model.credit_pulse.default_rate_by_region
+[0m00:28:27.154530 [debug] [Thread-1 (]: Finished running node test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9
+[0m00:28:27.155013 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.relationships_stg_repayments_loan_id__loan_id__ref_stg_loans_.e70870e368, now model.credit_pulse.top_borrowers_by_region)
+[0m00:28:27.157563 [debug] [Thread-2 (]: Writing injected SQL for node "model.credit_pulse.risk_by_credit_tier"
+[0m00:28:27.158347 [debug] [Thread-3 (]: Finished running node model.credit_pulse.default_rate_by_region
+[0m00:28:27.158755 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:27.159127 [debug] [Thread-4 (]: Began compiling node model.credit_pulse.top_borrowers_by_region
+[0m00:28:27.159657 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:27.160298 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_stg_repayments_repayment_id.d18aab13d9, now test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97)
+[0m00:28:27.162355 [debug] [Thread-4 (]: Writing injected SQL for node "model.credit_pulse.top_borrowers_by_region"
+[0m00:28:27.162895 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_pulse.default_rate_by_region, now test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m00:28:27.163340 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:27.163701 [debug] [Thread-2 (]: Began executing node model.credit_pulse.risk_by_credit_tier
+[0m00:28:27.164342 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:27.174667 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97"
+[0m00:28:27.175537 [debug] [Thread-2 (]: Finished running node model.credit_pulse.risk_by_credit_tier
+[0m00:28:27.182337 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m00:28:27.183179 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:27.183778 [debug] [Thread-4 (]: Began executing node model.credit_pulse.top_borrowers_by_region
+[0m00:28:27.184482 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.credit_pulse.risk_by_credit_tier, now test.credit_pulse.not_null_stg_customers_name.89de04c00e)
+[0m00:28:27.185350 [debug] [Thread-4 (]: Finished running node model.credit_pulse.top_borrowers_by_region
+[0m00:28:27.185738 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:27.186082 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:27.186562 [debug] [Thread-4 (]: Began running node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:27.192416 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_stg_customers_name.89de04c00e"
+[0m00:28:27.192874 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:27.193631 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97
+[0m00:28:27.194039 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.credit_pulse.top_borrowers_by_region, now test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9)
+[0m00:28:27.194829 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m00:28:27.195347 [debug] [Thread-1 (]: Began running node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:27.195732 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:27.196284 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:27.196827 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:27.197262 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_customers_credit_score.1a2b785b97, now test.credit_pulse.unique_stg_customers_customer_id.c7614daada)
+[0m00:28:27.211318 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9"
+[0m00:28:27.211803 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254)
+[0m00:28:27.212517 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_stg_customers_name.89de04c00e
+[0m00:28:27.212899 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:27.213464 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:27.214107 [debug] [Thread-2 (]: Began running node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:27.220411 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.unique_stg_customers_customer_id.c7614daada"
+[0m00:28:27.227127 [debug] [Thread-4 (]: Began executing node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:27.227787 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254"
+[0m00:28:27.228329 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_stg_customers_name.89de04c00e, now test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a)
+[0m00:28:27.229314 [debug] [Thread-4 (]: Finished running node test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9
+[0m00:28:27.229809 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:27.230442 [debug] [Thread-4 (]: Began running node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:27.237464 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a"
+[0m00:28:27.238210 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.relationships_stg_loans_customer_id__customer_id__ref_stg_customers_.21d858c1b9, now test.credit_pulse.assert_valid_default_rate_pct)
+[0m00:28:27.238819 [debug] [Thread-1 (]: Began executing node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:27.239501 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:27.240147 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:27.241337 [debug] [Thread-1 (]: Finished running node test.credit_pulse.unique_stg_customers_customer_id.c7614daada
+[0m00:28:27.242553 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254
+[0m00:28:27.245491 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.assert_valid_default_rate_pct"
+[0m00:28:27.246111 [debug] [Thread-1 (]: Began running node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:27.246588 [debug] [Thread-2 (]: Began executing node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:27.247061 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:27.247779 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_stg_customers_customer_id.c7614daada, now test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714)
+[0m00:28:27.248617 [debug] [Thread-2 (]: Finished running node test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a
+[0m00:28:27.249048 [debug] [Thread-4 (]: Began executing node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:27.249501 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_late_payment_vs_default_loan_status.3e678a5254, now test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf)
+[0m00:28:27.249941 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:27.250443 [debug] [Thread-2 (]: Began running node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:27.251151 [debug] [Thread-4 (]: Finished running node test.credit_pulse.assert_valid_default_rate_pct
+[0m00:28:27.251506 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:27.259420 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714"
+[0m00:28:27.260236 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_late_payment_vs_default_loan_status.8d1d82864a, now test.credit_pulse.unique_default_rate_by_region_region.e319e76966)
+[0m00:28:27.260829 [debug] [Thread-4 (]: Began running node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:27.267783 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf"
+[0m00:28:27.268389 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:27.269523 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.credit_pulse.assert_valid_default_rate_pct, now test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e)
+[0m00:28:27.276946 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.unique_default_rate_by_region_region.e319e76966"
+[0m00:28:27.277660 [debug] [Thread-4 (]: Began compiling node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:27.307034 [debug] [Thread-4 (]: Writing injected SQL for node "test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e"
+[0m00:28:27.307594 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:27.308290 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf
+[0m00:28:27.308670 [debug] [Thread-3 (]: Began running node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:27.309066 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_default_rate_by_region_region.23b4eaacdf, now test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4)
+[0m00:28:27.309440 [debug] [Thread-3 (]: Began compiling node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:27.315750 [debug] [Thread-3 (]: Writing injected SQL for node "test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4"
+[0m00:28:27.316562 [debug] [Thread-1 (]: Began executing node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:27.317673 [debug] [Thread-1 (]: Finished running node test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714
+[0m00:28:27.318918 [debug] [Thread-1 (]: Began running node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:27.319542 [debug] [Thread-2 (]: Began executing node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:27.320071 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.credit_pulse.not_null_default_rate_by_region_default_rate_pct.d9691fc714, now test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d)
+[0m00:28:27.321649 [debug] [Thread-2 (]: Finished running node test.credit_pulse.unique_default_rate_by_region_region.e319e76966
+[0m00:28:27.323673 [debug] [Thread-3 (]: Began executing node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:27.325090 [debug] [Thread-1 (]: Began compiling node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:27.326423 [debug] [Thread-2 (]: Began running node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:27.327465 [debug] [Thread-3 (]: Finished running node test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4
+[0m00:28:27.327808 [debug] [Thread-4 (]: Began executing node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:27.333491 [debug] [Thread-1 (]: Writing injected SQL for node "test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d"
+[0m00:28:27.334110 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.credit_pulse.unique_default_rate_by_region_region.e319e76966, now test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7)
+[0m00:28:27.335065 [debug] [Thread-4 (]: Finished running node test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e
+[0m00:28:27.335677 [debug] [Thread-2 (]: Began compiling node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:27.342395 [debug] [Thread-2 (]: Writing injected SQL for node "test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7"
+[0m00:28:27.343117 [debug] [Thread-1 (]: Began executing node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:27.343884 [debug] [Thread-1 (]: Finished running node test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d
+[0m00:28:27.344433 [debug] [Thread-2 (]: Began executing node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:27.345159 [debug] [Thread-2 (]: Finished running node test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7
+[0m00:28:27.346278 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:28:27.347222 [debug] [MainThread]: Connection 'list_credit_pipeline_public' was properly closed.
+[0m00:28:27.347505 [debug] [MainThread]: Connection 'test.credit_pulse.not_null_top_borrowers_by_region_rank_in_region.6e4f6a7bb7' was properly closed.
+[0m00:28:27.347886 [debug] [MainThread]: Connection 'test.credit_pulse.not_null_risk_by_credit_tier_credit_tier.ce7a16edd4' was properly closed.
+[0m00:28:27.348154 [debug] [MainThread]: Connection 'test.credit_pulse.unique_risk_by_credit_tier_credit_tier.cd9490674d' was properly closed.
+[0m00:28:27.348418 [debug] [MainThread]: Connection 'test.credit_pulse.accepted_values_risk_by_credit_tier_credit_tier__Excellent__Good__Fair__Poor.7256680b2e' was properly closed.
+[0m00:28:27.354910 [debug] [MainThread]: Command end result
+[0m00:28:27.487765 [debug] [MainThread]: Wrote artifact WritableManifest to S:\CreditPulse\credit_pulse_dbt\target\manifest.json
+[0m00:28:27.491870 [debug] [MainThread]: Wrote artifact SemanticManifest to S:\CreditPulse\credit_pulse_dbt\target\semantic_manifest.json
+[0m00:28:27.521405 [debug] [MainThread]: Wrote artifact OsiDocument to S:\CreditPulse\credit_pulse_dbt\target\osi_document.json
+[0m00:28:27.530547 [debug] [MainThread]: Wrote artifact RunExecutionResult to S:\CreditPulse\credit_pulse_dbt\target\run_results.json
+[0m00:28:27.707807 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m00:28:27.708172 [info ] [MainThread]: Building catalog
+[0m00:28:27.719518 [debug] [ThreadPool]: Acquiring new postgres connection 'credit_pipeline.information_schema'
+[0m00:28:27.726313 [debug] [ThreadPool]: Using postgres connection "credit_pipeline.information_schema"
+[0m00:28:27.726862 [debug] [ThreadPool]: On credit_pipeline.information_schema: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_pulse", "target_name": "dev", "connection_name": "credit_pipeline.information_schema"} */
+
+    
+    
+
+    select
+        'credit_pipeline' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('default_rate_by_region')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('loans')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_customers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('late_payment_vs_default')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_loans')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('risk_by_credit_tier')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('top_borrowers_by_region')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('repayments')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('customers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_repayments')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m00:28:27.727295 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:28:27.778939 [debug] [ThreadPool]: SQL status: SELECT 56 in 0.052 seconds
+[0m00:28:27.782732 [debug] [ThreadPool]: On credit_pipeline.information_schema: ROLLBACK
+[0m00:28:27.783719 [debug] [ThreadPool]: On credit_pipeline.information_schema: Close
+[0m00:28:27.798327 [debug] [MainThread]: Wrote artifact CatalogArtifact to S:\CreditPulse\credit_pulse_dbt\target\catalog.json
+[0m00:28:27.839356 [debug] [MainThread]: Wrote artifact WritableManifest to S:\CreditPulse\credit_pulse_dbt\target\manifest.json
+[0m00:28:27.843043 [debug] [MainThread]: Wrote artifact SemanticManifest to S:\CreditPulse\credit_pulse_dbt\target\semantic_manifest.json
+[0m00:28:27.846536 [debug] [MainThread]: Wrote artifact OsiDocument to S:\CreditPulse\credit_pulse_dbt\target\osi_document.json
+[0m00:28:27.846926 [info ] [MainThread]: Catalog written to S:\CreditPulse\credit_pulse_dbt\target\catalog.json
+[0m00:28:27.848284 [debug] [MainThread]: Command `dbt docs generate` succeeded at 00:28:27.848155 after 2.12 seconds
+[0m00:28:27.848632 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m00:28:27.848928 [debug] [MainThread]: Connection 'credit_pipeline.information_schema' was properly closed.
+[0m00:28:27.849305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D555C3F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D55F5EBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D56449E90>]}
+[0m00:28:27.849684 [debug] [MainThread]: Flushing usage events
+[0m00:28:28.982323 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:28:49.369276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EBBF245160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EBC194FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EBC194F9D0>]}
+
+
+============================== 00:28:49.382343 | 4ec04809-b251-4fb2-99b8-5df443ac2a68 ==============================
+[0m00:28:49.382343 [info ] [MainThread]: Running with dbt=1.12.0
+[0m00:28:49.383518 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'S:\\CreditPulse\\credit_pulse_dbt\\logs'}
+[0m00:28:49.718945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4ec04809-b251-4fb2-99b8-5df443ac2a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EBBF91D940>]}
+[0m00:28:49.799955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4ec04809-b251-4fb2-99b8-5df443ac2a68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EBC19F3350>]}

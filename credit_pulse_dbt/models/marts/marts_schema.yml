@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: default_rate_by_region
+    description: Default rate percentage per region.
+    columns:
+      - name: region
+        tests:
+          - unique
+          - not_null
+      - name: default_rate_pct
+        tests:
+          - not_null
+
+  - name: risk_by_credit_tier
+    description: Loan volume, average amount, and defaults bucketed by credit tier.
+    columns:
+      - name: credit_tier
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ['Excellent', 'Good', 'Fair', 'Poor']
+
+  - name: top_borrowers_by_region
+    description: Customers ranked by total borrowed amount within their region.
+    columns:
+      - name: rank_in_region
+        tests:
+          - not_null
+
+  - name: late_payment_vs_default
+    description: Average days late grouped by loan status.
+    columns:
+      - name: loan_status
+        tests:
+          - unique
+          - not_null

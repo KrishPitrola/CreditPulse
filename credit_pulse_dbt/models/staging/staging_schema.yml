@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: One row per customer.
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: name
+        tests:
+          - not_null
+      - name: credit_score
+        tests:
+          - not_null
+
+  - name: stg_loans
+    description: One row per loan, linked to the customer who took it.
+    columns:
+      - name: loan_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: loan_status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Current', 'Paid Off', 'Default']
+
+  - name: stg_repayments
+    description: One row per repayment event, linked to a loan.
+    columns:
+      - name: repayment_id
+        tests:
+          - unique
+          - not_null
+      - name: loan_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_loans')
+              field: loan_id
+      - name: days_late
+        tests:
+          - not_null

@@ -1,0 +1,19 @@
+# profiles.yml
+# Connection profile for dbt. Reads credentials from environment
+# variables (with local defaults matching docker-compose.yml) so this
+# file is safe to commit -- no plaintext secrets. dbt is run from the
+# host machine, connecting to Postgres via the port docker-compose
+# publishes to localhost.
+
+credit_pulse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('POSTGRES_HOST', 'localhost') }}"
+      port: "{{ env_var('POSTGRES_PORT', '5432') | as_number }}"
+      user: "{{ env_var('POSTGRES_USER', 'postgres') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD', 'postgres') }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'credit_pipeline') }}"
+      schema: public
+      threads: 4
